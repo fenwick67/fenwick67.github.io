@@ -1,42 +1,42 @@
 var currentIx=100;
 $(function(){
 	//window activation
-	$('desktop').on('click dragstart resizestart mousedown','winder',function(){		
+	$('.desktop').on('click dragstart resizestart mousedown','.winder',function(){		
 		currentIx++;
-		$('winder').removeClass('active');
+		$('.winder').removeClass('active');
 		$(this).css({"z-index":currentIx}).addClass('active');
 
 	});
 	//resize or drag: put an invisible div over the window to prevent iframe problems
-	$('desktop').on('resizestart dragstart','winder',function(){
+	$('.desktop').on('resizestart dragstart','.winder',function(){
 		$(this).prepend('<div id="draghider"></div>');
-		$(this).find('#draghider').height($(this).height()).width(10000).css({"position":"absolute"});
 	});
-	$('desktop').on('resizestop dragstop','winder',function(){	
-		$(this).find("#draghider").remove();
+	$('.desktop').on('resizestop dragstop','.winder,.windowhandle',function(){	
+	console.log('dragstop or resizestop');
+		$('body').find("#draghider").remove();
 	});
 
 	//close behavior
-	$('desktop').on('click','closebutton',function(){
+	$('.desktop').on('click','.closebutton',function(){
 		var theTaskId = $(this).parent().parent().parent().data('taskId');
 		$(this).parent().parent().parent().remove();
-		$('taskbar').find('.taskbarItem').each(function(){
+		$('.taskbar').find('.taskbarItem').each(function(){
 			if ($(this).data('taskId')==theTaskId){
 				$(this).remove();
 			}
 		});		
 	});
 	//minimize behavior
-	$('desktop').on('click','minimizebutton',function(){
+	$('.desktop').on('click','.minimizebutton',function(){
 		$(this).parent().parent().parent().css({
 			"display":"none"			
 		});				
 	});
 	//maximize
-	$('desktop').on('click','maximizebutton',function(){
+	$('.desktop').on('click','.maximizebutton',function(){
 		var theWindow = $(this).parent().parent().parent();
-		var width = $('desktop').width();
-		var height = $('desktop').height();
+		var width = $('.desktop').width();
+		var height = $('.desktop').height();
 		//if window is maximized
 		if (theWindow.width()>=(width-10)&&theWindow.height()>=(height-10)){
 			theWindow.removeClass('fullscreen');
@@ -60,22 +60,22 @@ $(function(){
 			
 	});	
 	//open launcher
-	$('startbutton').on('click',function(){
-		$('launcher').css({
+	$('.startbutton').on('click',function(){
+		$('.launcher').css({
 			"display":"block"
 		});
 	});
 	//close launcher
-	$('desktop').on('click drag resize',function(){
-		$('launcher').css({
+	$('.desktop').on('click drag resize',function(){
+		$('.launcher').css({
 			"display":"none"
 		});
 	});
 	//taskbar clicks
-	$('taskbar').on('click','.taskbarItem',function(){
+	$('.taskbar').on('click','.taskbarItem',function(){
 		var theUniqueId= $(this).data('taskId');
 		currentIx++;
-		$('winder').removeClass('active');
+		$('.winder').removeClass('active');
 		$("#"+theUniqueId).css({'display':'flex',"z-index":currentIx}).addClass('active');
 	});
 	
@@ -91,7 +91,7 @@ $(function(){
 		createWindow($('<div>YOU OPENED A NEW HTML WINDOW<br>YOU ARE SOO COOL<img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cameraegg.org%2Fwp-content%2Fuploads%2F2013%2F03%2FCanon-EOS-100D-Rebel-SL1-Sample-Image.jpg&f=1"></img></div>'),'html window');
 	});
 	$('#newYoutubeWindowButton').on('click',function(){
-		createWindow($('<iframe src="https://www.youtube.com/embed/GCZMfYNWcp4" frameborder="0" allowfullscreen></iframe>'),'YouTube');
+		createWindow($('<iframe src="https://www.youtube.com/embed/GCZMfYNWcp4" allowfullscreen></iframe>'),'YouTube');
 	});
 	
 		createWindow($('<iframe src="http://www.duckduckgo.com"></iframe>'),'Web');	
@@ -105,29 +105,29 @@ function createWindow(jqobj,windowTitle){
 		
 	var uniqueId = (new Date().getTime());	
 	
-	var newWindow=$('<winder id="'+uniqueId+'">'
-					+'<windowhandle>'
-						+'<windowtitle>'+windowTitle+'</windowtitle>'
-						+'<windowactions>'
-							+'<minimizebutton></minimizebutton>'
-							+'<maximizebutton></maximizebutton>'
-							+'<closebutton></closebutton>'
-						+'</windowactions>'
-					+'</windowhandle>'
-					+'<windowcontent></windowcontent>'
-				+'</winder>'
+	var newWindow=$('<div class="winder" id="'+uniqueId+'">'
+					+'<div class="windowhandle">'
+						+'<div class="windowtitle">'+windowTitle+'</div>'
+						+'<div class="windowactions">'
+							+'<div class="minimizebutton"></div>'
+							+'<div class="maximizebutton"></div>'
+							+'<div class="closebutton"></div>'
+						+'</div>'
+					+'</div>'
+					+'<div class="windowcontent"></div>'
+				+'</div>'
 			).data('taskId',uniqueId);	
-	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:"windowHandle",containment:"parent"}).css({'z-index':currentIx});
+	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowhandle",containment:"parent"}).css({'z-index':currentIx});
 	if(jqobj.prop('tagName')=="IFRAME"){
-		jqobj.addClass('windowContent');
-		newWindow.find('windowcontent').replaceWith(jqobj);
+		jqobj.addClass('windowContent').attr('frameborder','0');
+		newWindow.find('.windowcontent').replaceWith(jqobj);
 	}
 	else{
-		newWindow.find('windowcontent').append(jqobj);
+		newWindow.find('.windowcontent').append(jqobj);
 	}
-	$('winder').removeClass("active");
+	$('.winder').removeClass("active");
 	newWindow.addClass('active');
-	$('desktop').append(newWindow);
+	$('.desktop').append(newWindow);
 	var newTaskbarItem=$('<div class="taskbarItem">'+windowTitle+'</div>').data('taskId',uniqueId);
-	$('taskbar').append(newTaskbarItem);
+	$('.taskbar').append(newTaskbarItem);
 };
