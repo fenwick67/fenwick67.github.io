@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html style="height:100%;margin:0;min-height:100%;">
+<head><title>Redirected</title></head>
+<body style="overflow:auto;font-family:sans-serif;width:100%;margin:0;height:100%;min-height:100%;background-color:aliceblue">
+
+<div style="position:relative;background-color:lemonchiffon;width:80%;margin:0 auto;box-shadow:0 0 10px rgba(0,0,0,.3);border: 1px solid rgba(0,0,0,.2);overflow:hidden;min-height:300px;padding:30px;top:10px;">
+	<h1>Copy the text below and paste it into the application.</h1><br>
+	<textarea id="b" onclick="a();" style="width:100%;resize:none;border:none;padding:0;min-height:50%;font-family:monospace"></textarea>
+	<h2>Hint: Hit ctrl+c to copy, or, on a smartphone/tablet, tap and hold on the text until the menu appears.</h2>
+
+</div>
+<script>
+document.getElementById('b').textContent=window.location.search;
+function a(){
+	document.getElementById('b').focus();
+	document.getElementById('b').select();
+}
+</script>
+</body>
+</html>
