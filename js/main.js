@@ -1,4 +1,5 @@
 var currentIx=100;
+
 $(function(){
 	//window activation
 	$('.desktop').on('click dragstart resizestart mousedown','.winder',function(){		
@@ -8,12 +9,12 @@ $(function(){
 
 	});
 	//resize or drag: put an invisible div over the window to prevent iframe problems
+  //todo: add it to all windows
 	$('.desktop').on('resizestart dragstart','.winder',function(){
-		$(this).prepend('<div id="draghider"></div>');
+		$('.winder').prepend('<div class="draghider"></div>');
 	});
-	$('.desktop').on('resizestop dragstop','.winder,.windowhandle',function(){	
-	console.log('dragstop or resizestop');
-		$('body').find("#draghider").remove();
+	$('.desktop').on('resizestop dragstop','.winder,.windowhandle',function(){
+		$('body').find(".draghider").remove();
 	});
 
 	//close behavior
@@ -37,7 +38,7 @@ $(function(){
 		var theWindow = $(this).parent().parent().parent();
 		var width = $('.desktop').width();
 		var height = $('.desktop').height();
-		//if window is maximized
+		//if window is maximized... un-max it
 		if (theWindow.width()>=(width-10)&&theWindow.height()>=(height-10)){
 			theWindow.removeClass('fullscreen');
 			theWindow.css({
@@ -47,7 +48,7 @@ $(function(){
 				"height":theWindow.height()/2+"px"
 			});
 		}
-		//window not maximized
+		//window not maximized... max it
 		else{
 			theWindow.addClass('fullscreen');
 			theWindow.css({
@@ -59,18 +60,19 @@ $(function(){
 		}
 			
 	});	
-	//open launcher
-	$('.startbutton').on('click',function(){
-		$('.launcher').css({
-			"display":"block"
-		});
-	});
-	//close launcher
-	$('.desktop').on('click drag resize',function(){
-		$('.launcher').css({
-			"display":"none"
-		});
-	});
+  //launcher open / close   
+  function toggleLauncher(){
+		$('.launcher').toggleClass('launcher-hidden');
+    $('.startbutton').toggleClass('active');
+  }
+  function closeLauncher(){
+		$('.launcher').addClass('launcher-hidden');
+    $('.startbutton').removeClass('active');
+	}
+  
+	$('.startbutton').on('click',toggleLauncher);
+	$('.desktop').on('click drag resize mouseenter',closeLauncher);
+  
 	//taskbar clicks
 	$('.taskbar').on('click','.taskbarItem',function(){
 		var theUniqueId= $(this).data('taskId');
@@ -81,25 +83,71 @@ $(function(){
 	
 });
 
-//this implementation stuff
+//application code
 $(function(){	
 	
-	$('#newWindowButton').on('click',function(){
-		createWindow($('<div>YOU OPENED A NEW WINDOW<br>YOU ARE SOO COOL</div>'),"Word Up");
-	});
-	$('#newHtmlWindowButton').on('click',function(){
-		createWindow($('<div>YOU OPENED A NEW HTML WINDOW<br>YOU ARE SOO COOL<img src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.cameraegg.org%2Fwp-content%2Fuploads%2F2013%2F03%2FCanon-EOS-100D-Rebel-SL1-Sample-Image.jpg&f=1"></img></div>'),'html window');
-	});
-	$('#newYoutubeWindowButton').on('click',function(){
-		createWindow($('<iframe src="https://www.youtube.com/embed/GCZMfYNWcp4" allowfullscreen></iframe>'),'YouTube');
-	});
-	
-		createWindow($('<iframe src="http://www.duckduckgo.com"></iframe>'),'Web');	
+  var links = [
+    {
+      url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+      icon:'/img/waves.jpg',
+      title:'Chiptune Music'
+    },
+    {
+      url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179665508%3Fsecret_token%3Ds-zMDjT&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
+      icon:'/img/waves.jpg',
+      title:'Calming Music'
+    },
+    {
+      url:"/window",
+      icon:'/img/conure.svg',
+      title:'Weather'
+    },
+    {
+      url:"http://www.duckduckgo.com/",
+      icon:'/img/conure2.svg',
+      title:'Search'
+    },
+    {
+      url:'/about',
+      icon:'/img/conure.svg',
+      title:'About'
+    },
+    {
+      url:'/calculator',
+      icon:'/img/conure.svg',
+      title:'Calculator'
+    }
+    /*,
+    {
+      url:"https://www.youtube.com/embed/GCZMfYNWcp4",
+      icon:'/img/conure.svg',
+      title:'Youtube'
+    }*/
+  ];
+  
+  //create launcher and desktop links
+  links.forEach(function(link){
+    var launcherItem = $('<li data-url="'+link.url+'" data-title="'+link.title+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span></li>');
+    $('.launcher ul').append(launcherItem);
+    
+    var desktopItem = $('<span class="desktop-icon" data-url="'+link.url+'" data-title="'+link.title+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span></span>');
+    $('.desktop').append(desktopItem);
+  });
+  
+  //register click listeners for those links
+  $('.launcher').on('click','li',function(e){
+    var $this = $(this)
+    createWindow($('<iframe src="'+$this.data('url')+'" allowfullscreen></iframe>'),$this.data('title') );
+  });
+  $('.desktop-icon').on('click',function(e){
+    var $this = $(this);
+    createWindow($('<iframe src="'+$this.data('url')+'" allowfullscreen></iframe>'),$this.data('title') );
+  });
 	
 });
 
 
-//create a window out of a div or anything
+//create a window out of a jquery element
 function createWindow(jqobj,windowTitle){
 	if(!windowTitle){windowTitle="New Window"}
 		
@@ -117,7 +165,7 @@ function createWindow(jqobj,windowTitle){
 					+'<div class="windowcontent"></div>'
 				+'</div>'
 			).data('taskId',uniqueId);	
-	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowhandle",containment:"parent"}).css({'z-index':currentIx});
+	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowtitle",containment:"parent"}).css({'z-index':currentIx});
 	if(jqobj.prop('tagName')=="IFRAME"){
 		jqobj.addClass('windowContent').attr('frameborder','0');
 		newWindow.find('.windowcontent').replaceWith(jqobj);
