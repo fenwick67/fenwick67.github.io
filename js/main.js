@@ -2,14 +2,17 @@ var currentIx=100;
 
 $(function(){
 	//window activation
-	$('.desktop').on('click dragstart resizestart mousedown','.winder',function(){		
+	$('.desktop').on('touchdown mousedown','.winder',function(){		
 		currentIx++;
 		$('.winder').removeClass('active');
 		$(this).css({"z-index":currentIx}).addClass('active');
-
+    $(this).addClass('clicked')
 	});
+  $('.desktop').on('mouseup dragend resizeend','.winder,.windowhandle,.windowtitle',function(){
+    $('.winder').removeClass('clicked');
+    console.log('window release');
+  });
 	//resize or drag: put an invisible div over the window to prevent iframe problems
-  //todo: add it to all windows
 	$('.desktop').on('resizestart dragstart','.winder',function(){
 		$('.winder').prepend('<div class="draghider"></div>');
 	});
