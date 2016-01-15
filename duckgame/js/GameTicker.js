@@ -18,6 +18,10 @@ function GameTicker(){
       delta = frameLength;
     }
     
+    if (delta > frameLength * 5){//cap frame length
+      delta = frameLength * 5;
+    }
+    
     me.onTick(delta / frameLength);
     then = now;
     window.requestAnimationFrame(run)
