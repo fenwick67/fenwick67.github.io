@@ -11,6 +11,14 @@ function GameTicker(){
   var then = Date.now();
   
 	function run(now) {
+    
+    /*
+    if (Math.random() < 0){
+      window.requestAnimationFrame(run);
+      return;
+    }
+    */
+    
     //now is when the frame is being fired
     var delta = now - then;
     
@@ -18,13 +26,13 @@ function GameTicker(){
       delta = frameLength;
     }
     
-    if (delta > frameLength * 5){//cap frame length
-      delta = frameLength * 5;
+    if (delta > frameLength * 6){//cap frame length
+      delta = frameLength * 6;
     }
     
     me.onTick(delta / frameLength);
     then = now;
-    window.requestAnimationFrame(run)
+    window.requestAnimationFrame(run);
   }
   
   window.requestAnimationFrame(run);

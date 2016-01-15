@@ -296,10 +296,13 @@ function gameStart() {
 		}
 
 		//move duck
+    
+    //todo: need to better integrate delta into deceleration
+    //right now slower framerates makes you jump a bit higher
 		if (duck.jumpVelocity || !grounded) {
-			duck.position.y += duck.jumpVelocity;
-      if (!jumpedThisFrame){
-        duck.jumpVelocity = duck.jumpVelocity - (G * game.sqSpeed * delta / 2);//equations of motion, bitch!
+			duck.position.y += duck.jumpVelocity * delta;
+      if (!jumpedThisFrame){//slow the duck down
+        duck.jumpVelocity = duck.jumpVelocity - (G * game.sqSpeed * delta  / 2);
       }
 			//handle ground collisions and ground duck
 			if (duck.position.y < 0) {
