@@ -274,6 +274,14 @@ function gameStart() {
 
 	//game ticker
 	var ticker = new GameTicker();
+  
+  //vars in game loop are brought out to reduce GC
+  var grounded;
+  var jumpedThisFrame;
+  var collides;
+  var obs;
+  var br;
+  
 	ticker.onTick = function (delta) {
     game.time += delta;
     
@@ -282,8 +290,8 @@ function gameStart() {
     }
 		//jump behavior
 
-    var jumpedThisFrame = false;
-		var grounded = duck.position.y <= 0;
+    jumpedThisFrame = false;
+		grounded = duck.position.y <= 0;
     
     if (grounded){
       duck.jumpsUsed = 0;
@@ -312,13 +320,11 @@ function gameStart() {
 		}
     
 
-
-
 		//move obstacles
 		_.each(obstacles,function(obstacle,id){
       obstacle.position.z += 1 * game.speed * delta;
       
-      var collides = playerCubeCollision(obstacle,SPIKE_SIZE,SPIKE_SIZE);
+      collides = playerCubeCollision(obstacle,SPIKE_SIZE,SPIKE_SIZE);
       if (collides){
         alert('GAME OVER. score: '+game.score * 100);
         console.log('GAME OVER. score: '+game.score * 100);
@@ -354,14 +360,14 @@ function gameStart() {
 
 		//place new obstacles
 		//todo only do this so often
-		var obs = obstacleType();
+		obs = obstacleType();
 		if (obs === TerrainTypes.SPIKES) {
 			var spike = placeSpike();
 			obstacles[spike.uuid] = spike;
 		}
 
 		//place breads
-		var br = breadExists();
+		br = breadExists();
 		if (br) {
 			var bread = placeBread();
 			breads[bread.uuid] = bread;
