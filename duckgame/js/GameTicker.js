@@ -9,6 +9,7 @@ function GameTicker(){
 
   // Let's play this game!
   var then = Date.now();
+  var delta;
   
 	function run(now) {
     
@@ -20,7 +21,7 @@ function GameTicker(){
     */
     
     //now is when the frame is being fired
-    var delta = now - then;
+    delta = now - then;
     
     if (delta < 0){//first tick will be crazy
       delta = frameLength;

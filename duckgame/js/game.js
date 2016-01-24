@@ -429,11 +429,11 @@ function setCameraPlay(){
 
 function enableCameraControls(){
       
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.addEventListener( 'change', render ); // add this only if there is no animation loop (requestAnimationFrame)
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.25;
-    controls.enableZoom = true;    
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.addEventListener( 'change', render ); // add this only if there is no animation loop (requestAnimationFrame)
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.25;
+  controls.enableZoom = true;    
 
 }
 //spike object pool

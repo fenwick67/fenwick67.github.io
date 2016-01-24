@@ -32,18 +32,24 @@ left:0;
 right:0;
 box-shadow:0 0 5px black;
 }
-div.taskbarItem{
-line-height:1.4em;
-font-size:1.3em;
-margin:0 .5em;
-padding: 0 .5em;
-background-color:rgba(255,255,255,.5);
-overflow:hidden;
+.taskbarItem{
+  display:flex;
+  align-items:center;
+  height:100%;
+  margin:0 .5em;
+  background-color:rgba(255,255,255,.5);
+  overflow:hidden;
+}
+.taskbartitle{
+  font-size:1.3em;
+  padding:0 .5em;
+  line-height:100%;
+  display:inline-block;
 }
 .startbutton{
-display:block;
-height:2em;
-width:3em;
+  display:block;
+  height:2em;
+  width:3em;
 }
 .startbutton-inner{
   width:100%;
@@ -62,6 +68,7 @@ color:#AEE8D3;
 display:flex;
 position:absolute !important;
 flex-direction:column;
+/*default width and height: should never be rendered this way*/
 width:350px;
 height:400px;
 background-color:currentcolor;
@@ -72,9 +79,9 @@ border:solid 5px currentcolor;
  transform-origin:100% 0;
  transform:scale(1);
 }
-.winder.ui-draggable-dragging, .winder.clicked{
-   box-shadow:0 2px 15px 0 rgba(0,0,0,.4);
-    transform:scale(1.02);
+.winder.ui-draggable-dragging:not(.fullscreen), .winder.clicked:not(.fullscreen){
+  box-shadow:0 2px 15px 0 rgba(0,0,0,.4);
+  transform:scale(1.02);
 }
 .windowcontent,.windowContent{
 display:block;
@@ -111,6 +118,24 @@ height:2em;
 .windowactions{
 color:black;
 display:flex;
+}
+.windowicon,.taskbaricon{
+  margin-left:3px;
+  display:flex;
+  align-items:center;
+  height:100%;
+  max-width:3rem;
+  line-height:100%;
+}
+.windowicon{
+  margin-top: -2px;
+}
+.windowicon>img,.taskbaricon>img{
+  display:block;
+  height:75%;
+  width:auto;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,.5));
+  -webkit-filter: drop-shadow(0 0 2px rgba(0,0,0,.5));
 }
 .windowtitle{
 padding-left:.3em;

@@ -89,7 +89,7 @@ $(function(){
 //application code
 $(function(){	
 	
-  var links = [
+  window.links = [
     {
       url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
       icon:'/img/waves.jpg',
@@ -117,47 +117,58 @@ $(function(){
     },
     {
       url:'/calculator',
-      icon:'/img/conure.svg',
-      title:'Calculator'
+      icon:'/img/calculatoricon.png',
+      title:'Calculator',
+      width:397,
+      height:626
     }
-    /*,
+    ,
     {
-      url:"https://www.youtube.com/embed/GCZMfYNWcp4",
-      icon:'/img/conure.svg',
-      title:'Youtube'
-    }*/
+      url:"/duckgame",
+      icon:'/img/duckicon.png',
+      title:'Game'
+    }
   ];
   
   //create launcher and desktop links
-  links.forEach(function(link){
-    var launcherItem = $('<li data-url="'+link.url+'" data-title="'+link.title+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span></li>');
+  links.forEach(function(link,index){
+    var launcherItem = $('<li data-link-index="'+index+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span></li>');
     $('.launcher ul').append(launcherItem);
-    
-    var desktopItem = $('<span class="desktop-icon" data-url="'+link.url+'" data-title="'+link.title+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span></span>');
+    var desktopItem = $('<span class="desktop-icon" data-link-index="'+index+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span></span>');
     $('.desktop').append(desktopItem);
   });
   
+  function openWindowFromClick(e){
+    var link = window.links[$(this).data('link-index')];
+    createWindow($('<iframe src="'+link.url+'" allowfullscreen></iframe>'),link.title, link );
+  }
+    
   //register click listeners for those links
-  $('.launcher').on('click','li',function(e){
-    var $this = $(this)
-    createWindow($('<iframe src="'+$this.data('url')+'" allowfullscreen></iframe>'),$this.data('title') );
-  });
-  $('.desktop-icon').on('click',function(e){
-    var $this = $(this);
-    createWindow($('<iframe src="'+$this.data('url')+'" allowfullscreen></iframe>'),$this.data('title') );
-  });
+  $('.launcher').on('click','li',openWindowFromClick);
+  $('.desktop').on('click','.desktop-icon',openWindowFromClick);
 	
 });
 
+/**
+  create a window out of a jquery element
 
-//create a window out of a jquery element
-function createWindow(jqobj,windowTitle){
+  @param jqobj: the jquery object to winowify
+  @param windowTitle: duh
+  @params options:
+    @param icon: icon url
+  
+*/
+function createWindow(jqobj,windowTitle,options){
+  var options = options || {};
+  options.icon = options.icon || '';
+  
 	if(!windowTitle){windowTitle="New Window"}
 		
 	var uniqueId = (new Date().getTime());	
 	
-	var newWindow=$('<div class="winder" id="'+uniqueId+'">'
+	var newWindowString ='<div class="winder" id="'+uniqueId+'">'
 					+'<div class="windowhandle">'
+            +'<div class="windowicon"><img src="'+options.icon+'"></img></div>'
 						+'<div class="windowtitle">'+windowTitle+'</div>'
 						+'<div class="windowactions">'
 							+'<div class="minimizebutton"></div>'
@@ -166,9 +177,17 @@ function createWindow(jqobj,windowTitle){
 						+'</div>'
 					+'</div>'
 					+'<div class="windowcontent"></div>'
-				+'</div>'
-			).data('taskId',uniqueId);	
-	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowtitle",containment:"parent"}).css({'z-index':currentIx});
+				+'</div>';
+        
+  var newWindow = $(newWindowString).data('taskId',uniqueId);
+  
+  newWindow.css({
+    'height':(options.height||400)+'px',
+    'width':(options.width||350)+'px',
+    'z-index':currentIx
+  });
+    
+	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowtitle",containment:"parent"});
 	if(jqobj.prop('tagName')=="IFRAME"){
 		jqobj.addClass('windowContent').attr('frameborder','0');
 		newWindow.find('.windowcontent').replaceWith(jqobj);
@@ -179,6 +198,6 @@ function createWindow(jqobj,windowTitle){
 	$('.winder').removeClass("active");
 	newWindow.addClass('active');
 	$('.desktop').append(newWindow);
-	var newTaskbarItem=$('<div class="taskbarItem">'+windowTitle+'</div>').data('taskId',uniqueId);
+	var newTaskbarItem=$('<div class="taskbarItem"><div class="taskbaricon"><img src="'+options.icon+'"></img></div><span class="taskbartitle">'+windowTitle+'</div></span>').data('taskId',uniqueId);
 	$('.taskbar').append(newTaskbarItem);
 };
