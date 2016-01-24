@@ -15,9 +15,13 @@ var clock = new THREE.Clock();
 var mixers = [];
 var MAX_BREADS = 40;
 var MAX_SPIKES = 20;
-var HIDDEN_POS = {x:0,y:-150,z:0};
+var HIDDEN_POS = {x:0,y:9000,z:0};
 var useShadows = true;
 var materialType = THREE.MeshLambertMaterial;//polyfill the THREE.MeshBasicMaterial or THREE.MeshLabmertMaterial
+var BASE_FOV = 100;//this isn't really FOV in degrees.  This times pi / 4 = FOV
+
+//window stuff
+//window.godmode = true;
 
 //some mobile detection
 var isMobile = false; //initiate as false
@@ -26,6 +30,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) isMobile = true;
 
   
+  //HACK
   //HACK
 if (isMobile){
   useShadows = false;
@@ -40,12 +45,16 @@ function init() {
 	container = document.createElement('div');
 	document.body.appendChild(container);
 
-	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 2000);
+	camera = new THREE.PerspectiveCamera(BASE_FOV, window.innerWidth / window.innerHeight, 1, 2000);
 	camera.position.set(100, 30, 0);
+  onWindowResize();
 
 	scene = new THREE.Scene();
-	//scene.fog = new THREE.FogExp2( 0x000000, 0.035 );
-
+	scene.fog = new THREE.FogExp2( 0xffffff, 0.004 );
+  
+  var skyMatl = new THREE.MeshLambertMaterial({side:THREE.BackSide,fog:false,color:0x00ccee});
+  var skyDome = new THREE.Mesh( new THREE.SphereGeometry( 300, 20, 10 ), skyMatl );
+  scene.add(skyDome);
 	// Add Blender exported Collada model
 
 
@@ -56,7 +65,7 @@ function init() {
 		var material = materials[0];
 		material.skinning = true;
 
-		var faceMaterial = new THREE.MeshFaceMaterial(materials);
+		var faceMaterial = new THREE.MeshFaceMaterial(materials,{side:THREE.DoubleSide});
 
 		mesh = new THREE.SkinnedMesh(geometry, faceMaterial);
 		mesh.castShadow = true;
@@ -78,7 +87,7 @@ function init() {
 		animate();
 
 		//add ground
-		var groundGeo = new THREE.PlaneGeometry(500, 500);
+		var groundGeo = new THREE.PlaneGeometry(1000, 1000);
 		var groundMatl = new materialType({
 				color : 0x00dd20
 			});
@@ -100,10 +109,16 @@ function init() {
 	});
 
 	// Lights
+  
+  var pointLight = new THREE.PointLight(0xffffff);
+  pointLight.intensity = 1;
+  pointLight.position.set(0,99,0);
+  scene.add(pointLight);
 
 	var spotLight = new THREE.SpotLight(0xffff00);
 	spotLight.position.set(100, 500, 0);
   if (useShadows){
+    spotLight.intensity = 0;//wer'e just using it for shadows
     spotLight.castShadow = true;
 
     spotLight.shadowMapWidth = 1024;
@@ -119,7 +134,8 @@ function init() {
 
 	var spotLightHelper = new THREE.SpotLightHelper(spotLight);
 	//scene.add(spotLightHelper);
-
+  
+  //ambient light
 	scene.add(new THREE.AmbientLight(0xcceeee));
 
 	// Renderer
@@ -151,9 +167,13 @@ function init() {
 //
 
 function onWindowResize(event) {
-
-	renderer.setSize(window.innerWidth, window.innerHeight);
-
+  
+  //set vertical FOV
+  camera.fov =  BASE_FOV * Math.atan2(window.innerHeight, window.innerWidth);
+  
+  if (renderer){
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  }
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 
@@ -183,9 +203,9 @@ function render() {
 }
 
 //constants
-var PLAY_HEIGHT = 30;
-var SPIKE_SIZE = 15;
-var JUMP_STRENGTH = 1.3;
+var PLAY_HEIGHT = 27;
+var SPIKE_SIZE = 10;
+var JUMP_STRENGTH = 1;
 var BREAD_SIZE = 4;
 var BREAD_THICKNESS = 1;
 var G = .1;
@@ -325,7 +345,7 @@ function gameStart() {
       obstacle.position.z += 1 * game.speed * delta;
       
       collides = playerCubeCollision(obstacle,SPIKE_SIZE,SPIKE_SIZE);
-      if (collides){
+      if (collides && !window.godmode){
         alert('GAME OVER. score: '+game.score * 100);
         console.log('GAME OVER. score: '+game.score * 100);
         window.location = window.location;
@@ -394,7 +414,7 @@ function playerSphereCollision(obj, dist) {
 }
 
 function playerCubeCollision(obj,width,height){
-  //remember... Z axis is how stuff swooses in, y is up, x is worthless
+  //remember... Z axis is how stuff swooses in, y is up, x is to the background
   
     if (duck.position.z < obj.position.z - (width / 2)){
       return false;
@@ -423,8 +443,8 @@ function setCameraZoomed(){
 }
 
 function setCameraPlay(){
-  camera.position.set(95, 20, -35);
-  camera.lookAt( new THREE.Vector3(0,20,-35) );
+  camera.position.set(70, 20, -25);
+  camera.lookAt( new THREE.Vector3(0,20,-45) );
 }
 
 function enableCameraControls(){
