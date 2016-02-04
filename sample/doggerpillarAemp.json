@@ -1,54 +1,56 @@
 {
-	"version" : "1",
-	"snapshotTime" : "2015-04-29T21:31:19Z",
-	"equipment" : [{
-			"equipmentHeader" : {
-				"make" : "DOGGERPILLAR",
-				"model" : "123A",
-				"equipmentID" : "AB123AZ622029",
-				"serialNumber" : "AB123AZ622029"
-			},
-			"location" : {
-				"datetime" : "2011-06-08T13:30:26Z",
-				"latitude" : "42.483156",
-				"longitude" : "-87.040732"
-			},
-			"cumulativeOperatingHours" : {
-				"datetime" : "2011-06-08T13:30:26Z",
-				"hour" : "P0DT1H40M0S"
-			}
-		}, {
-			"equipmentHeader" : {
-				"make" : "DOGGERPILLAR",
-				"model" : "456B",
-				"equipmentID" : "AB456BX627059",
-				"serialNumber" : "AB456BX627059"
-			},
-			"location" : {
-				"datetime" : "2013-09-26T06:10:20Z",
-				"latitude" : "42.583156",
-				"longitude" : "-87.040732"
-			},
-			"cumulativeOperatingHours" : {
-				"datetime" : "2013-09-26T06:10:21Z",
-				"hour" : "P11DT10H56M0S"
-			}
-		}, {
-			"equipmentHeader" : {
-				"make" : "DOGGERPILLAR",
-				"model" : "789C",
-				"equipmentID" : "1AB789CXKA0629863",
-				"serialNumber" : "1AB789CXKA0629863"
-			},
-			"location" : {
-				"datetime" : "2015-02-14T10:01:28Z",
-				"latitude" : "42.383156",
-				"longitude" : "-87.040732"
-			},
-			"cumulativeOperatingHours" : {
-				"datetime" : "2015-02-14T10:01:30Z",
-				"hour" : "P6DT12H47M0S"
-			}
-		}
-	]
+    "fleet": {
+    	"version" : "1",
+    	"snapshotTime" : "2015-04-29T21:31:19Z",
+    	"equipment" : [{
+    			"equipmentHeader" : {
+    				"make" : "DOGGERPILLAR",
+    				"model" : "123A",
+    				"equipmentID" : "AB123AZ622029",
+    				"serialNumber" : "AB123AZ622029"
+    			},
+    			"location" : {
+    				"datetime" : "2011-06-08T13:30:26Z",
+    				"latitude" : "42.483156",
+    				"longitude" : "-87.040732"
+    			},
+    			"cumulativeOperatingHours" : {
+    				"datetime" : "2011-06-08T13:30:26Z",
+    				"hour" : "P0DT1H40M0S"
+    			}
+    		}, {
+    			"equipmentHeader" : {
+    				"make" : "DOGGERPILLAR",
+    				"model" : "456B",
+    				"equipmentID" : "AB456BX627059",
+    				"serialNumber" : "AB456BX627059"
+    			},
+    			"location" : {
+    				"datetime" : "2013-09-26T06:10:20Z",
+    				"latitude" : "42.583156",
+    				"longitude" : "-87.040732"
+    			},
+    			"cumulativeOperatingHours" : {
+    				"datetime" : "2013-09-26T06:10:21Z",
+    				"hour" : "P11DT10H56M0S"
+    			}
+    		}, {
+    			"equipmentHeader" : {
+    				"make" : "DOGGERPILLAR",
+    				"model" : "789C",
+    				"equipmentID" : "1AB789CXKA0629863",
+    				"serialNumber" : "1AB789CXKA0629863"
+    			},
+    			"location" : {
+    				"datetime" : "2015-02-14T10:01:28Z",
+    				"latitude" : "42.383156",
+    				"longitude" : "-87.040732"
+    			},
+    			"cumulativeOperatingHours" : {
+    				"datetime" : "2015-02-14T10:01:30Z",
+    				"hour" : "P6DT12H47M0S"
+    			}
+    		}
+    	]
+    }
 }
