@@ -91,6 +91,13 @@ $(function(){
 	
   window.links = [
     {
+      url:'/about',
+      icon:'/img/conure.svg',
+      title:'About',
+      height:500,
+      width:500
+    },
+    {
       url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
       icon:'/img/waves.jpg',
       title:'Chiptune Music'
@@ -98,22 +105,17 @@ $(function(){
     {
       url:"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179665508%3Fsecret_token%3Ds-zMDjT&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true",
       icon:'/img/waves.jpg',
-      title:'Calming Music'
+      title:'Ambient Music'
     },
     {
       url:"/window",
-      icon:'/img/conure.svg',
+      icon:'/img/deer.svg',
       title:'Weather'
     },
     {
-      url:"http://www.duckduckgo.com/",
+      url:"https://www.duckduckgo.com/",
       icon:'/img/conure2.svg',
-      title:'Search'
-    },
-    {
-      url:'/about',
-      icon:'/img/conure.svg',
-      title:'About'
+      title:'Web Search'
     },
     {
       url:'/calculator',
@@ -126,21 +128,32 @@ $(function(){
     {
       url:"/duckgame",
       icon:'/img/duckicon.png',
-      title:'Game'
+      title:'Jump, Duck!',
+      infoBox:'Made with Three.js'
+    },
+    {
+      url:"/bathroomdash",
+      icon:'/img/bd.png',
+      title:'Bathroom Dash',
+      infoBox:'Made for <a href="http://ludumdare.com/compo/minild-65/?action=preview&uid=80489">MiniLD65</a> using Unity3D<br><a href="https://www.dropbox.com/s/rxe2yy397b46q7i/bd.zip?dl=1">(download)</a>'
     }
   ];
   
   //create launcher and desktop links
   links.forEach(function(link,index){
-    var launcherItem = $('<li data-link-index="'+index+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span></li>');
-    $('.launcher ul').append(launcherItem);
-    var desktopItem = $('<span class="desktop-icon" data-link-index="'+index+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span></span>');
+    var launcherItem = $('<li data-link-index="'+index+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span>'+(link.infoBox?('<div class="launcher-info">'+link.infoBox+'</div>'):'')+'</li>');
+    $('.launcher ul').prepend(launcherItem);
+    var desktopItem = $('<span class="desktop-icon" data-link-index="'+index+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span>'+(link.infoBox?('<div class="desktop-info">'+link.infoBox+'</div>'):'')+'</div></span>');
     $('.desktop').append(desktopItem);
   });
   
   function openWindowFromClick(e){
-    var link = window.links[$(this).data('link-index')];
-    createWindow($('<iframe src="'+link.url+'" allowfullscreen></iframe>'),link.title, link );
+    if (e.target.tagName === 'A'){
+      //clicked a link, noop
+    }else{
+      var link = window.links[$(this).data('link-index')];
+      createWindow($('<iframe src="'+link.url+'" allowfullscreen></iframe>'),link.title, link );      
+    }
   }
     
   //register click listeners for those links

@@ -1,0 +1,35 @@
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <h1>About Me</h1>
+  <p>
+    My name's Drew.  I'm an electrical engineer, but I do all kinds of other stuff too.  This page is meant to showcase that stuff.
+  </p>
+  <p>
+    Lately I've been excited about Web Development, Node.js and Unity3d.  You can check out <a href="https://github.com/fenwick67">my github profile</a> to see what I've been up to lately. 
+  </p>
+  <p>
+    I've also done some app development, mostly with Apache Cordova.
+  </p>
+  <p>
+    You can get ahold of me at <a href="mailto:dfharwell@gmail.com">DFHarwell@gmail.com</a>.  
+  </p>
+  
+  <script>
+  //break out links in the iframe
+  var links = document.querySelectorAll('a');
+  
+  function eachLink(link){
+    link.addEventListener('click',function(e){
+      top.location = link.href;
+      return false;
+    });
+  }
+  
+  for(var i = 0; i < links.length; i ++){
+    eachLink(links[i]);
+  }
+  </script>
+</body>

@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="481.41489"
-     inkscape:cy="100.1895"
+     inkscape:zoom="8"
+     inkscape:cx="145.45915"
+     inkscape:cy="158.59308"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
            rdf:resource="" />
       </cc:Work>
@@ -68,22 +68,22 @@
      id="layer1"
      transform="translate(-134.15433,-153.77614)">
     <path
-       style="fill:#aeff00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 203,282.36222 -8.62178,-47.7987 44,-76 L 333,179.36221 405.12178,291.6609 293.77254,360.77613 Z"
+       style="fill:#ff5555;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 275.52928,266.34659 -44.62178,-31.7987 38.07798,-65.96792 65.5438,16.76661 -2.65254,84.53786 2.66104,100.56504 -43.28858,-0.59187 z"
        id="path3503"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccc" />
+       sodipodi:nodetypes="cccccccc" />
     <path
-       style="fill:#ffff00;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 139.15433,252.9706 21.00862,-56.766 72.42788,-27.63529 -38.40885,66.7929 z"
+       style="fill:#ffaaaa;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 199.61196,301.40741 -8.51959,-58.34739 15.38607,-44.7341 62.52839,-29.75661 -38.40885,66.7929 z"
        id="path3506"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="cccccc" />
     <path
-       style="fill:#4e5d30;fill-opacity:1;stroke:none"
+       style="fill:#550000;fill-opacity:1;stroke:none"
        inkscape:transform-center-x="2.7785691"
        inkscape:transform-center-y="1.9582242"
-       d="m 223.54393,235.58356 23.1671,-41.94031 22.80219,12.75078 -21.2462,8.36306 z"
+       d="m 274.10207,207.65284 9.02496,-14.00959 9.72071,12.39723 -11.03604,19.73806 z"
        id="path4336-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
