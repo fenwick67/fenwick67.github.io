@@ -91,7 +91,7 @@ $(function(){
 	
   window.links = [
     {
-      url:'/about',
+      url:window.location.href+'about',
       icon:'/img/conure.svg',
       title:'About',
       height:500,
