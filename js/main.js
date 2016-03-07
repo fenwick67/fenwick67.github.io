@@ -108,7 +108,7 @@ $(function(){
       title:'Ambient Music'
     },
     {
-      url:"/window",
+      url:window.location.href+"window",
       icon:'/img/deer.svg',
       title:'Weather'
     },
@@ -118,7 +118,7 @@ $(function(){
       title:'Web Search'
     },
     {
-      url:'/calculator',
+      url:window.location.href+'calculator',
       icon:'/img/calculatoricon.png',
       title:'Calculator',
       width:397,
@@ -126,13 +126,13 @@ $(function(){
     }
     ,
     {
-      url:"/duckgame",
+      url:window.location.href+"duckgame",
       icon:'/img/duckicon.png',
       title:'Jump, Duck!',
       infoBox:'Made with Three.js'
     },
     {
-      url:"/bathroomdash",
+      url:window.location.href+"bathroomdash",
       icon:'/img/bd.png',
       title:'Bathroom Dash',
       infoBox:'Made for <a href="http://ludumdare.com/compo/minild-65/?action=preview&uid=80489">MiniLD65</a> using Unity3D<br><a href="https://www.dropbox.com/s/rxe2yy397b46q7i/bd.zip?dl=1">(download)</a>'
