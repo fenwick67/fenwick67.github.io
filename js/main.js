@@ -123,8 +123,7 @@ $(function(){
       title:'Calculator',
       width:397,
       height:626
-    }
-    ,
+    },
     {
       url:window.location.href+"duckgame",
       icon:'/img/duckicon.png',
@@ -132,18 +131,25 @@ $(function(){
       infoBox:'Made with Three.js'
     },
     {
-      url:window.location.href+"bathroomdash",
+      url:window.location.href+"bathroomdash_min",
       icon:'/img/bd.png',
       title:'Bathroom Dash',
-      infoBox:'Made for <a href="http://ludumdare.com/compo/minild-65/?action=preview&uid=80489">MiniLD65</a> using Unity3D<br><a href="https://www.dropbox.com/s/rxe2yy397b46q7i/bd.zip?dl=1">(download)</a>'
-    }
+      infoBox:'Made for &nbsp;<a href="http://ludumdare.com/compo/minild-65/?action=preview&uid=80489"> MiniLD65 </a>&nbsp; using Unity3D<br'
+    },{
+      url:window.location.href+"ld35_min",
+      icon:'/img/chicken.png',
+      title:'Chicken Shift',
+      infoBox:'Made for &nbsp;<a href="http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=80489"> LD35 </a>&nbsp; using Unity3D<br>'
+    },
+    
+    
   ];
   
   //create launcher and desktop links
   links.forEach(function(link,index){
     var launcherItem = $('<li data-link-index="'+index+'"><img src="'+link.icon+'"></img><span>'+link.title+'</span>'+(link.infoBox?('<div class="launcher-info">'+link.infoBox+'</div>'):'')+'</li>');
     $('.launcher ul').prepend(launcherItem);
-    var desktopItem = $('<span class="desktop-icon" data-link-index="'+index+'"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span>'+(link.infoBox?('<div class="desktop-info">'+link.infoBox+'</div>'):'')+'</div></span>');
+    var desktopItem = $('<span class="desktop-icon" data-link-index="'+index+'"><div class="desktop-shadow"><img src="'+link.icon+'"></img><span class="title">'+link.title+'</span></div>'+(link.infoBox?('<div class="desktop-info">'+link.infoBox+'</div>'):'')+'</div></span>');
     $('.desktop').append(desktopItem);
   });
   
@@ -171,7 +177,10 @@ $(function(){
     @param icon: icon url
   
 */
+var nWindowsOpened = 0;
 function createWindow(jqobj,windowTitle,options){
+  ++nWindowsOpened;
+  
   var options = options || {};
   options.icon = options.icon || '';
   
@@ -197,7 +206,9 @@ function createWindow(jqobj,windowTitle,options){
   newWindow.css({
     'height':(options.height||400)+'px',
     'width':(options.width||350)+'px',
-    'z-index':currentIx
+    'z-index':currentIx,
+    top:(nWindowsOpened*38 % 300) + 'px',
+    left:(nWindowsOpened*33 % 300) + 'px'
   });
     
 	newWindow.resizable({handles:"all",containment:"parent"}).draggable({handle:".windowtitle",containment:"parent"});
