@@ -140,6 +140,12 @@ $(function(){
       icon:'/img/chicken.png',
       title:'Chicken Shift',
       infoBox:'Made for &nbsp;<a href="http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=80489"> LD35 </a>&nbsp; using Unity3D<br>'
+    },{
+      url:window.location.href+"markdown?mdsrc=https://cdn.rawgit.com/fenwick67/node-ez-tv/master/README.md",
+      icon:'/img/node-ez-tv logo.png',
+      title:'EZ-TV',
+      width:500,
+      height:500
     },
     
     
