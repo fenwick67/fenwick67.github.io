@@ -1,4 +1,9 @@
 //app stuff
+var modelRoot = '/stl';
+if (window.location.port){//hacky way around the git LFS stuff
+  modelRoot = '//cdn.rawgit.com/fenwick67/fenwick67.github.io/master/stl/';
+}
+
 
 $.get('/stl/models.json')
 .success(function(json){
@@ -6,15 +11,18 @@ $.get('/stl/models.json')
   json.stls.forEach(function(stl){
     var thing = $('<div class="model">'+stl.name+'</div>');
     thing.on('click',function(e){
-      var ref = '/stl/'+stl.file;
+      var ref = modelRoot + stl.file;
       window.loadStl(ref);
       //register listener for download button
       $('#download').attr('href',ref);
     });
     $left.append(thing);
   });
+  //rawgit
+  //https://cdn.rawgit.com/fenwick67/fenwick67.github.io/master/stl/duckholder.stl
+  
   //load first STL
-  var ref = '/stl/'+json.stls[0].file;
+  var ref = modelRoot + json.stls[0].file;
   window.loadStl(ref);
   $('#download').attr('href',ref);
   
