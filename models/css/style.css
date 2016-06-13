@@ -1,0 +1,48 @@
+html,body{
+  background-color:#000;
+  display:flex;
+  height:100%;
+  width:100%;
+  align-content:stretch;
+  align-items:stretch;
+}
+#left{
+  width:15em;
+  background-color:#888;
+  color:#000;
+  height:100%;  
+  overflow:auto;
+}
+.model,.info{
+  line-height:1.5em;
+  padding:1em;
+}
+.model{
+  margin:1em;
+  cursor:pointer;
+  border:solid 1px #000;  
+}
+#viewer{
+  width:10px;
+  flex:1 1 auto;
+  cursor:move;
+  overflow:hidden;
+}
+#download,#spin{
+  text-decoration:none;
+  line-height:1em;
+  position:absolute;
+  background-color:#888;
+  right:20px;
+  bottom:20px;
+  color:#000;
+  display:inline-block;
+  font-size:80px;
+}
+#spin{
+  bottom:initial;
+  top:20px;
+}
+#spin.active{
+  color:#ddd;
+}
