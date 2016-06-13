@@ -1,7 +1,7 @@
 //app stuff
 var modelRoot = '/stl/';
 if (!window.location.port){//hacky way around the git LFS stuff
-  modelRoot = '//cdn.rawgit.com/fenwick67/fenwick67.github.io/master/stl/';
+  modelRoot = '//media.githubusercontent.com/media/fenwick67/fenwick67.github.io/master/stl/';
 }
 
 
