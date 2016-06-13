@@ -146,13 +146,16 @@ $(function(){
       title:'EZ-TV',
       width:500,
       height:500
-    },{
+    }
+    /*
+    ,{
       url:window.location.href+"models",
       icon:'/img/duckicon.png',
       title:'Models',
       width:600,
       height:400
     }
+    */
     
     
   ];
