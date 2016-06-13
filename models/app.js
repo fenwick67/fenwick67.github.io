@@ -68,6 +68,8 @@ var tLast = 0;
           loader.load( path, function ( geometry ) {
             geometry.center();
             geometry.computeBoundingSphere();  
+            geometry.computeBoundingBox(); 
+            
             
             //get the biggest dimension of the model (x,y,or z) and use that to scale it to the scene
             var biggestDim = Math.max(
@@ -76,7 +78,11 @@ var tLast = 0;
               geometry.boundingBox.max.x - geometry.boundingBox.min.x
             );
             
-            var sc = 1/biggestDim;            
+            var sc = 1/biggestDim; 
+            if (sc < 0 || isNaN(sc)){
+              console.error('couldnt get scale of STL');
+              sc = 1;
+            }            
             
             if (window.theMesh != null){
               scene.remove(theMesh);
@@ -87,9 +93,7 @@ var tLast = 0;
             
                       
             mesh.scale.set( sc,sc,sc );
-            // get position to set bottom on the ground            
-            geometry.computeBoundingBox();
-            console.log(geometry.boundingBox);
+            // get position to set bottom on the ground
             var bottom = geometry.boundingBox.min.z;
             
             mesh.position.set(0,-sc*bottom - .5,0);
