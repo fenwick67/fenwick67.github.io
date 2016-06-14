@@ -150,8 +150,8 @@ $(function(){
       url:window.location.href+"models",
       icon:'/img/duckicon.png',
       title:'Models',
-      width:600,
-      height:400
+      width:700,
+      height:500
     }
     
     
