@@ -12,7 +12,7 @@ $.get('/stl/models.json')
     var thing = $('<div class="model">'+stl.name+'</div>');
     thing.on('click',function(e){
       var ref = modelRoot + stl.file;
-      window.loadStl(ref);
+      window.loadStl(ref,null,onProgress,clearProgress);
       //register listener for download button
       $('#download').attr('href',ref);
     });
@@ -23,11 +23,27 @@ $.get('/stl/models.json')
   
   //load first STL
   var ref = modelRoot + json.stls[0].file;
-  window.loadStl(ref);
+  window.loadStl(ref,null,onProgress,clearProgress);
   $('#download').attr('href',ref);
   
 })
 .error(function(){console.log('uhoh',arguments)});
+
+$('#shrink').on('click',function(){
+  $('#left').toggleClass('collapsed');
+  setTimeout(onWindowResize,501);
+});
+
+var $bar = $('#progress');
+function onProgress(xhr){
+  $bar.parent().removeClass('hidden');
+  var pct = (xhr.loaded||0) / (xhr.total||1);
+  $bar.css('width', (pct*100) + '%');
+}
+function clearProgress(){
+  $bar.parent().addClass('hidden');
+}
+
 
 var spinning = true;
 $('#spin').on('click',function(){
@@ -70,10 +86,11 @@ var tLast = 0;
 				var loader = new THREE.STLLoader();
         
         window.theMesh = null;
-        window.loadStl = function(path,color){
+        window.loadStl = function(path,color,onProgress,onFinish){
           // color: 0xff5533
           
           loader.load( path, function ( geometry ) {
+            
             geometry.center();
             geometry.computeBoundingSphere();  
             geometry.computeBoundingBox(); 
@@ -114,7 +131,10 @@ var tLast = 0;
             //TODO: get size of mesh
             
             window.theMesh = mesh;
-          } );
+            //set rotation
+            theMesh.rotation.set(-Math.PI/2 , 0, timer);
+            onFinish(geometry);
+          },onProgress||function(){} );
         }
         
         /*
@@ -181,6 +201,8 @@ var tLast = 0;
 				controls.enableDamping = true;
 				controls.dampingFactor = 0.25;
 				controls.enableZoom = true;        
+				controls.zoomSpeed = 0.6;
+        controls.panSpeed = controls.rotateSpeed = 0.3;    
         
 			}
 			function addShadowedLight( x, y, z, color, intensity ) {
