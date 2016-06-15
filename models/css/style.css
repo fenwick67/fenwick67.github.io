@@ -44,17 +44,10 @@ html,body{
   bottom:20px;
   color:#000;
   display:inline-block;
-  font-size: 70px;
+  padding:10px;
 }
-#download:after{
-  content:"";
-  display:block;
-  background-color:currentcolor;
-  height:.1em;
-  width:.75em;
-  left:.125em;
-  position:absolute;
-  bottom:.1em;
+#viewer .material-icons{
+  font-size: 60px;
 }
 #download,#spin,#left,#shrink,.model{  
 /*box shadow*/
