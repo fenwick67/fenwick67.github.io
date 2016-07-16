@@ -1,0 +1,41 @@
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../css/page.css" type="text/css"/>
+    <title>Drew's Blog - React Components are the New jQuery Plugins</title>
+  </head>
+  <body>
+    <div id="barba-wrapper">
+      <div class="post-body barba-container">
+        <h1>React Components are the New jQuery Plugins</h1>
+        <h2 class="post-date">August 13, 2016</h2><p>Remember jQuery plugins?  I do.  They used to be the cool way to implement everything in javascript.  The even pop up in StackOverflow answers for things like “how do I sort an array”.</p>
+<blockquote>
+<p>I wrote a jQuery plugin for this!  Just import jquery and my library, then call <code>var sortedArray =  jquery.coolSort(yourArray,true,false,false)</code> - an unhelpful user</p>
+</blockquote>
+<p>But now, jQuery plugins are out of style.  People realized a few things.</p>
+<ol>
+<li>DOM manipulation isn’te really that hard</li>
+<li>Not everybody uses jQuery</li>
+<li>I want people to use my library, so I should make it stand on its own feet</li>
+</ol>
+<p>Recently, the jQuery plugin registry moved to NPM, like some other registries have (cordova etc.).  If you look, there are <a href="https://www.npmjs.com/search?q=jquery+plugin">about 2000</a> jQuery plugins in NPM to date.  That’s a lot, right?  </p>
+<h2 id="not-really">Not Really</h2>
+<p><a href="https://www.npmjs.com/search?q=react+component">There are about 6 thousand hits in NPM for “react component”</a>.  6 freakin’ thousand!  There must be some really great stuff in there! </p>
+<p>Let’s look at page one…</p>
+<p><img src="http://i.imgur.com/fTEHE5v.png" alt="a bunch of components"></p>
+<p>Out of the first six (excluding the non-english one), two were scaffolders, one was boilerplate, one was empty.  Not a great start.</p>
+<p>The other two?  </p>
+<p><em>rand-char-react-component</em> is what it sounds like.  It’s a react component that gets set to a “random” character (when I say “random”, I mean “<a href="https://github.com/cartogram/rand-char-loader/blob/master/lib/rand-char-react-component.jsx#L9">a random choice in the author’s chosen list</a>“).  It even has <a href="https://github.com/cartogram/rand-char-loader/blob/master/spec/rand-char-react-component.spec.jsx#L18">a fake test</a>. </p>
+<p><em>react-component-list</em> is also just what it sounds like.  It’s a list.  I can’t tell you if this would be useful beacuse I’m not a react developer.  Which brings me around to a point…</p>
+<h2 id="history-is-repeating-itself">History is Repeating Itself</h2>
+<p>Remember my list up above about jQuery plugins?  The same thing goes for the six thousand react components (not to mention the eight thousand angular components).  If you actually have a neato little component to publish and show the world, try to decouple it from your favorite framework, be it CSS, Javascript, what have you.</p>
+<h2 id="npm-is-not-just-for-you">NPM is Not Just for You</h2>
+<p>I have to tell myself this sometimes too, but don’t commit stuff to NPM that isn’t useful to anybody but yourself.  Npm is meant to be different from github.  You can install packages from github URLs and it isn’t hard.  Even moreso, stop dumping empty repositories on there.</p>
+<a class="in-blog next enabled" href="/blog/2016-07-15 The Worst Web Design Trends of 2016.html">The Worst Web Design Trends of 2016</a><a class="previous disabled"></a>
+      </div>
+    </div>
+    <script src="https://cdn.rawgit.com/luruke/barba.js/master/dist/barba.min.js"></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="/js/blog-transition.js"></script>
+  </body>
+</html>

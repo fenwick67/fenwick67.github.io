@@ -17,7 +17,7 @@ a{
 }
 .desktop{
   flex:1 1 auto;
-  background-color:#AEE8D3;
+  background-color: #d2ffef;
   /*background-image:url("/img/bg.jpg");*/
   overflow:hidden;
   background-size:cover;
@@ -73,6 +73,7 @@ a{
   box-shadow: 0 3px 10px 0 rgba(0,0,0,.2);
   transform-origin:100% 0;
   transform:scale(1);
+  min-width: 250px;
 }
 .winder.ui-draggable-dragging:not(.fullscreen), .winder.clicked:not(.fullscreen){
   box-shadow:0 2px 15px 0 rgba(0,0,0,.4);
@@ -109,6 +110,7 @@ border:none;
 .windowContent{
   overflow:hidden;
   opacity:50%;
+  min-width: 250px;
 }
 .ui-resizable-se.ui-resizable-handle{
   right:-5px;
@@ -191,13 +193,13 @@ html,body{
 }
 .launcher{
   position:absolute;
-  bottom:2em;
+  bottom: 2em;
   left:0;
   background-color:white;
   z-index:1000;
   overflow:hidden;
   transition:all .3s;
-  height: 575px;
+  height: 700px;
   box-shadow: 0 0 5px rgba(0,0,0,.4);
 }
 .launcher.launcher-hidden{
@@ -248,7 +250,7 @@ html,body{
 }
 .desktop-icon:hover{
   box-shadow:0 2px 10px 0 rgba(0,0,0,.3);
-  transform:scale(1.05);
+  /* transform:scale(1.05); */
 }
 .desktop-shadow{
   /* box-shadow:0 2px 10px 0 rgba(0,0,0,.3); */
