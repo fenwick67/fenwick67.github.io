@@ -152,9 +152,11 @@ $(function(){
       title:'Models',
       width:700,
       height:500
+    },{
+      url:window.location.href+"blog",
+      icon:'/img/conure.svg',
+      title:'Blog'
     }
-    
-    
     
   ];
   

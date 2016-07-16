@@ -199,7 +199,7 @@ html,body{
   z-index:1000;
   overflow:hidden;
   transition:all .3s;
-  height: 700px;
+  height: 765px;
   box-shadow: 0 0 5px rgba(0,0,0,.4);
 }
 .launcher.launcher-hidden{
