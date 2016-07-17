@@ -1,5 +1,6 @@
 var $body;
 var whooshRight = true;
+var duration = 300;
 
 //dir = -1 or 1
 function WhooshFactory(dir){
@@ -24,7 +25,7 @@ function WhooshFactory(dir){
        * this.oldContainer is the HTMLElement of the old Container
        */
 
-      return $(this.oldContainer).animate({ left: -$body.width()*dir }).promise();
+      return $(this.oldContainer).animate({ left: -$body.width()*dir },duration).promise();
     },
 
     fadeIn: function() {
@@ -45,7 +46,7 @@ function WhooshFactory(dir){
         left:$body.width()*dir
       });
 
-      $el.animate({ opacity: 1, left:0 }, 400, function() {
+      $el.animate({ opacity: 1, left:0 }, duration, function() {
         /**
          * Do not forget to call .done() as soon your transition is finished!
          * .done() will automatically remove from the DOM the old Container

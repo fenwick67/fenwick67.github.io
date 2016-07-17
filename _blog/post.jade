@@ -5,6 +5,7 @@ html(lang="en")
     title!= "Drew's Blog - "+post.title
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
   body
+    canvas#bg
     #barba-wrapper
       .post-body.barba-container
           h1= post.title
@@ -22,7 +23,8 @@ html(lang="en")
                 span= post.next.title
                 i.material-icons arrow_forward
             else
-              a.next.disabled
+              a.next.disabled            
     script(src="https://cdn.rawgit.com/luruke/barba.js/master/dist/barba.min.js")
     script(src="/js/vendor/jquery-1.11.2.min.js")
     script(src="/js/blog-transition.js")
+    script(src="/js/background-animation.js")
