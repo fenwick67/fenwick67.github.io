@@ -1,6 +1,5 @@
 /* pages CSS for blog posts et cetera */
 
-
 body,html{
   display:block;
   margin:0;
@@ -54,7 +53,7 @@ p,blockquote,ul,li,ol,a,aside{
   background-color:white;
   max-width:800px;
   margin:0 auto;
-  border:solid 1px #ddd;
+  /* border:solid 1px #ddd; */
 }
 .post-body{
   position:relative;
@@ -87,4 +86,27 @@ blockquote{
 }
 img{
   max-width:100%;
+}
+.navigation{
+  display:flex;
+  justify-content:space-between;
+}
+a.previous, a.next {
+  font-family:'Roboto', 'Helvetica', sans-serif;
+  text-decoration:none;
+  color:#39544a;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex: 0 1 auto;
+  min-height:45px;
+  margin:10px;
+  padding:10px;
+  background-color:#AEE8D3;
+}
+a.next i,a.previous i{
+  font-size: 4rem;
+}
+a.previous:not(.enabled),a.next:not(.enabled){
+  background-color:white;
 }
