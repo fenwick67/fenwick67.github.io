@@ -126,9 +126,9 @@ function draw(ts){
     ctx.fill();
     ctx.stroke();
     
-    ctx.resetTransform();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     
   });
     
-    ctx.resetTransform();
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
 }
