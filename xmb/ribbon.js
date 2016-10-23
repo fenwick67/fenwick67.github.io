@@ -43,7 +43,7 @@ module.exports = function(opts){
     for (var i = 0; i < r.length;i++){
       var offset = offsets[i];
       var circleOffset = circleOffsets[i%CIRCLE];
-      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.7);
+      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.4);
 
       orig[i] = r[i];
     }
