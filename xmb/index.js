@@ -33,10 +33,10 @@ ribbons[0].mesh.position.set(0,0,-5);
 ribbons[1].mesh.position.set(0,0,5);
 
 var sparks = window.sparks = Sparks({
-  size:new THREE.Vector3(320,320,320),
-  number:2000
+  size:new THREE.Vector3(250,180,100),
+  number:500
 });
-sparks.position.set(-160,-160,-300);
+sparks.position.set(-125,-90,-80);
 scene.add(sparks);
 
 //lights

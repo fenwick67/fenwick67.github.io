@@ -61,10 +61,10 @@ ribbons[0].mesh.position.set(0,0,-5);
 ribbons[1].mesh.position.set(0,0,5);
 
 var sparks = window.sparks = Sparks({
-  size:new THREE.Vector3(320,320,320),
-  number:2000
+  size:new THREE.Vector3(250,180,100),
+  number:500
 });
-sparks.position.set(-160,-160,-300);
+sparks.position.set(-125,-90,-80);
 scene.add(sparks);
 
 //lights
@@ -59160,7 +59160,7 @@ module.exports = function(opts){
     for (var i = 0; i < r.length;i++){
       var offset = offsets[i];
       var circleOffset = circleOffsets[i%CIRCLE];
-      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.5);
+      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.7);
 
       orig[i] = r[i];
     }
@@ -59185,6 +59185,7 @@ module.exports = function(opts){
 },{"lodash":3,"three":5}],7:[function(require,module,exports){
 var THREE = require('three');
 var _ = require('lodash');
+var DEBUG = (window.location.search.indexOf('debug') > -1);
 
 module.exports = function(opts){
 
@@ -59201,8 +59202,15 @@ module.exports = function(opts){
 
   var sprites = [];
 
-  for (var i = 0; i < o.number;i++){
+  if (DEBUG){
+    var geometry =  new THREE.BoxGeometry( o.size.x, o.size.y, o.size.z);
+    var material = new THREE.MeshBasicMaterial( {color: 0,wireframe:true,side:THREE.DoubleSide} );
+    var cube = new THREE.Mesh( geometry, material );
+    cube.position.set(o.size.x/2, o.size.y/2, o.size.z/2);//center it
+    object3d.add(cube);
+  }
 
+  for (var i = 0; i < o.number;i++){
 
     //var color = Math.round(Math.random()*0xffffff);
     var material = new THREE.SpriteMaterial({color:0xffffff,map:map,transparent:true});

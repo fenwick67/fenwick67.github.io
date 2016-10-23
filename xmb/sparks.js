@@ -1,5 +1,6 @@
 var THREE = require('three');
 var _ = require('lodash');
+var DEBUG = (window.location.search.indexOf('debug') > -1);
 
 module.exports = function(opts){
 
@@ -16,8 +17,15 @@ module.exports = function(opts){
 
   var sprites = [];
 
-  for (var i = 0; i < o.number;i++){
+  if (DEBUG){
+    var geometry =  new THREE.BoxGeometry( o.size.x, o.size.y, o.size.z);
+    var material = new THREE.MeshBasicMaterial( {color: 0,wireframe:true,side:THREE.DoubleSide} );
+    var cube = new THREE.Mesh( geometry, material );
+    cube.position.set(o.size.x/2, o.size.y/2, o.size.z/2);//center it
+    object3d.add(cube);
+  }
 
+  for (var i = 0; i < o.number;i++){
 
     //var color = Math.round(Math.random()*0xffffff);
     var material = new THREE.SpriteMaterial({color:0xffffff,map:map,transparent:true});
