@@ -62,7 +62,7 @@ ribbons[1].mesh.position.set(0,0,5);
 
 var sparks = window.sparks = Sparks({
   size:new THREE.Vector3(250,180,100),
-  number:500
+  number:1000
 });
 sparks.position.set(-125,-90,-80);
 scene.add(sparks);
@@ -59160,7 +59160,7 @@ module.exports = function(opts){
     for (var i = 0; i < r.length;i++){
       var offset = offsets[i];
       var circleOffset = circleOffsets[i%CIRCLE];
-      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.7);
+      r[i] = r[i].addScaledVector(offset,0.01).addScaledVector(circleOffset,0.4);
 
       orig[i] = r[i];
     }
