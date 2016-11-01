@@ -27,7 +27,7 @@ var ribbons =  [Ribbon({
   offset:-1,
   frequency:1.1112
 }),Ribbon({
-  
+
 })];
 ribbons[0].mesh.position.set(0,0,-5);
 ribbons[1].mesh.position.set(0,0,5);

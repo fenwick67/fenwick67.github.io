@@ -52,7 +52,7 @@ module.exports = function(opts){
     });
   }
 
-  return _.extend(object3d,{updateSparks});
+  return _.extend(object3d,{updateSparks:updateSparks});
 
 }
 

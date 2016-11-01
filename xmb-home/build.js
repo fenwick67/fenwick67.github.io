@@ -77116,7 +77116,7 @@ module.exports = function(opts){
     geometry.verticesNeedUpdate = true;
   }
 
-  return {init,mesh,update};
+  return {init:init,mesh:mesh,update:update};
 
 }
 
@@ -77175,7 +77175,7 @@ module.exports = function(opts){
     });
   }
 
-  return _.extend(object3d,{updateSparks});
+  return _.extend(object3d,{updateSparks:updateSparks});
 
 }
 
@@ -77223,7 +77223,7 @@ var ribbons =  [Ribbon({
   offset:-1,
   frequency:1.1112
 }),Ribbon({
-  
+
 })];
 ribbons[0].mesh.position.set(0,0,-5);
 ribbons[1].mesh.position.set(0,0,5);

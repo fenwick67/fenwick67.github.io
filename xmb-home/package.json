@@ -15,5 +15,10 @@
     "three": "^0.81.2",
     "vue": "^2.0.3",
     "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "less": "^2.7.1",
+    "uglify-js": "^2.7.4"
   }
 }

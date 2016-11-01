@@ -10,16 +10,21 @@
   <body>
     <h1 class="top">Drew Harwell</h1>
     <div id="xmb-contain">
-      <div id="xmb">
+      <div id="xmb" v-cloak>
         <ul>
           <li v-for="column,index in columns" v-bind:class="{active:column.active}" v-bind:style="{left:column.position.x+'px'}" class="column">
             <div v-bind:class="{active:column.active}" v-on:click="highlightCell(column.index,0)" class="cell"><i class="material-icons xmb-icon">{{column.icon}}</i>
               <label>{{column.title}}</label>
             </div>
             <ul>
-              <li v-for="item,itemIndex in column.items" v-bind:class="{active:item.active}" v-bind:style="{top:item.position.y+'px'}" v-on:click="highlightCell(column.index,itemIndex)" class="cell submenu">
+              <li v-for="item,itemIndex in column.items"
+               v-bind:class="{active:item.active}"
+               v-bind:style="{top:item.position.y+'px'}"
+                v-on:click="highlightCell(column.index,itemIndex)"
+                 class="cell submenu">
                 <a v-bind:href="item.active?item.href||'#missinglink':'#'">
-                  <i class="material-icons xmb-icon">{{item.icon}}</i>
+                  <i v-if= "item.icon" class="material-icons xmb-icon">{{item.icon}}</i>
+                  <i v-if="!item.icon" class="xmb-icon" v-bind:style="{backgroundImage:item.iconUrl||''}"></i>
                   <label>{{item.title}}
                     <label class="subtitle">{{item.subtitle}}</label>
                   </label>
@@ -30,6 +35,6 @@
         </ul>
       </div>
     </div>
-    <script src="./build.js"></script>
+    <script src="./build.min.js"></script>
   </body>
 </html>

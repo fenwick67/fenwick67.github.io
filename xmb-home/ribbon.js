@@ -61,6 +61,6 @@ module.exports = function(opts){
     geometry.verticesNeedUpdate = true;
   }
 
-  return {init,mesh,update};
+  return {init:init,mesh:mesh,update:update};
 
 }
