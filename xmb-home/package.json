@@ -16,6 +16,7 @@
     "month-colors": "0.0.1",
     "three": "^0.81.2",
     "uglify-js": "^2.7.4",
+    "uglifyjs": "^2.4.10",
     "vue": "^2.0.3",
     "zepto": "^1.2.0"
   }

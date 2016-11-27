@@ -34,7 +34,7 @@ ribbons[1].mesh.position.set(0,0,5);
 
 var sparks = window.sparks = Sparks({
   size:new THREE.Vector3(250,180,100),
-  number:1000
+  number:250
 });
 sparks.position.set(-125,-90,-80);
 scene.add(sparks);
