@@ -1,0 +1,47 @@
+.hero h1{
+  font-size:3em;
+  margin:0.7em;
+  font-weight:lighter;
+  text-align:center;
+}
+.reading{
+  font-size:1.5rem;
+  max-width:40em;
+  margin: 0 auto;
+}
+.reading p{  
+  font-family:Verdana, sans-serif;
+  font-size:1.4rem;
+}
+.reading iframe{
+  width:100%;
+  min-height:400px;
+}
+.article-body{
+  overflow:hidden;
+}
+.box:not(.expanded) .article-body *:nth-child(1n+4){
+  display:none;
+}
+.box.expanded .ellipsis{
+  display:none;
+}
+.section,.level,.container{
+  background-color:inherit;
+}
+
+// Override variables here
+// You can add new ones or update existing ones:
+
+$blue: #72d0eb // Update blue
+$pink: #ffb3b3 // Add pink
+$family-serif: "Georgia", serif // Add a serif family
+
+// Override generated variables here
+// For example, by default, the $danger color is $red and the font is sans-serif
+// You can change these values:
+
+$danger: $orange // Use the existing orange
+$family-primary: $family-serif // Use the new serif family
+
+@import "bulma"

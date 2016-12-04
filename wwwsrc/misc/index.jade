@@ -1,8 +1,9 @@
 - var sortedFiles = _.orderBy(files,function(f){ return f.meta.date||f.meta.name },'asc')
 
 each file in sortedFiles
-    - if (file.meta.category == "games" && !file.meta.isIndex)
+    - if (file.meta.category == "misc" && !file.meta.isIndex)
         - var strippedContent = file.contents.toString().replace(/<iframe[\s\S]*\/iframe>/gi,'');
         .box
             h1!= file.meta.pagetitle
             span!=strippedContent
+            a.button.is-primary(href=file.meta.permalink) View

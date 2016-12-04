@@ -1,6 +1,10 @@
-each file in files
+- var sortedFiles = _.orderBy(files,function(f){return new Date(f.meta.date)},'desc')
+
+each file in sortedFiles
 	- if (file.meta.category == "blog" && !file.meta.isIndex)
 		.box
+			h1!= file.meta.pagetitle
+			small!= file.meta.date
 			.article-body!= file.contents
 			.level.is-mobile
 				.level-left

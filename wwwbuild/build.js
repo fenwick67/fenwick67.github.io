@@ -6,7 +6,7 @@ var _ = require('lodash'),
 
 var source = '../wwwsrc'
 
-//todo: 
+//todo:
 // sort files by date when showing on index pages
 
 Metalsmith(path.resolve('./'))
@@ -22,8 +22,7 @@ Metalsmith(path.resolve('./'))
     .use(template)              // last step: wrap everything with main template 
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
-    });
-
+    })
 
 function msIgnores(files,metalsmith,done){
     _.each(files,function(file,name){
@@ -71,12 +70,22 @@ function addMeta(files,ms,done){
     // add metadata to each file
     _.each(files,function(file,name){
         file.meta = {};
-        file.meta.meta = md;// english: each file points to global MS Metadata.
-        file.meta.files = files;// point to all files within metadata
-        file.meta.title = "";
+        file.meta.meta = md;                    // english: each file points to global MS Metadata.
+        file.meta.files = files;                // point to all files within metadata
+        file.meta.title = file.title || name;
+        file.meta.date = file.date?(dateToEnglish(file.date)):"";
         file.meta.permalink = name;
         file.meta.category = getCategoryForFilename(name);
         file.meta.isIndex = name.indexOf('index') > -1;
+
+        if (file.title){
+            file.meta.pagetitle = file.title;
+        }else if (!file.meta.isIndex){
+            file.meta.pagetitle = getGetNameForFilename(name);
+        }else{
+            file.meta.pagetitle = "";
+        }
+
     });
 
     return done()
@@ -88,11 +97,12 @@ function template(files,metalsmith,done){
 
     _.each(files,function(file,name){
         //pug var "html" is the file content
+        if (path.parse(name).ext.toLowerCase() != ".html") return;
         if (!file.meta.contents){
             file.meta.content = _.extend({},file.meta)
             file.meta.content.html = file.contents.toString()
         }
-        file.contents = template( _.extend({},file.meta,meta) );
+        file.contents = template( _.extend({"_":_},file.meta,meta) );
     });
 
     return done();
@@ -110,8 +120,9 @@ function puggify(files,metalsmith,done){
     _.each(files,function(file,name){
         var parsed = path.parse(name);
         var ext = parsed.ext.toLowerCase();
+        var meta = metalsmith.metadata();
         if (ext == ".pug" || ext == ".jade"){
-            var contents = pug.render(file.contents.toString(),_.extend({},file.meta));
+            var contents = pug.render(file.contents.toString(),_.extend({"_":_},file.meta,meta));
             file.contents = contents;
             delete files[name];
             files[path.join(parsed.dir,parsed.name+".html")] = file;
@@ -126,4 +137,18 @@ function getCategoryForFilename(name){
         return "";
     }
     return cat;
+}
+
+function getGetNameForFilename(name){
+    return path.parse(name).name;
+}
+
+function dateToEnglish(d){
+    var d = new Date(d);
+    var mos = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    var year = d.getFullYear();
+    var month = mos[d.getMonth()];
+    var day = d.getDate();
+
+    return day + " " + month + " " + year;
 }

@@ -7,12 +7,11 @@ html
         include includes/header
 
         div#pagecontent
-
             .article-body.content.reading.section
-                if content.title
-                    h1= content.title
-                if content.date
-                    small= content.date
+                if pagetitle
+                    h1= pagetitle
+                if date
+                    small= date
                 div!= content.html
 
         include includes/scripts

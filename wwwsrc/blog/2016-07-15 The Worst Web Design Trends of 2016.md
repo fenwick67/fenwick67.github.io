@@ -1,3 +1,8 @@
+---
+title: The Worst Web Design Trends of 2016
+date: 2016-07-15
+---
+
 In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it's tacky and overused.  Let's move on.
 
 Speaking as a user, this is my official list of irritating web design trends in 2016.

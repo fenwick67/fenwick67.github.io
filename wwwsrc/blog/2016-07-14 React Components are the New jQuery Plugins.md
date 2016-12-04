@@ -1,3 +1,8 @@
+---
+title: React Components are the New Jquery plugins
+date: 2016-07-14
+---
+
 Remember jQuery plugins?  I do.  They used to be the cool way to implement everything in javascript.  The even pop up in StackOverflow answers for things like "how do I sort an array".
 
 > I wrote a jQuery plugin for this!  Just import jquery and my library, then call `var sortedArray =  jquery.coolSort(yourArray,true,false,false)` - an unhelpful user
