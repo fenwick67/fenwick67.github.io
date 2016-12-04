@@ -12,6 +12,6 @@
     "lodash": "^4.17.2",
     "marked": "^0.3.6",
     "metalsmith": "^2.3.0",
-    "pug": "^2.0.0-beta6"
+    "metalsmith-markdown": "^0.2.1"
   }
 }
