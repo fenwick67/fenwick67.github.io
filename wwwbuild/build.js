@@ -1,11 +1,13 @@
 var _ = require('lodash'),
     Metalsmith = require('metalsmith'),
-    path = require('path'),
+    path = require('path').win32,
     markdown = require('metalsmith-markdown'),
     pug = require('jade')
 
 var source = '../wwwsrc'
 
+//todo: 
+// sort files by date when showing on index pages
 
 Metalsmith(path.resolve('./'))
     .clean(false)
@@ -72,8 +74,9 @@ function addMeta(files,ms,done){
         file.meta.meta = md;// english: each file points to global MS Metadata.
         file.meta.files = files;// point to all files within metadata
         file.meta.title = "";
-        file.meta.permalink = name;        
+        file.meta.permalink = name;
         file.meta.category = getCategoryForFilename(name);
+        file.meta.isIndex = name.indexOf('index') > -1;
     });
 
     return done()
@@ -81,7 +84,6 @@ function addMeta(files,ms,done){
 
 function template(files,metalsmith,done){
     var meta = metalsmith.metadata();
-
     var template = pug.compile(meta.template,{filename:meta.templateFilename});
 
     _.each(files,function(file,name){
@@ -98,12 +100,18 @@ function template(files,metalsmith,done){
 
 // raw pug to HTML.  Pug can pull in vars about other files, so index pages can be built dynamically.
 function puggify(files,metalsmith,done){
+
+    _.each(files,function(file,name){
+        file.meta.name = name;
+        file.meta.permalink = "/"+name;
+        file.meta.category = getCategoryForFilename(name);
+    });
+
     _.each(files,function(file,name){
         var parsed = path.parse(name);
         var ext = parsed.ext.toLowerCase();
         if (ext == ".pug" || ext == ".jade"){
-            console.log(file.meta)
-            var contents = pug.render(file.contents.toString(),file.meta);
+            var contents = pug.render(file.contents.toString(),_.extend({},file.meta));
             file.contents = contents;
             delete files[name];
             files[path.join(parsed.dir,parsed.name+".html")] = file;
@@ -113,5 +121,9 @@ function puggify(files,metalsmith,done){
 }
 
 function getCategoryForFilename(name){
-    return (path.dirname(name)||path.win32.basename(name)).toLowerCase()
+    cat = ( path.dirname(name)||path.basename(name) ).toLowerCase();
+    if (cat  == "."){
+        return "";
+    }
+    return cat;
 }

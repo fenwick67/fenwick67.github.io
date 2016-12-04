@@ -1,0 +1,18 @@
+each file in files
+	- if (file.meta.category == "blog" && !file.meta.isIndex)
+		.box
+			.article-body!= file.contents
+			.level.is-mobile
+				.level-left
+					.level-item.ellipsis 
+						.icon.is-medium
+							i.fa.fa-ellipsis-h 
+				.level-right
+					a.level-item.button.is-info.continue-reading 
+						.icon
+							i.fa.fa-caret-down
+						span Read The Rest
+					a.level-item.button.is-info.is-outlined(href=file.meta.permalink)
+						.icon
+							i.fa.fa-link
+						span Permalink

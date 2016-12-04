@@ -2,7 +2,7 @@
     nav.nav.has-shadow
         .container
             .nav-left
-                a.nav-item= title
+                a.nav-item(href="/")= title
             #nav-toggle.nav-toggle
                 span
                 span
@@ -33,5 +33,6 @@
                     span.icon
                         i.fa.fa-code
                     span &nbsp;Misc Projects
-.hero.is-bold.is-info
-    h1= category.charAt(0).toUpperCase()+category.slice(1)
+if category
+    .hero.is-bold.is-info
+        h1= category.charAt(0).toUpperCase()+category.slice(1)

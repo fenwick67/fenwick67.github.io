@@ -1,5 +1,5 @@
 //todo: refactor for native APIs
-$('.reading').on('click','.continue-reading',function(e){
+$('.box').on('click','.continue-reading',function(e){
   e.delegateTarget.classList.add('expanded');
   this.style.display="none";
 });

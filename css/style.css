@@ -16,10 +16,10 @@
 .article-body{
   overflow:hidden;
 }
-.reading:not(.expanded) .article-body *:nth-child(1n+4){
+.box:not(.expanded) .article-body *:nth-child(1n+4){
   display:none;
 }
-.reading.expanded .ellipsis{
+.box.expanded .ellipsis{
   display:none;
 }
 
