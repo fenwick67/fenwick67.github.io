@@ -1,0 +1,17 @@
+{
+  "name": "fenwick67.github.io",
+  "version": "1.0.0",
+  "description": "personal page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drew Harwell",
+  "license": "unlicensed",
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "marked": "^0.3.6",
+    "metalsmith": "^2.3.0",
+    "pug": "^2.0.0-beta6"
+  }
+}

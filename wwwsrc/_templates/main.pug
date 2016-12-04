@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html
+    include includes/head.pug
+    body
+        // vars:  category, content, contents (plural means multiple pages, i.e. landing page)
+            content objects contain: title, date, html, permalink
+        include includes/header
+
+        div#pagecontent
+            if contents
+                for article in contents
+                    section.section
+                    article.box.content.reading
+                        if article.title
+                            h1= article.title
+                        if article.date
+                            small= article.date
+                        .article-body= article.html
+                        .level.is-mobile
+                            .level-left
+                                .level-item.ellipsis 
+                                .icon.is-medium
+                                    i.fa.fa-ellipsis-h 
+                            .level-right
+                                a.level-item.button.is-info.continue-reading 
+                                    .icon
+                                    i.fa.fa-caret-down
+                                    span Read The Rest
+                                if article.permalink
+                                    a.level-item.button.is-info.is-outlined(href=article.permalink)
+                                        .icon
+                                        i.fa.fa-link
+                                        span Permalink
+
+            else if content
+                if content.title
+                    h1= content.title
+                if content.date
+                    small= content.date
+                .article-body= content.html
+
+        include includes/scripts
