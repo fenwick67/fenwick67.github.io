@@ -2,7 +2,7 @@ var _ = require('lodash'),
     Metalsmith = require('metalsmith'),
     path = require('path').win32,
     markdown = require('metalsmith-markdown'),
-    pug = require('jade')
+    pug = require('pug')
 
 var source = '../wwwsrc'
 
