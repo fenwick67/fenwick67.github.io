@@ -15,7 +15,7 @@
 }
 .reading iframe{
   width:100%;
-  min-height:400px;
+  min-height:450px;
 }
 .article-body{
   overflow:hidden;
@@ -29,19 +29,38 @@
 .section,.level,.container{
   background-color:inherit;
 }
+html{
+  height:100%;
+}
+body{
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
 
 // Override variables here
 // You can add new ones or update existing ones:
 
-$blue: #72d0eb // Update blue
-$pink: #ffb3b3 // Add pink
-$family-serif: "Georgia", serif // Add a serif family
+$primary: #ffcb00; // Update primary color
+$info: #ff3860;
+$link-visited:$info;
 
-// Override generated variables here
-// For example, by default, the $danger color is $red and the font is sans-serif
-// You can change these values:
+@import "bulma";
 
-$danger: $orange // Use the existing orange
-$family-primary: $family-serif // Use the new serif family
 
-@import "bulma"
+.hero nav.nav{
+  background-color:black;
+}
+.nav .nav-item.is-tab{
+  transition: all 0.5s !important;
+  border-bottom-width: 5px !important;
+}
+.nav .nav-item.is-tab:hover{
+  color:$primary;
+  background-color:rgba(255,255,255,0.2);
+}
+.nav .logo{
+  font-size:2em;
+  color:$primary;
+}

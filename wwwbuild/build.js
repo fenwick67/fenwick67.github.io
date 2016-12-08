@@ -14,6 +14,9 @@ Metalsmith(path.resolve('./'))
     .source(source)
     .use(sourceMeta)
     .destination('../')
+    .use(require('metalsmith-sass')({
+        includePaths:["./node_modules/bulma"]
+    }))
     .use(loadTemplates)         // load templates and add to metadata
     .use(msIgnores)             // ignore _ dirs
     .use(addMeta)               // add metadata to each file
