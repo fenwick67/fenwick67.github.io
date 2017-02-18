@@ -3,7 +3,8 @@ var _ = require('lodash'),
     path = require('path').win32,
     markdown = require('metalsmith-markdown'),
     pug = require('pug'),
-    request = require('request')
+    request = require('request'),
+    uncss = require('metalsmith-uncss')
 
 var source = '../wwwsrc'
 
@@ -25,6 +26,11 @@ Metalsmith(path.resolve('./'))
     .use(markdown())            // load markdown
     .use(puggify)               // load pug templates
     .use(template)              // last step: wrap everything with main template
+    .use(uncss({
+        css: ['style.css'],	    // CSS files to run through UnCSS
+        output: 'style.css',	  // output CSS filename
+        basepath: 'css',				// optional base path where all your css files are stored
+    }))
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
     })

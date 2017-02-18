@@ -76,11 +76,11 @@ $background: $white;
   font-size:2em;
 }
 
+// hero and mini hero
+
 .sidekick{
   height:1em;
 }
-// override hero gradient
-
 .hero.is-bold.is-primary, .sidekick{
   background-color:$primary;
   background-image:linear-gradient(141deg, $primary 0%, mix($primary,$info) 71%, $info 100%);
