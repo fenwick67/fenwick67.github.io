@@ -8,15 +8,8 @@ each file in sortedFiles
 			.article-body!= file.contents
 			.level.is-mobile
 				.level-left
-					.level-item.ellipsis 
-						.icon.is-medium
-							i.fa.fa-ellipsis-h 
 				.level-right
-					a.level-item.button.is-primary.continue-reading 
+					a.level-item.button.is-primary(href=file.meta.permalink)
 						.icon
-							i.fa.fa-caret-down
-						span Read The Rest
-					a.level-item.button.is-primary.is-outlined(href=file.meta.permalink)
-						.icon
-							i.fa.fa-link
-						span Permalink
+							i.fa.fa-book
+						span Read

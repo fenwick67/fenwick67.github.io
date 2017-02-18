@@ -1,6 +1,14 @@
 body,html{
   text-align:center;
-  font-family:"Press Start 2P", monospace;
+  font-family:
+    Monaco,
+    "Lucida Console",
+    "andale mono",		/* MS WebFont */
+    "monotype.com",		/* MS WebFont, former name */
+    monaco,			/* MacOS */
+    "courier new",		/* Windows, MacOS */
+    courier,			/* Unix+X, MacOS */
+    monospace;
   background-color:black;
   color:white;
   display:flex;

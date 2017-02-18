@@ -7,3 +7,15 @@ each file in sortedFiles
             h1!= file.meta.pagetitle
             span!=strippedContent
             a.button.is-primary(href=file.meta.permalink) View
+    - if (file.meta.category == "misc" && file.meta.isIndex)
+        p There are lots of demos etc. on my 
+            a(href="http://codepen.io/fenwick/") Codepen Page
+            | .  Some other things are featured below:
+        .box
+            h1
+                a(href="/models") Models
+            p A simple .stl model viewer with Three.js
+        .box
+            h1
+                a(href="/xmb-home") Old XMB concept
+            p This was an old concept I had for my homepage, inspired by the beautiful XMB user interface.

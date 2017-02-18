@@ -2,7 +2,8 @@ var _ = require('lodash'),
     Metalsmith = require('metalsmith'),
     path = require('path').win32,
     markdown = require('metalsmith-markdown'),
-    pug = require('pug')
+    pug = require('pug'),
+    request = require('request')
 
 var source = '../wwwsrc'
 
@@ -17,12 +18,13 @@ Metalsmith(path.resolve('./'))
     .use(require('metalsmith-sass')({
         includePaths:["./node_modules/bulma"]
     }))
+
     .use(loadTemplates)         // load templates and add to metadata
     .use(msIgnores)             // ignore _ dirs
     .use(addMeta)               // add metadata to each file
     .use(markdown())            // load markdown
     .use(puggify)               // load pug templates
-    .use(template)              // last step: wrap everything with main template 
+    .use(template)              // last step: wrap everything with main template
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
     })
