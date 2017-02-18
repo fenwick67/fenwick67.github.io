@@ -28,8 +28,12 @@ Metalsmith(path.resolve('./'))
     .use(template)              // last step: wrap everything with main template
     .use(uncss({
         css: ['style.css'],	    // CSS files to run through UnCSS
-        output: 'style.css',	  // output CSS filename
-        basepath: 'css',				// optional base path where all your css files are stored
+        output: 'style.css',		// output CSS filename
+        basepath: 'css',				 // optional base path where all your css files are stored
+        removeOriginal: true,			// remove original CSS files from the build
+        uncss: {							     // uncss options - passed directly to UnCSS
+            ignore: [/\.nav-toggle/,/\.nav-menu/]  // nav toggle and nav menu are modified at runtime
+        }
     }))
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
