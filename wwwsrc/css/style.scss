@@ -49,15 +49,25 @@ $info: darken($prim-light,30%);
 
 $link:darken($primary,20%);
 $link-visited:darken($primary,20%);
-$white: #E4F3EB;
+$white: lighten(#E4F3EB,5%);
+$really-white:#fff;
 $top-color:$white;
 $text:#01001F;
-
 $grey:lighten($text,0.5);
 $body-background: $white;
 $background: $white;
 
+$big-shadow:0 20px 60px rgba(10, 10, 10, 0.02), 0 5px 10px rgba(10, 10, 10, 0.1), 0 1px 1px rgba(10, 10, 10, 0.2), 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1);
+
+// 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1)
 @import "bulma";
+
+//style the boxes
+
+.box{
+  background-color:$really-white;
+  box-shadow:$big-shadow;
+}
 
 //nav styling
 .hero nav.nav,.nav .nav-menu, .nav-toggle:hover{

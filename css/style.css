@@ -92,7 +92,7 @@ iframe {
 }
 
 html {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -132,7 +132,7 @@ a:hover {
 }
 
 code {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   color: #ff3860;
   font-size: 12px;
   font-weight: normal;
@@ -157,7 +157,7 @@ span {
 }
 
 .box {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   border-radius: 5px;
   box-shadow: 0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);
   display: block;
@@ -240,7 +240,7 @@ span {
 .button.is-#000 {
   background-color: #0a0a0a;
   border-width: 0;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .button.is-#000:hover,
@@ -248,20 +248,20 @@ span {
 .button.is-#000.is-active {
   background-color: #000;
   border-color: transparent;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .button.is-#000.is-inverted {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   color: #0a0a0a;
 }
 
 .button.is-#000.is-inverted:hover {
-  background-color: #d2ebde;
+  background-color: #e4f3eb;
 }
 
 .button.is-#000.is-loading:after {
-  border-color: transparent transparent #E4F3EB #E4F3EB !important;
+  border-color: transparent transparent #f6fbf8 #f6fbf8 !important;
 }
 
 .button.is-#000.is-outlined {
@@ -275,7 +275,7 @@ span {
 .button.is-#000.is-outlined:focus {
   background-color: #0a0a0a;
   border-color: #0a0a0a;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .button.is-primary {
@@ -334,7 +334,7 @@ span {
 }
 
 .content blockquote {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   border-left: 5px solid #dbdbdb;
   padding: 1.5em;
 }
@@ -409,7 +409,7 @@ span {
 
 .notification.is-#000 {
   background-color: #0a0a0a;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .progress::-webkit-progress-bar {
@@ -425,11 +425,11 @@ span {
 }
 
 .progress.is-#fff::-webkit-progress-value {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
 }
 
 .progress.is-#fff::-moz-progress-bar {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
 }
 
 .progress.is-#000::-webkit-progress-value {
@@ -536,7 +536,7 @@ span {
 
 .tag.is-#000 {
   background-color: #0a0a0a;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 @media screen and (max-width: 768px) {
@@ -581,7 +581,7 @@ span {
 
 .message.is-#000 .message-header {
   background-color: #0a0a0a;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .message.is-#000 .message-body {
@@ -623,7 +623,7 @@ span {
 }
 
 .nav-toggle:hover {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
 }
 
 .nav-toggle.is-active span {
@@ -699,7 +699,7 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    background-color: #E4F3EB;
+    background-color: #f6fbf8;
     box-shadow: 0 4px 7px rgba(10,10,10,0.1);
     left: 0;
     display: none;
@@ -749,7 +749,7 @@ a.nav-item.is-tab.is-active {
 
 .nav {
   align-items: stretch;
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   display: flex;
   min-height: 50px;
   position: relative;
@@ -774,7 +774,7 @@ a.nav-item.is-tab.is-active {
 
 .hero {
   align-items: stretch;
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -787,7 +787,7 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .hero.is-#fff .nav-menu {
-    background-color: #E4F3EB;
+    background-color: #f6fbf8;
   }
 }
 
@@ -811,11 +811,11 @@ a.nav-item.is-tab.is-active {
 
 .hero.is-#000 {
   background-color: #0a0a0a;
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .hero.is-#000 .title {
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .hero.is-#000 .title a,
@@ -824,16 +824,16 @@ a.nav-item.is-tab.is-active {
 }
 
 .hero.is-#000 .subtitle {
-  color: rgba(228,243,235,0.9);
+  color: rgba(246,251,248,0.9);
 }
 
 .hero.is-#000 .subtitle a,
 .hero.is-#000 .subtitle strong {
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .hero.is-#000 .nav {
-  box-shadow: 0 1px 0 rgba(228,243,235,0.2);
+  box-shadow: 0 1px 0 rgba(246,251,248,0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -844,18 +844,18 @@ a.nav-item.is-tab.is-active {
 
 .hero.is-#000 a.nav-item,
 .hero.is-#000 .nav-item a:not(.button) {
-  color: rgba(228,243,235,0.7);
+  color: rgba(246,251,248,0.7);
 }
 
 .hero.is-#000 a.nav-item:hover,
 .hero.is-#000 a.nav-item.is-active,
 .hero.is-#000 .nav-item a:not(.button):hover,
 .hero.is-#000 .nav-item a:not(.button).is-active {
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .hero.is-#000 .tabs a {
-  color: #E4F3EB;
+  color: #f6fbf8;
   opacity: 0.9;
 }
 
@@ -869,7 +869,7 @@ a.nav-item.is-tab.is-active {
 
 .hero.is-#000 .tabs.is-boxed a,
 .hero.is-#000 .tabs.is-toggle a {
-  color: #E4F3EB;
+  color: #f6fbf8;
 }
 
 .hero.is-#000 .tabs.is-boxed a:hover,
@@ -881,8 +881,8 @@ a.nav-item.is-tab.is-active {
 .hero.is-#000 .tabs.is-boxed li.is-active a:hover,
 .hero.is-#000 .tabs.is-toggle li.is-active a,
 .hero.is-#000 .tabs.is-toggle li.is-active a:hover {
-  background-color: #E4F3EB;
-  border-color: #E4F3EB;
+  background-color: #f6fbf8;
+  border-color: #f6fbf8;
   color: #0a0a0a;
 }
 
@@ -892,7 +892,7 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (max-width: 768px) {
   .hero.is-#000 .nav-toggle span {
-    background-color: #E4F3EB;
+    background-color: #f6fbf8;
   }
 
   .hero.is-#000 .nav-toggle:hover {
@@ -900,11 +900,11 @@ a.nav-item.is-tab.is-active {
   }
 
   .hero.is-#000 .nav-toggle.is-active span {
-    background-color: #E4F3EB;
+    background-color: #f6fbf8;
   }
 
   .hero.is-#000 .nav-menu .nav-item {
-    border-top-color: rgba(228,243,235,0.2);
+    border-top-color: rgba(246,251,248,0.2);
   }
 }
 
@@ -1086,12 +1086,12 @@ a.nav-item.is-tab.is-active {
 }
 
 .section {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   padding: 40px 20px;
 }
 
 .footer {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   padding: 40px 20px 80px;
 }
 
@@ -1115,10 +1115,15 @@ a.nav-item.is-tab.is-active {
   border-bottom-color: #2fba85;
 }
 
+.box {
+  background-color: #fff;
+  box-shadow: 0 20px 60px rgba(10,10,10,0.02),0 5px 10px rgba(10,10,10,0.1),0 1px 1px rgba(10,10,10,0.2),0 2px 3px rgba(10,10,10,0.1),0 0 0 1px rgba(10,10,10,0.1);
+}
+
 .hero nav.nav,
 .nav .nav-menu,
 .nav-toggle:hover {
-  background-color: #E4F3EB;
+  background-color: #f6fbf8;
   box-shadow: none;
 }
 

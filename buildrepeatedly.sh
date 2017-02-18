@@ -3,5 +3,5 @@
 while true
 do
     ./build.sh
-    sleep 60
+    sleep 2 
 done
