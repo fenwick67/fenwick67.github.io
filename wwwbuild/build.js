@@ -24,6 +24,7 @@ Metalsmith(path.resolve('./'))
     .use(msIgnores)             // ignore _ dirs
     .use(addMeta)               // add metadata to each file
     .use(markdown())            // load markdown
+    .use(summarize)             // summarize
     .use(puggify)               // load pug templates
     .use(template)              // last step: wrap everything with main template
     .use(uncss({
@@ -59,7 +60,7 @@ function loadTemplates(files,ms,done){
             var filename = path.resolve(path.join(source,name));
             var templateName = path.parse(name).name;
 
-            console.log(filename)
+            //console.log(filename)
             meta.template = file.contents.toString();
             meta.templateFilename = filename;
             // delete from transform files
@@ -90,6 +91,7 @@ function addMeta(files,ms,done){
         file.meta.title = file.title || name;
         file.meta.date = file.date?(dateToEnglish(file.date)):"";
         file.meta.permalink = name;
+        file.meta.summary = file.summary || '';
         file.meta.category = getCategoryForFilename(name);
         file.meta.isIndex = name.indexOf('index') > -1;
 
@@ -144,6 +146,24 @@ function puggify(files,metalsmith,done){
         }
     });
     return done();
+}
+
+// create the summary of a page if it doesn't already exist
+function summarize(files,metalsmith,done){
+  _.each(files,function(file,name){
+    if (!file.meta.summary && path.parse(name).ext.toLowerCase() == ".html"){
+      //get the first paragraph
+      var c = file.contents.toString();
+      var p0 = c.indexOf(c.match( /\<p\>/i )) + 3; // NOTE: this requires a strict <p> or <P>
+      var p1 = c.indexOf(c.match(/\<\/p\>/i));
+      if (p0 >= 0 || p1 >= 0){
+        //first p
+        file.meta.summary = c.slice(p0,p1);
+      }
+
+    }
+  });
+  return done();
 }
 
 function getCategoryForFilename(name){

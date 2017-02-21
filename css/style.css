@@ -26,10 +26,6 @@
   overflow: hidden;
 }
 
-.box:not(.expanded) .article-body *:nth-child(1n+2) {
-  display: none;
-}
-
 .section,
 .level,
 .container {

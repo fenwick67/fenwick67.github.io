@@ -5,7 +5,11 @@ each file in sortedFiles
 		.box
 			h1!= file.meta.pagetitle
 			small!= file.meta.date
-			.article-body!= file.contents
+			- if (file.meta.summary)
+					.article-body
+						p!= file.meta.summary
+			- else
+				.article-body!= file.contents
 			.level.is-mobile
 				.level-left
 				.level-right

@@ -20,12 +20,6 @@
 .article-body{
   overflow:hidden;
 }
-.box:not(.expanded) .article-body *:nth-child(1n+2){
-  display:none;
-}
-.box.expanded .ellipsis{
-  display:none;
-}
 .section,.level,.container{
   background-color:inherit;
 }
