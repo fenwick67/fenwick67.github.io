@@ -42,25 +42,36 @@ body{
 // Override variables here
 // You can add new ones or update existing ones:
 
-$prim-light:#6BCFD3;
+// background-image: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
 
-$primary: #73DCB4; // Update primary color
-$info: darken($prim-light,30%);
+//ff8100
+// #b8ff86
+$primary: #00fff0; // Update primary color
+//$info: hsl(30,saturation($primary),lightness($primary)); // hue 30
+$info:complement($primary);
 
-$link:darken($primary,20%);
-$link-visited:darken($primary,20%);
-$white: lighten(#E4F3EB,5%);
+$link:darken($primary,7%);
+$link-visited:desaturate($link,20%);
+$white: hsl(hue($info),100%,99%);
 $really-white:#fff;
 $top-color:$white;
-$text:#01001F;
+$text:hsl(hue($primary),99%,7%);
+$text-strong:hsl(hue($primary),99%,0%);
+$text-light:hsl(hue($primary),3%,40%);
 $grey:lighten($text,0.5);
 $body-background: $white;
 $background: $white;
 
 $big-shadow:0 20px 60px rgba(10, 10, 10, 0.02), 0 5px 10px rgba(10, 10, 10, 0.1), 0 1px 1px rgba(10, 10, 10, 0.2), 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1);
+$big-shadow-inset:0 20px 60px rgba(10, 10, 10, 0.02) inset, 0 5px 10px rgba(10, 10, 10, 0.1) inset, 0 1px 1px rgba(10, 10, 10, 0.2) inset, 0 2px 3px rgba(10,10,10,0.1) inset, 0 0 0 1px rgba(10,10,10,0.1) inset;
 
-// 0 2px 3px rgba(10,10,10,0.1), 0 0 0 1px rgba(10,10,10,0.1)
 @import "bulma";
+
+//highlight
+::selection {
+  background-color: $primary;
+  color: $text;
+}
 
 //style the boxes
 
@@ -70,17 +81,19 @@ $big-shadow:0 20px 60px rgba(10, 10, 10, 0.02), 0 5px 10px rgba(10, 10, 10, 0.1)
 }
 
 //nav styling
+
 .hero nav.nav,.nav .nav-menu, .nav-toggle:hover{
   background-color:$top-color;
-  box-shadow:none;
+  //box-shadow:$big-shadow;
 }
 .nav .nav-item.is-tab{
   transition: all 0.5s !important;
   border-bottom-width: 5px !important;
+  color:$text-light;
 }
 .nav .nav-item.is-tab:hover, .nav .nav-item.is-tab.is-active{
-  color:$grey;
   border-bottom-color:$primary;
+  color:$text;
 }
 .nav .logo{
   font-size:2em;
@@ -89,9 +102,12 @@ $big-shadow:0 20px 60px rgba(10, 10, 10, 0.02), 0 5px 10px rgba(10, 10, 10, 0.1)
 // hero and mini hero
 
 .sidekick{
-  height:1em;
+  height:2em;
 }
 .hero.is-bold.is-primary, .sidekick{
   background-color:$primary;
-  background-image:linear-gradient(141deg, $primary 0%, mix($primary,$info) 71%, $info 100%);
+  $gradient-top-left: lighten(saturate(adjust-hue($primary, -8deg), 5%), 3%);
+  $gradient-bottom-right: darken(saturate(adjust-hue($primary, 8deg), 5%), 3%);
+  background-image: linear-gradient(141deg, $gradient-top-left 0%, $primary 40%, $primary 60%, $gradient-bottom-right 100%);
+  box-shadow:$big-shadow-inset;
 }
