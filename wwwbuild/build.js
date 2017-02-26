@@ -7,6 +7,7 @@ var _ = require('lodash'),
     uncss = require('metalsmith-uncss')
 
 var source = '../wwwsrc'
+var dest = '../ms-build'
 
 //todo:
 // sort files by date when showing on index pages
@@ -15,7 +16,7 @@ Metalsmith(path.resolve('./'))
     .clean(false)
     .source(source)
     .use(sourceMeta)
-    .destination('../')
+    .destination(dest)
     .use(require('metalsmith-sass')({
         includePaths:["./node_modules/bulma"]
     }))
