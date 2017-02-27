@@ -9,6 +9,6 @@ cd ..
 
 # copy to public dir
 mkdir public
-cp -r ms-build public
-cp -r static public
+cp -r ms-build/* public/
+cp -r static/* public/
 echo "done"
