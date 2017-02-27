@@ -2,6 +2,7 @@ image: node:7.5
 
 pages:
   script:
+  - chmod +x ./build.sh
   - ./build.sh
   artifacts:
     paths:
