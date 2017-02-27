@@ -8,3 +8,5 @@ pages:
     paths:
     - static
     - ms-build
+  only:
+  - src
