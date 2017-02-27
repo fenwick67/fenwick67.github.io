@@ -1,6 +1,6 @@
 var _ = require('lodash'),
     Metalsmith = require('metalsmith'),
-    path = require('path').win32,
+    path = require('path'),
     markdown = require('metalsmith-markdown'),
     pug = require('pug'),
     request = require('request'),
