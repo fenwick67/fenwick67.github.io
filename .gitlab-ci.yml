@@ -1,0 +1,9 @@
+image: node:7.5
+
+pages:
+  script:
+  - ./build.sh
+  artifacts:
+    paths:
+    - static
+    - ms-build
