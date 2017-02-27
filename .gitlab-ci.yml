@@ -7,3 +7,4 @@ pages:
   artifacts:
     paths:
     - static
+    - ms-build

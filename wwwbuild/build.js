@@ -6,8 +6,8 @@ var _ = require('lodash'),
     request = require('request'),
     uncss = require('metalsmith-uncss')
 
-var source = '../wwwsrc'
-var dest = '../ms-build'
+var source = path.resolve('../wwwsrc')
+var dest = path.resolve('../ms-build')
 
 //todo:
 // sort files by date when showing on index pages
