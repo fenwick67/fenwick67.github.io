@@ -9,7 +9,6 @@ pages:
   - ./build.sh
   artifacts:
     paths:
-    - static
-    - ms-build
+    - public
   only:
   - src
