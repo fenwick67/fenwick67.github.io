@@ -1,0 +1,11 @@
+{
+  "stls":[
+    {
+     "name":"Low poly car",
+     "file":"geo.stl"
+    },{
+     "name":"Duck shaped smartphone holder",
+     "file":"duckholder.stl"
+    }
+  ]
+}

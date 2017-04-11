@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
+    <meta charset="UTF-8">
+    <title>3D printable models</title>    
+    <link rel="stylesheet" href="css/normalize.css">   
+    <link rel="stylesheet" href="css/style.css">  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>   
+<div id="left">
+  <div class="info">This is a collection of 3d printable models I've made... they are all CC Attribution 4.0 licensed.</div>
+</div>
+<div id="viewer">
+<div id="progress-outer" class="hidden"><div id = "progress"> </div></div>
+<a href="#" id="spin" class="active">
+  <i class="material-icons">3d_rotation</i>
+</a>
+<a href="#" id="shrink">
+  <i class="material-icons">chevron_left</i>
+</a>
+<a download href="#" id="download">
+  <i class="material-icons">file_download</i>
+</a>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>    
+<script src='js/three.js'></script>
+<script src='js/loaders/STLLoader.js'></script>
+<script src="js/controls/OrbitControls.js"></script>
+
+<script src='app.js'></script>
+  </body>
+</html>
