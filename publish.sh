@@ -6,7 +6,7 @@ branch=`git rev-parse --abbrev-ref HEAD`
 if [ ${branch} == 'src' ]
 then
   echo "pushing..."
-  git subtree push --prefix public origin gh-pages
+  git subtree push --prefix public origin master
 else
   echo "you're on the wrong branch, dummy: "
   echo "you're on: '${branch}', expected 'src'"
