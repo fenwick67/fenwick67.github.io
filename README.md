@@ -7,4 +7,8 @@ dir structure:
 /wwwsrc: where content goes
     all main pages are index.jade
     other posts / pages are xxx.jade or xxx.md
+/static: where static html and files go
 ```
+
+to build: `./build.sh`
+to publish: `./publish.sh`
