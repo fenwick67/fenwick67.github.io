@@ -1,0 +1,65 @@
+body,html{
+  text-align:center;
+  font-family:
+    Monaco,
+    "Lucida Console",
+    "andale mono",		/* MS WebFont */
+    "monotype.com",		/* MS WebFont, former name */
+    monaco,			/* MacOS */
+    "courier new",		/* Windows, MacOS */
+    courier,			/* Unix+X, MacOS */
+    monospace;
+  background-color:black;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+div,span{
+  position:relative;
+  display:inline-block;
+}
+.main-weather{
+  display:block;
+  font-size:40px;
+  height:100px;
+  line-height:100px;
+}
+#temperature{
+  top:-30px;
+}
+#weather-icon,#weather-icon img{
+  height:100px;
+}
+.cells>span{
+  padding:1em;
+  margin:1em;
+}
+.card{
+  line-height:50%;
+  display:flex;
+  flex-direction:column;
+  background-color:transparent;
+  flex: 1 0 auto;
+  justify-content:space-around;
+}
+.main-weather,.cells{
+  background-color:rgba(0,0,0,.175);
+  box-shadow:0 0 200px 80px rgba(0,0,0,.2);
+}
+#cameras,#cam,#cam2{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+#cam,#cam2{
+  background-image:url("http://wwc.instacam.com/instacamimg/DBQHJ/DBQHJ_l.jpg");
+  background-size:cover;
+  background-position:center;
+  background-color:transparent;
+}
