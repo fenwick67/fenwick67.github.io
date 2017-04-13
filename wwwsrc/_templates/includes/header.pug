@@ -2,7 +2,7 @@
     nav.nav.has-shadow
         .container
             .nav-left
-                a.logo.nav-item(href="/")= title
+                a.logo.nav-item(href="/")= title+' 🍕'
             #nav-toggle.nav-toggle
                 span
                 span
@@ -11,27 +11,22 @@
                 a.nav-item.is-tab(
                         class=category=="blog"?"is-active":"",
                         href="/blog")
-                    span
-                    span.icon
-                        i.fa.fa-book
+                    .icon 📓&#xFE0E;
                     span &nbsp;Blog
                 a.nav-item.is-tab(
                         class=category=="games"?"is-active":"",
                         href="/games")
-                    span.icon
-                        i.fa.fa-gamepad
+                    .icon 🎮&#xFE0E;
                     span  &nbsp;Games
                 a.nav-item.is-tab(
                         class=category=="music"?"is-active":"",
                         href="/music")
-                    span.icon
-                        i.fa.fa-music
+                    .icon 🎶&#xFE0E;
                     span &nbsp;Music
                 a.nav-item.is-tab(
                         class=category=="misc"?"is-active":"",
                         href="/misc")
-                    span.icon
-                        i.fa.fa-code
+                    .icon 🔗&#xFE0E;
                     span &nbsp;Misc Projects
 if category && isIndex
     .hero.is-bold.is-primary
