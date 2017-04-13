@@ -50,27 +50,19 @@ html,
 body,
 p,
 ol,
-ul,
 li,
 blockquote,
 iframe,
-hr,
 h1,
-h2,
-h3 {
+h2 {
   margin: 0;
   padding: 0;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-size: 100%;
   font-weight: normal;
-}
-
-ul {
-  list-style: none;
 }
 
 html {
@@ -93,17 +85,6 @@ img {
 
 iframe {
   border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-  text-align: left;
 }
 
 html {
@@ -149,17 +130,9 @@ a:hover {
 code {
   background-color: snow;
   color: #ff3860;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: normal;
   padding: 1px 2px 2px;
-}
-
-hr {
-  background-color: #dbdbdb;
-  border: none;
-  display: block;
-  height: 1px;
-  margin: 20px 0;
 }
 
 img {
@@ -173,25 +146,6 @@ small {
 span {
   font-style: inherit;
   font-weight: inherit;
-}
-
-strong {
-  color: #000;
-  font-weight: 700;
-}
-
-table {
-  width: 100%;
-}
-
-table td,
-table th {
-  text-align: left;
-  vertical-align: top;
-}
-
-table th {
-  color: #000;
 }
 
 .has-text-centered {
@@ -355,22 +309,19 @@ table th {
 
 .content blockquote:not(:last-child),
 .content p:not(:last-child),
-.content ol:not(:last-child),
-.content ul:not(:last-child) {
+.content ol:not(:last-child) {
   margin-bottom: 1em;
 }
 
 .content h1,
-.content h2,
-.content h3 {
+.content h2 {
   color: #000;
   font-weight: 300;
   line-height: 1.125;
   margin-bottom: 20px;
 }
 
-.content h2:not(:first-child),
-.content h3:not(:first-child) {
+.content h2:not(:first-child) {
   margin-top: 40px;
 }
 
@@ -388,19 +339,8 @@ table th {
   font-size: 1.75em;
 }
 
-.content h3 {
-  font-size: 1.5em;
-}
-
 .content ol {
   list-style: decimal outside;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 1em;
-}
-
-.content ul {
-  list-style: disc outside;
   margin-left: 2em;
   margin-right: 2em;
   margin-top: 1em;
@@ -565,6 +505,12 @@ table th {
   }
 }
 
+.fa {
+  font-size: 21px;
+  text-align: center;
+  vertical-align: top;
+}
+
 .icon {
   display: inline-block;
   font-size: 21px;
@@ -573,6 +519,11 @@ table th {
   text-align: center;
   vertical-align: top;
   width: 24px;
+}
+
+.icon .fa {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .tag.is-#000 {
@@ -1197,13 +1148,4 @@ a.nav-item.is-tab.is-active {
   background-color: #00fff0;
   background-image: linear-gradient(141deg, #0fffd1 0%, #00fff0 40%, #00fff0 60%, #00def0 100%);
   box-shadow: 0 20px 60px rgba(10,10,10,0.02) inset,0 5px 10px rgba(10,10,10,0.1) inset,0 1px 1px rgba(10,10,10,0.2) inset,0 2px 3px rgba(10,10,10,0.1) inset,0 0 0 1px rgba(10,10,10,0.1) inset;
-}
-
-@font-face {
-  font-family: "icomoon";
-  src: url("/fonts/icomoon.woff") format("woff");
-}
-
-.icon {
-  font-family: "icomoon", sans-serif;
 }
