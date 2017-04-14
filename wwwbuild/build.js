@@ -4,7 +4,9 @@ var _ = require('lodash'),
     markdown = require('metalsmith-markdown'),
     pug = require('pug'),
     request = require('request'),
-    uncss = require('metalsmith-uncss')
+    uncss = require('metalsmith-uncss'),
+    cleanCSS = require('metalsmith-clean-css');
+
 
 var source = path.resolve('../wwwsrc')
 var dest = path.resolve('../ms-build')
@@ -36,6 +38,15 @@ Metalsmith(path.resolve('./'))
         uncss: {							     // uncss options - passed directly to UnCSS
             ignore: [/\.nav-toggle/,/\.nav-menu/]  // nav toggle and nav menu are modified at runtime
         }
+    }))
+    .use(cleanCSS({
+      cleanCSS: {
+        level:{
+          2:{
+            all:true// mess my css up fam
+          }
+        }
+      }
     }))
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
