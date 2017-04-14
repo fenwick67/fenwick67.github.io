@@ -9,7 +9,7 @@ Especially when the influence of individual factors is difficult to understand, 
 
 ## Case 1: Vehicle Emissions
 
-### Backgorund: VW NOx scandal
+### Background: VW NOx scandal
 
 As you are likely aware, in 2015, [Volkswagen was accused of cheating](https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal) on its emissions tests.  Cars were found to behave differently in real-world conditions than when they were undergoing the EPA test regimen.  The EPA fined Volkswagen for about $18 Billion.  VW stuck with the story that a "rogue engineer" was responsible for this issue.
 
