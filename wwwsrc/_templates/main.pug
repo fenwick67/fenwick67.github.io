@@ -3,16 +3,16 @@ html
     include includes/head
     body
         // vars:  category, content, contents (plural means multiple pages, i.e. landing page)
-            content objects contain: title, date, html, permalink
+            content objects contain: title, date, html, permalink, isoDate
         include includes/header
 
-        div#pagecontent
+        div#pagecontent.h-entry
             .article-body.content.reading.section
                 if pagetitle
-                    h1= pagetitle
+                    h1.p-name= pagetitle
                 if date
-                    small= date
-                div!= content.html
+                    small.dt-published(datetime=isoDate)= date
+                div.e-content!= content.html
 
         .footer.container.has-text-centered
             span Contact:&nbsp;&nbsp;

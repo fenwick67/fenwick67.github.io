@@ -101,6 +101,7 @@ function addMeta(files,ms,done){
         file.meta.meta = md;                    // english: each file points to global MS Metadata.
         file.meta.files = files;                // point to all files within metadata
         file.meta.title = file.title || name;
+        file.meta.isoDate = file.date?(new Date(file.date).toISOString()):"";
         file.meta.date = file.date?(dateToEnglish(file.date)):"";
         file.meta.permalink = name;
         file.meta.summary = file.summary || '';
@@ -191,11 +192,12 @@ function getGetNameForFilename(name){
 }
 
 function dateToEnglish(d){
-    var d = new Date(d);
+    var isoParts = d.toISOString().split(/[tT-]/g).map(function(s){return Number(s)});
+    
     var mos = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-    var year = d.getFullYear();
-    var month = mos[d.getMonth()];
-    var day = d.getDate();
+    var year = isoParts[0];
+    var month = mos[isoParts[1]];
+    var day = isoParts[2];
 
     return day + " " + month + " " + year;
 }
