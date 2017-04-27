@@ -6,12 +6,16 @@ html
             content objects contain: title, date, html, permalink, isoDate
         include includes/header
 
-        div#pagecontent.h-entry
+        - var isArticle = permalink && !isIndex && category
+        div#pagecontent(class=isArticle?'h-entry':'')
             .article-body.content.reading.section
                 if pagetitle
                     h1.p-name= pagetitle
                 if date
                     small.dt-published(datetime=isoDate)= date
+                if isArticle
+                    small
+                        a.u-url(href=permalink) &nbsp;&nbsp;Permalink
                 div.e-content!= content.html
 
         .footer.container.has-text-centered

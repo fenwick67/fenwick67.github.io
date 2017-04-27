@@ -4,7 +4,10 @@ each file in sortedFiles
 	- if (file.meta.category == "blog" && !file.meta.isIndex)
 		.box
 			h1!= file.meta.pagetitle
-			small!= file.meta.date
+			if file.meta.date
+					small.dt-published= file.meta.date
+			small
+					a(href=file.meta.permalink) &nbsp;&nbsp;Permalink
 			- if (file.meta.summary)
 					.article-body
 						p!= file.meta.summary

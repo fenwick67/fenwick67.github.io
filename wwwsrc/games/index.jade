@@ -5,4 +5,6 @@ each file in sortedFiles
         - var strippedContent = file.contents.toString().replace(/<iframe[\s\S]*\/iframe>/gi,'');
         .box
             h1!= file.meta.pagetitle
+            if file.meta.date
+                small.dt-published(datetime=isoDate)= file.meta.date
             span!=strippedContent

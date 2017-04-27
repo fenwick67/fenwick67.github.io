@@ -5,7 +5,8 @@ var _ = require('lodash'),
     pug = require('pug'),
     request = require('request'),
     uncss = require('metalsmith-uncss'),
-    cleanCSS = require('metalsmith-clean-css');
+    cleanCSS = require('metalsmith-clean-css'),
+    Feed = require('feed');
 
 
 var source = path.resolve('../wwwsrc')
@@ -29,7 +30,7 @@ Metalsmith(path.resolve('./'))
     .use(markdown())            // load markdown
     .use(summarize)             // summarize
     .use(puggify)               // load pug templates
-    .use(template)              // last step: wrap everything with main template
+    .use(template)              // last templating step: wrap everything with main template
     .use(uncss({
         css: ['style.css'],	    // CSS files to run through UnCSS
         output: 'style.css',		// output CSS filename
@@ -48,6 +49,7 @@ Metalsmith(path.resolve('./'))
         }
       }
     }))
+    .use(genAtom)               // create Atom feed
     .build(function(err) {      // build process
         if (err) throw err;     // error handling is required
     })
@@ -100,10 +102,10 @@ function addMeta(files,ms,done){
         file.meta = {};
         file.meta.meta = md;                    // english: each file points to global MS Metadata.
         file.meta.files = files;                // point to all files within metadata
-        file.meta.title = file.title || name;
+        file.meta.title = file.title || getTitle(name);
         file.meta.isoDate = file.date?(new Date(file.date).toISOString()):"";
         file.meta.date = file.date?(dateToEnglish(file.date)):"";
-        file.meta.permalink = name;
+        file.meta.permalink = getPermalink(name);
         file.meta.summary = file.summary || '';
         file.meta.category = getCategoryForFilename(name);
         file.meta.isIndex = name.indexOf('index') > -1;
@@ -141,11 +143,11 @@ function template(files,metalsmith,done){
 // raw pug to HTML.  Pug can pull in vars about other files, so index pages can be built dynamically.
 function puggify(files,metalsmith,done){
 
-    _.each(files,function(file,name){
-        file.meta.name = name;
-        file.meta.permalink = "/"+name;
-        file.meta.category = getCategoryForFilename(name);
-    });
+  _.each(files,function(file,name){
+      file.meta.name = name;
+      file.meta.permalink = getPermalink(name);
+      file.meta.category = getCategoryForFilename(name);
+  });
 
     _.each(files,function(file,name){
         var parsed = path.parse(name);
@@ -158,6 +160,7 @@ function puggify(files,metalsmith,done){
             files[path.join(parsed.dir,parsed.name+".html")] = file;
         }
     });
+
     return done();
 }
 
@@ -191,13 +194,75 @@ function getGetNameForFilename(name){
     return path.parse(name).name;
 }
 
+function genAtom(files,metalsmith,done){
+  //create atom feed for everything with a date
+  var filteredFiles = _.filter(files,function(f,name){
+    return f.meta && f.meta.date;
+  });
+
+  var baseUrl = metalsmith.metadata().url;
+
+
+  var feed = new Feed({
+    title: 'Drew Harwell',
+    description: 'Drew Harwell\'s personal feed',
+    id: baseUrl,
+    link: baseUrl,
+    //image: 'http://example.com/image.png',
+    copyright: 'All rights reserved '+new Date().getYear()+', Drew Harwell',
+    author: {
+      name: 'Drew Harwell',
+      email: 'dfharwell@gmail.com',
+      link: baseUrl
+    }
+  });
+
+  _.each(filteredFiles,function(file,name){
+    var m = file.meta;
+    feed.addItem({
+      title: m.title||'',
+      id: encodeURI(baseUrl+m.permalink),
+      link: encodeURI(baseUrl+m.permalink),
+      description: m.summary||'',
+      author: [{
+        name: 'Drew Harwell',
+        email: 'dfharwell@gmail.com',
+        link:baseUrl
+      }],
+      date: new Date(m.date)
+    })
+  });
+
+  files['rss.xml']={contents:new Buffer(feed.rss2(),'utf8')};
+  files['atom.xml']={contents:new Buffer(feed.atom1(),'utf8')};
+
+  return done();
+
+}
+
 function dateToEnglish(d){
-    var isoParts = d.toISOString().split(/[tT-]/g).map(function(s){return Number(s)});
-    
+    var dt = null;
+    if (typeof d == 'object'){
+      dt = d;
+    }else{
+      dt = new Date(d);
+    }
+    var isoParts = dt.toISOString().split(/[tT-]/g).map(function(s){return Number(s)});
+
     var mos = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     var year = isoParts[0];
     var month = mos[isoParts[1]];
     var day = isoParts[2];
 
     return day + " " + month + " " + year;
+}
+
+function getPermalink(filename){
+  // get a link to the file
+  return "/"+filename.replace(/\\/g,'/').replace(/\.jade|\.pug/i,'.html');
+}
+
+function getTitle(filename){
+  // determine canonical title of filename
+  return filename.split(/\/\\/g).pop().replace(/\.[a-z0-9]{1,9}$/i,'');
 }
