@@ -8,7 +8,7 @@ each file in sortedFiles
             span!=strippedContent
             a.button.is-primary(href=file.meta.permalink) View
     - if (file.meta.category == "misc" && file.meta.isIndex)
-        p There are lots of demos etc. on my 
+        p There are lots of demos etc. on my
             a(href="http://codepen.io/fenwick/") Codepen Page
             | .  Some other things are featured below:
         .box
@@ -19,3 +19,8 @@ each file in sortedFiles
             h1
                 a(href="/xmb-home") Old XMB concept
             p This was an old concept I had for my homepage, inspired by the beautiful XMB user interface.
+        .box
+            h1
+                a(href="http://www.mastofeed.com") Mastofeed
+            p A way to embed Mastodon feeds via iframe, which Mastodon doesn't support natively.  As seen on my 
+                a(href="/") Homepage.
