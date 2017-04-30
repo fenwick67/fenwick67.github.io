@@ -264,5 +264,5 @@ function getPermalink(filename){
 
 function getTitle(filename){
   // determine canonical title of filename
-  return filename.split(/\/\\/g).pop().replace(/\.[a-z0-9]{1,9}$/i,'');
+  return filename.split(/[\/\\]/g).pop().replace(/\.[a-z0-9]{1,9}$/i,'');
 }

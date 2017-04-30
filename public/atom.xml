@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://fenwick.pizza</id>
     <title>Drew Harwell</title>
-    <updated>2017-04-27T04:07:26Z</updated>
+    <updated>2017-04-27T04:12:12Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Drew Harwell</name>
@@ -13,7 +13,7 @@
     <subtitle>Drew Harwell&apos;s personal feed</subtitle>
     <rights>All rights reserved 117, Drew Harwell</rights>
     <entry>
-        <title type="html"><![CDATA[games\Adventure Owl Meets the MoleMen]]></title>
+        <title type="html"><![CDATA[Adventure Owl Meets the MoleMen]]></title>
         <id>http://fenwick.pizza/games/Adventure%20Owl%20Meets%20the%20MoleMen.html</id>
         <link href="http://fenwick.pizza/games/Adventure%20Owl%20Meets%20the%20MoleMen.html">
         </link>
@@ -41,12 +41,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Worst Web Design Trends of 2016]]></title>
-        <id>http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html</id>
-        <link href="http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html">
+        <title type="html"><![CDATA[Risks of Opaque Machine Learning]]></title>
+        <id>http://fenwick.pizza/blog/2017-04-11%20machine%20learning.html</id>
+        <link href="http://fenwick.pizza/blog/2017-04-11%20machine%20learning.html">
         </link>
-        <updated>2016-08-15T05:00:00Z</updated>
-        <summary type="html"><![CDATA[In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&#39;s tacky and overused.  Let&#39;s move on.]]></summary>
+        <updated>2017-05-11T05:00:00Z</updated>
+        <summary type="html"><![CDATA[Many science fiction writers have written about how an AI can go rogue, typically in self-preservation.  Stories like Terminator or The Matrix.  Fortunately today, there is very little risk of an AI taking over the world, but there are ethical dilemmas that need to be considered when we work with Machine Learning.]]></summary>
         <author>
             <name>Drew Harwell</name>
             <email>dfharwell@gmail.com</email>
@@ -54,12 +54,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Risks of Opaque Machine Learning]]></title>
-        <id>http://fenwick.pizza/blog/2017-04-11%20machine%20learning.html</id>
-        <link href="http://fenwick.pizza/blog/2017-04-11%20machine%20learning.html">
+        <title type="html"><![CDATA[The Worst Web Design Trends of 2016]]></title>
+        <id>http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html</id>
+        <link href="http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html">
         </link>
-        <updated>2017-05-11T05:00:00Z</updated>
-        <summary type="html"><![CDATA[Many science fiction writers have written about how an AI can go rogue, typically in self-preservation.  Stories like Terminator or The Matrix.  Fortunately today, there is very little risk of an AI taking over the world, but there are ethical dilemmas that need to be considered when we work with Machine Learning.]]></summary>
+        <updated>2016-08-15T05:00:00Z</updated>
+        <summary type="html"><![CDATA[In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&#39;s tacky and overused.  Let&#39;s move on.]]></summary>
         <author>
             <name>Drew Harwell</name>
             <email>dfharwell@gmail.com</email>
