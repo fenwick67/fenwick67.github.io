@@ -57,6 +57,9 @@ div,span{
   top:0;
   left:0;
 }
+#cameras{
+    filter:brightness(110%) contrast(110%);
+}
 #cam,#cam2{
   background-image:url("http://wwc.instacam.com/instacamimg/DBQHJ/DBQHJ_l.jpg");
   background-size:cover;
