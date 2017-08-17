@@ -16,7 +16,7 @@ function refreshAll(){
     
     $.get('http://api.openweathermap.org/data/2.5/weather?zip=52001&APPID='+k+'&units=imperial'
       ,function(data) {
-        var temp = data.main.temp+' F';
+        var temp = Math.round(data.main.temp)+' F';
         var city = data.name;
         var desc = data.weather[0].description;
         var wind = data.wind.speed + ' MPH wind';
