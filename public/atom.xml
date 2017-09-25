@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://fenwick.pizza</id>
     <title>Drew Harwell</title>
-    <updated>2017-04-30T23:12:41Z</updated>
+    <updated>2017-09-25T05:08:04Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Drew Harwell</name>
@@ -28,12 +28,12 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[React Components are the New Jquery plugins]]></title>
-        <id>http://fenwick.pizza/blog/2016-07-14%20React%20Components%20are%20the%20New%20jQuery%20Plugins.html</id>
-        <link href="http://fenwick.pizza/blog/2016-07-14%20React%20Components%20are%20the%20New%20jQuery%20Plugins.html">
+        <title type="html"><![CDATA[The Worst Web Design Trends of 2016]]></title>
+        <id>http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html</id>
+        <link href="http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html">
         </link>
-        <updated>2016-08-14T05:00:00Z</updated>
-        <summary type="html"><![CDATA[Remember jQuery plugins?  I do.  They used to be the cool way to implement everything in javascript.  The even pop up in StackOverflow answers for things like &quot;how do I sort an array&quot;.]]></summary>
+        <updated>2016-08-15T05:00:00Z</updated>
+        <summary type="html"><![CDATA[In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&#39;s tacky and overused.  Let&#39;s move on.]]></summary>
         <author>
             <name>Drew Harwell</name>
             <email>dfharwell@gmail.com</email>
@@ -54,12 +54,25 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Worst Web Design Trends of 2016]]></title>
-        <id>http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html</id>
-        <link href="http://fenwick.pizza/blog/2016-07-15%20The%20Worst%20Web%20Design%20Trends%20of%202016.html">
+        <title type="html"><![CDATA[React Components are the New Jquery plugins]]></title>
+        <id>http://fenwick.pizza/blog/2016-07-14%20React%20Components%20are%20the%20New%20jQuery%20Plugins.html</id>
+        <link href="http://fenwick.pizza/blog/2016-07-14%20React%20Components%20are%20the%20New%20jQuery%20Plugins.html">
         </link>
-        <updated>2016-08-15T05:00:00Z</updated>
-        <summary type="html"><![CDATA[In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&#39;s tacky and overused.  Let&#39;s move on.]]></summary>
+        <updated>2016-08-14T05:00:00Z</updated>
+        <summary type="html"><![CDATA[Remember jQuery plugins?  I do.  They used to be the cool way to implement everything in javascript.  The even pop up in StackOverflow answers for things like &quot;how do I sort an array&quot;.]]></summary>
+        <author>
+            <name>Drew Harwell</name>
+            <email>dfharwell@gmail.com</email>
+            <uri>http://fenwick.pizza</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goodbye, Good-guy Google]]></title>
+        <id>http://fenwick.pizza/blog/2017-09-24%20Goodbye%20Good-guy%20Google.html</id>
+        <link href="http://fenwick.pizza/blog/2017-09-24%20Goodbye%20Good-guy%20Google.html">
+        </link>
+        <updated>2017-10-24T05:00:00Z</updated>
+        <summary type="html"><![CDATA[The good-guy image of Google is gone, at least in my eyes.]]></summary>
         <author>
             <name>Drew Harwell</name>
             <email>dfharwell@gmail.com</email>
