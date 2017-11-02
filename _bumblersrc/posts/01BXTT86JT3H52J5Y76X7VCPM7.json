@@ -1,0 +1,8 @@
+{
+  "tags": "projects",
+  "caption": "Mastofeed is a project that lets users embed their Mastodon feed into their blog, website, et cetera:\n\n[mastofeed](https://mastofeed.com)\n\nHere's what one looks like:\n\n<iframe id=\"frame\" allowfullscreen=\"\" sandbox=\"allow-top-navigation allow-scripts\" src=\"//mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;theme=dark&amp;size=100&amp;header=true\"  height=\"400\" style=\"width:100%\"></iframe>",
+  "title": "Mastofeed",
+  "assets": [],
+  "date": "2017-10-31T22:33:29-05:00",
+  "id": "01BXTT86JT3H52J5Y76X7VCPM7"
+}

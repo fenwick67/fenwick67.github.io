@@ -1,14 +1,5 @@
 For my own future reference:
 
-dir structure:
-```
-/wwwbuild: build scripts
-    to build: npm install && node build.js
-/wwwsrc: where content goes
-    all main pages are index.jade
-    other posts / pages are xxx.jade or xxx.md
-/static: where static html and files go
-```
+Using Bumbler for building.
 
-to build: `./build.sh`
-to publish: `./publish.sh`
+In the future, open new git repos for subdirectories.
