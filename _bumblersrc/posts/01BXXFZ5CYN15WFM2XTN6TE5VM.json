@@ -1,0 +1,8 @@
+{
+  "tags": "projects",
+  "caption": "[Term-px](//github.com/fenwick67/term-px) lets you turn images or image data into RGB or ANSI art for your terminal.  \n\n![Demo](http://i.imgur.com/iwlN1Ru.gif)\n\nIt's written in Javascript, so you can use it with Node, *or* say, [use it to make a browser tool](//fenwick67.github.io/term-px).\n\nYou can try converting an image [here](//fenwick67.github.io/term-px).",
+  "title": "Term-Px",
+  "assets": [],
+  "date": "2017-11-01T23:31:31-05:00",
+  "id": "01BXXFZ5CYN15WFM2XTN6TE5VM"
+}

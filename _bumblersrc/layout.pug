@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+html
+  head
+    title= site.title + (page.isCustom?(' - '+page.customPage.title):"") + (page.tag?' - '+_.capitalize(page.tag):'')+ (page.posts && page.posts.length == 1 && page.posts[0].title?' - '+page.posts[0].title:'')
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jenil/bulmaswatch/gh-pages/journal/bulmaswatch.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    style(type="text/css") .is-post-width{max-width:800px}.post-info{padding:.25rem 0}.post-info-level{padding:.5rem 1.5rem .5rem 0.25rem;display:flex;width:100%;justify-content:space-between;border-top:solid 1px rgba(0,0,0,.2)}.post-info-level:first-child{border-top:none}.post-info-level *{padding:0 0 0 1.25rem}.is-circle{margin:0;padding:0;border-radius:100%;display:inline-block}.post-assets{display:flex;flex-wrap:wrap}.post-asset{background:#ddd;width:50%;height:auto;flex:1 1 auto}a.post-asset{line-height:0}.post-asset *{width:100%}.blog-menu{text-align:center}.blog-menu-body .menu-label{font-size:1.5em;margin:.5rem}
+    <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png" />
+    meta(name="description" content=site.description)
+  body
+    .container    
+      .columns
+        .column.is-3
+          .section.blog-menu
+            span.blog-menu-header
+              div
+                a(href="/")
+                  img(src=site.avatar).image.is-128x128.is-circle.box
+              a(href="/").title.has-text-centered= site.title
+            .blog-menu-body
+              ul.menu-list
+                a.is-hidden(href="/admin") Admin
+                a(href="/") Home
+                a(href="/atom.xml") Atom feed
+              p.menu-label Tags
+              ul.menu-list
+                for tagInfo in site.tags
+                  a(href="/tag/"+tagInfo.name) #{_.capitalize(tagInfo.name)} <b class="tag">#{tagInfo.count}</b>
+              p.menu-label Contact
+              ul.menu-list
+                a(href="mailto:dfharwell@gmail.com") Email
+                a(href="//github.com/fenwick67") Github
+        .column.is-9.is-post-width
+          .level
+            // bread
+            .level-item.has-text-centered
+              .breadcrumb.is-centered
+                ul
+                  if page.tag || page.number && page.number != 1
+                    li
+                      a(href="/") Home
+                  if page.tag
+                    li
+                      a(href="/tag/"+page.tag)= _.capitalize(page.tag)
+                  if page.number && page.number != 1
+                    li
+                      a(href=".")= page.number
+          if page.number == 1 && !page.tag
+            .section.post
+              section.card
+                .card-content.content
+                  p My name's Drew. I'm an electrical engineer, but I do all kinds of other stuff too. This site is meant to showcase that stuff.
+                  p Lately I've been excited about Web Development, Node.js and Unity3d. You can check out my <a href="https://github.com/fenwick67">github profile</a> to see what else I've been up to lately.
+                  p You can get ahold of me at <a href="mailto:dfharwell@gmail.com">DFHarwell@gmail.com</a>.
+            hr
+          if page.posts
+            for post in page.posts
+              .section.post
+                div
+                  if post.tags
+                    .post-info
+                      .post-info-level
+                        span.tags
+                          for tag in post.tags
+                            a.tag.is-primary(href="/tag/"+tag)= _.capitalize(tag)
+                  .post-assets
+                    for asset in post.assets
+                      a.post-asset(href=attachment.href)
+                        span!= attachment.widget
+                  .card-content
+                    if post.title
+                      h1.title= post.title
+                    .content!= post.caption
+                  .card
+                    .post-info
+                      .post-info-level
+                        span Posted October 30, 2017
+                        span 
+                          a(href=post.permalink) Link
+                          a(href='/admin/#post/edit?id='+post.id).is-hidden ✎ Edit
+    
+    .hide-scroll
+      // pagination
+      .container.section
+        .pagination
+          if page.number && (page.links.nextPage || page.links.previousPage)
+            a(href=page.links.previousPage disabled=!page.links.previousPage).pagination-previous.button Previous
+            a(href=page.links.nextPage disabled=!page.links.nextPage).pagination-next.button Next page
+            if page.number
+              ul.pagination-list
+                if page.number >= 3
+                  li
+                    a(href=page.links.firstPage).pagination-link= 1
+                if page.number >= 4
+                  li
+                    .pagination-ellipsis &hellip;
+                if page.links.previousPage
+                  li
+                    a(href=page.links.previousPage).pagination-link= page.number-1
+                li
+                  a(href='#').pagination-link.is-current= page.number
+                if page.links.nextPage
+                  li
+                    a(href=page.links.nextPage).pagination-link= page.number + 1
+                if page.number < site.pageCount - 2
+                  li
+                    .pagination-ellipsis &hellip;
+                if page.number < site.pageCount - 1
+                  li
+                    a(href=page.links.lastPage).pagination-link= site.pageCount
+  footer
+    footer.section
+      .container
+        .content.has-text-centered
+          p All content ©
+            strong #{site.authorName}
+            |  #{new Date().getFullYear()}.
+          p
+            a(href="https://github.com/fenwick67/bumbler") Bumbler
+            |  flat CMS by
+            b  Drew Harwell
+
+  // infinite scroll:
+  // <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+
+  // unhide stuff if user might be an admin
+  script(type="text/javascript")!= "document.addEventListener('DOMContentLoaded',function(){if(!localStorage['admin']){return;}var els = document.querySelectorAll('.is-hidden');  if (!els){return};  for (var i = 0; i < els.length; i ++){els[i].classList.remove('is-hidden')}});"
+
+  // infscroll
+  if page.number == 1
+    // script(type="text/javascript") var infScroll = new InfiniteScroll( '.posts', {path:'.pagination-next',append:'.post',hideNav:'.hide-scroll'});

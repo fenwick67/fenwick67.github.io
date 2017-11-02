@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
+<id>https://fenwick.pizza/feed.atom</id>
+<title>Drew Harwell</title>
+<subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
+<updated>2017-11-02T00:03:12-05:00</updated>
+<logo>https://fenwick.pizza/tile.png</logo>
+<author>
+<id>https://fenwick.pizza</id>
+<activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
+<uri>https://fenwick.pizza/</uri>
+<name>Drew Harwell</name>
+<summary type="html">&lt;p&gt;A showcase of most stuff Drew works on in his spare time&lt;/p&gt;</summary>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/"/>
+<link rel="avatar" type="image/png" media:width="120" media:height="120" href="https://fenwick.pizza/tile.png"/>
+<poco:displayName>Drew Harwell</poco:displayName>
+<poco:note>A showcase of most stuff Drew works on in his spare time</poco:note>
+</author>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/"/>
+<link rel="self" type="application/atom+xml" href="https://fenwick.pizza/feed.atom"/>
+<entry>
+<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
+<published>2017-11-01T23:31:31-05:00</published>
+<updated>2017-11-01T23:31:31-05:00</updated>
+<title>Term-Px</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
+<published>2017-11-01T23:31:31-05:00</published>
+<updated>2017-11-01T23:31:31-05:00</updated>
+<title>Term-Px</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term="projects"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXXCSQ436JPG2PCQCRGMTWD3.html</id>
+<published>2017-11-01T22:36:07-05:00</published>
+<updated>2017-11-01T22:36:07-05:00</updated>
+<title>Goodbye, Good-Guy Google</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Goodbye, Good-Guy Google&lt;/h1&gt;&lt;span&gt;&lt;p&gt;The good-guy image of Google is gone, at least in my eyes.&lt;/p&gt;
+&lt;p&gt;I was a beta user of Gmail.  Yes, there was webmail before, but Google offered &lt;em&gt;unlimited storage&lt;/em&gt;, which was a game-changer at the time.  At this point in time, Google seemed like a company out to do good.  They were helping the internet and the access to information grow very quickly, they were offering services for free, and accelerated the web by pushing for secure, fast browsing.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;#39;s just me getting older and more cynical, but I&amp;#39;m done falling for their old &amp;quot;don&amp;#39;t be evil&amp;quot; motto. It seems they are too, since they changed their motto in 2015.&lt;/p&gt;
+&lt;h2 id=&#34;google-wants-to-own-the-web&#34;&gt;Google Wants to Own the Web&lt;/h2&gt;
+&lt;p&gt;Google has been taking a monopolistic and paternalistic approach to the web  lately.&lt;/p&gt;
+&lt;p&gt;They have been pushing the AMP (Accelerated Mobile Pages) standard pretty hard lately.  The stated goal of AMP, faster load times on mobile devices, sounds noble, but the real reason they push for it is the Google AMP Cache.  When you visit an AMP page on mobile, the traffic goes through Google &lt;em&gt;by design&lt;/em&gt;.  Of course, the Google AMP Cache is free, but there&amp;#39;s no such thing as free lunch, they just want to see all web traffic on mobile (no big deal, right?).&lt;/p&gt;
+&lt;p&gt;Ad-blocking software has become very common in web browsers, at about 11% of users worldwide [1].  That may not sound like a huge number, but if you are a company like Google who makes most of their money off of advertisements, that&amp;#39;s huge.&lt;/p&gt;
+&lt;p&gt;Google has been making many efforts to make ads &amp;quot;more friendly&amp;quot; but &amp;quot;less annoying&amp;quot; to users.  That means carefully treading between attention-getting and obnoxious.  They&amp;#39;ve been pushing blocking autoplay videos (except on their own sites of course), and removing &amp;quot;intrusive ads&amp;quot; [2] on websites it deems do not &amp;quot;meet their criteria&amp;quot;.  These are clearly efforts to keep people from having a negative ad experience, so they don&amp;#39;t install an actual ad-blocker like uBlock Origin.  And you can be sure none of Google&amp;#39;s ads will ever be stopped in Chrome.&lt;/p&gt;
+&lt;h2 id=&#34;ads-for-chrome&#34;&gt;Ads for Chrome&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/img/chromead.png&#34; alt=&#34;chrome ad&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you use YouTube, GMail, or Google in anything other than Chrome, you know what I&amp;#39;m referring to.  Google begs and pleads for you to switch to Chrome.  While I might have applauded this when people were stuck on old versions of IE, they now target evergreen browsers like Firefox and Edge, which are kept up to date and secure.  It&amp;#39;s very clear that their goal isn&amp;#39;t just getting people on the web, or getting them into a secure browser anymore.  It&amp;#39;s funneling users to their services and sending them more ads.&lt;/p&gt;
+&lt;h2 id=&#34;tracking-is-creepy&#34;&gt;Tracking is Creepy&lt;/h2&gt;
+&lt;p&gt;One problem with Facebook, Google, and Amazon&amp;#39;s ads is their pervasiveness.  Your activity on any site with a Google ad is tracked by them.  To be honest, I really do not care that the activity is tracked, as much as I care &lt;em&gt;what is done with it&lt;/em&gt;.  My ISP probably tracks my activity on the web, but they don&amp;#39;t use it to sell ads to me.&lt;/p&gt;
+&lt;p&gt;What is so bad about selling ads?  Nothing, if they are obvious, honest, and marginally effective, but Google&amp;#39;s are none of these.  Google strives to sell as many clicks as possible, and charge as much for those clicks as possible.  If this means making ads (a little) less annoying to prevent you from &amp;quot;tipping&amp;quot; into using an ad-blocker, they will do that.  If it means lobbying, they will do that.  Google has grown into a massive, autonomous organization without a conscience.  &lt;/p&gt;
+&lt;h2 id=&#34;machine-learning-experts-to-what-end-&#34;&gt;Machine Learning Experts - To What End?&lt;/h2&gt;
+&lt;p&gt;Google has been touting their prowess as the experts of machine learning - publishing many papers, libraries, and tools around it.  The DeepDream thing was cool, but why are they working on machine learning so much?  For self-driving cars?  Probably not.  Google is an advertising company first and foremost.  The self-driving car ventures are simply an ad campaign for them.  What Google really wants is to sell you ads.&lt;/p&gt;
+&lt;h2 id=&#34;recaptcha&#34;&gt;ReCaptcha&lt;/h2&gt;
+&lt;p&gt;The original ReCaptcha, if you don&amp;#39;t remember, was touted as a way to archive newspapers and books using the power of crowdsourcing.  You were shown a word they weren&amp;#39;t quite sure how to classify, then you typed what it said.  Wow, what a great philanthropic application of technology!  Nowadays, however, you get to work for Google for free by classifying images for them.  They could put up a task in Amazon Mechanical Turk for this, which would cost them a few pennies per image, but why would they when they have free labor at their disposal?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Anyway, I&amp;#39;m trying to wean myself off of Google&amp;#39;s products.  I&amp;#39;ve been using DuckDuckGo for search for about a year now and don&amp;#39;t really miss Google search.  If Apple made an iPhone for less than $500 I would use one.  I am now moving over to Firefox, which is actually proving exciting with all the work they&amp;#39;re putting into WebRenderer.  Gmail will be a harder one to move away from, but if I&amp;#39;m still using uBlock Origin, I&amp;#39;m not doing them any favors.&lt;/p&gt;
+&lt;h3 id=&#34;citations&#34;&gt;Citations&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://www.nytimes.com/2017/01/31/technology/ad-blocking-internet.html&#34;&gt;https://www.nytimes.com/2017/01/31/technology/ad-blocking-internet.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&#34;https://arstechnica.com/tech-policy/2017/06/google-prepares-publishers-for-the-release-of-chrome-ad-blocking/&#34;&gt;https://arstechnica.com/tech-policy/2017/06/google-prepares-publishers-for-the-release-of-chrome-ad-blocking/&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXXCSQ436JPG2PCQCRGMTWD3.html</id>
+<published>2017-11-01T22:36:07-05:00</published>
+<updated>2017-11-01T22:36:07-05:00</updated>
+<title>Goodbye, Good-Guy Google</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Goodbye, Good-Guy Google&lt;/h1&gt;&lt;span&gt;&lt;p&gt;The good-guy image of Google is gone, at least in my eyes.&lt;/p&gt;
+&lt;p&gt;I was a beta user of Gmail.  Yes, there was webmail before, but Google offered &lt;em&gt;unlimited storage&lt;/em&gt;, which was a game-changer at the time.  At this point in time, Google seemed like a company out to do good.  They were helping the internet and the access to information grow very quickly, they were offering services for free, and accelerated the web by pushing for secure, fast browsing.&lt;/p&gt;
+&lt;p&gt;Maybe it&amp;#39;s just me getting older and more cynical, but I&amp;#39;m done falling for their old &amp;quot;don&amp;#39;t be evil&amp;quot; motto. It seems they are too, since they changed their motto in 2015.&lt;/p&gt;
+&lt;h2 id=&#34;google-wants-to-own-the-web&#34;&gt;Google Wants to Own the Web&lt;/h2&gt;
+&lt;p&gt;Google has been taking a monopolistic and paternalistic approach to the web  lately.&lt;/p&gt;
+&lt;p&gt;They have been pushing the AMP (Accelerated Mobile Pages) standard pretty hard lately.  The stated goal of AMP, faster load times on mobile devices, sounds noble, but the real reason they push for it is the Google AMP Cache.  When you visit an AMP page on mobile, the traffic goes through Google &lt;em&gt;by design&lt;/em&gt;.  Of course, the Google AMP Cache is free, but there&amp;#39;s no such thing as free lunch, they just want to see all web traffic on mobile (no big deal, right?).&lt;/p&gt;
+&lt;p&gt;Ad-blocking software has become very common in web browsers, at about 11% of users worldwide [1].  That may not sound like a huge number, but if you are a company like Google who makes most of their money off of advertisements, that&amp;#39;s huge.&lt;/p&gt;
+&lt;p&gt;Google has been making many efforts to make ads &amp;quot;more friendly&amp;quot; but &amp;quot;less annoying&amp;quot; to users.  That means carefully treading between attention-getting and obnoxious.  They&amp;#39;ve been pushing blocking autoplay videos (except on their own sites of course), and removing &amp;quot;intrusive ads&amp;quot; [2] on websites it deems do not &amp;quot;meet their criteria&amp;quot;.  These are clearly efforts to keep people from having a negative ad experience, so they don&amp;#39;t install an actual ad-blocker like uBlock Origin.  And you can be sure none of Google&amp;#39;s ads will ever be stopped in Chrome.&lt;/p&gt;
+&lt;h2 id=&#34;ads-for-chrome&#34;&gt;Ads for Chrome&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/img/chromead.png&#34; alt=&#34;chrome ad&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you use YouTube, GMail, or Google in anything other than Chrome, you know what I&amp;#39;m referring to.  Google begs and pleads for you to switch to Chrome.  While I might have applauded this when people were stuck on old versions of IE, they now target evergreen browsers like Firefox and Edge, which are kept up to date and secure.  It&amp;#39;s very clear that their goal isn&amp;#39;t just getting people on the web, or getting them into a secure browser anymore.  It&amp;#39;s funneling users to their services and sending them more ads.&lt;/p&gt;
+&lt;h2 id=&#34;tracking-is-creepy&#34;&gt;Tracking is Creepy&lt;/h2&gt;
+&lt;p&gt;One problem with Facebook, Google, and Amazon&amp;#39;s ads is their pervasiveness.  Your activity on any site with a Google ad is tracked by them.  To be honest, I really do not care that the activity is tracked, as much as I care &lt;em&gt;what is done with it&lt;/em&gt;.  My ISP probably tracks my activity on the web, but they don&amp;#39;t use it to sell ads to me.&lt;/p&gt;
+&lt;p&gt;What is so bad about selling ads?  Nothing, if they are obvious, honest, and marginally effective, but Google&amp;#39;s are none of these.  Google strives to sell as many clicks as possible, and charge as much for those clicks as possible.  If this means making ads (a little) less annoying to prevent you from &amp;quot;tipping&amp;quot; into using an ad-blocker, they will do that.  If it means lobbying, they will do that.  Google has grown into a massive, autonomous organization without a conscience.  &lt;/p&gt;
+&lt;h2 id=&#34;machine-learning-experts-to-what-end-&#34;&gt;Machine Learning Experts - To What End?&lt;/h2&gt;
+&lt;p&gt;Google has been touting their prowess as the experts of machine learning - publishing many papers, libraries, and tools around it.  The DeepDream thing was cool, but why are they working on machine learning so much?  For self-driving cars?  Probably not.  Google is an advertising company first and foremost.  The self-driving car ventures are simply an ad campaign for them.  What Google really wants is to sell you ads.&lt;/p&gt;
+&lt;h2 id=&#34;recaptcha&#34;&gt;ReCaptcha&lt;/h2&gt;
+&lt;p&gt;The original ReCaptcha, if you don&amp;#39;t remember, was touted as a way to archive newspapers and books using the power of crowdsourcing.  You were shown a word they weren&amp;#39;t quite sure how to classify, then you typed what it said.  Wow, what a great philanthropic application of technology!  Nowadays, however, you get to work for Google for free by classifying images for them.  They could put up a task in Amazon Mechanical Turk for this, which would cost them a few pennies per image, but why would they when they have free labor at their disposal?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Anyway, I&amp;#39;m trying to wean myself off of Google&amp;#39;s products.  I&amp;#39;ve been using DuckDuckGo for search for about a year now and don&amp;#39;t really miss Google search.  If Apple made an iPhone for less than $500 I would use one.  I am now moving over to Firefox, which is actually proving exciting with all the work they&amp;#39;re putting into WebRenderer.  Gmail will be a harder one to move away from, but if I&amp;#39;m still using uBlock Origin, I&amp;#39;m not doing them any favors.&lt;/p&gt;
+&lt;h3 id=&#34;citations&#34;&gt;Citations&lt;/h3&gt;
+&lt;p&gt;[1] &lt;a href=&#34;https://www.nytimes.com/2017/01/31/technology/ad-blocking-internet.html&#34;&gt;https://www.nytimes.com/2017/01/31/technology/ad-blocking-internet.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[2] &lt;a href=&#34;https://arstechnica.com/tech-policy/2017/06/google-prepares-publishers-for-the-release-of-chrome-ad-blocking/&#34;&gt;https://arstechnica.com/tech-policy/2017/06/google-prepares-publishers-for-the-release-of-chrome-ad-blocking/&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXXCSQ436JPG2PCQCRGMTWD3.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXXCSQ436JPG2PCQCRGMTWD3.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTTH5C8QEWZDNTC4WP1ZN4G.html</id>
+<published>2017-10-31T22:38:23-05:00</published>
+<updated>2017-10-31T22:38:23-05:00</updated>
+<title>Music</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Music&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Here are some samples of music I&amp;#39;ve made.  &lt;/p&gt;
+&lt;p&gt;Check out my &lt;a href=&#34;https://soundcloud.com/smileman66/tracks&#34;&gt;SoundCloud&lt;/a&gt; for the rest.&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;Chiptune Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;h2&gt;Ambient Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179665508%3Fsecret_token%3Ds-zMDjT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTTH5C8QEWZDNTC4WP1ZN4G.html</id>
+<published>2017-10-31T22:38:23-05:00</published>
+<updated>2017-10-31T22:38:23-05:00</updated>
+<title>Music</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Music&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Here are some samples of music I&amp;#39;ve made.  &lt;/p&gt;
+&lt;p&gt;Check out my &lt;a href=&#34;https://soundcloud.com/smileman66/tracks&#34;&gt;SoundCloud&lt;/a&gt; for the rest.&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;Chiptune Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;h2&gt;Ambient Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179665508%3Fsecret_token%3Ds-zMDjT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTTH5C8QEWZDNTC4WP1ZN4G.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTTH5C8QEWZDNTC4WP1ZN4G.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html</id>
+<published>2017-10-31T22:33:29-05:00</published>
+<updated>2017-10-31T22:33:29-05:00</updated>
+<title>Mastofeed</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Mastofeed&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Mastofeed is a project that lets users embed their Mastodon feed into their blog, website, et cetera:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mastofeed.com&#34;&gt;mastofeed&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s what one looks like:&lt;/p&gt;
+&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html</id>
+<published>2017-10-31T22:33:29-05:00</published>
+<updated>2017-10-31T22:33:29-05:00</updated>
+<title>Mastofeed</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Mastofeed&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Mastofeed is a project that lets users embed their Mastodon feed into their blog, website, et cetera:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://mastofeed.com&#34;&gt;mastofeed&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s what one looks like:&lt;/p&gt;
+&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSX12PW0YJF9GZ1H9GGFB0.html</id>
+<published>2017-10-31T22:27:23-05:00</published>
+<updated>2017-10-31T22:27:23-05:00</updated>
+<title>Adventure Owl Meets the Mole Men</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Adventure Owl Meets the Mole Men&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;br&gt;    A 2D adventure platformer for the web.  Made in 72 hours for Ludum Dare 38, with Phaser, WebGl, and more.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a  href=&#34;//fenwick67.github.io/ld38/build&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSX12PW0YJF9GZ1H9GGFB0.html</id>
+<published>2017-10-31T22:27:23-05:00</published>
+<updated>2017-10-31T22:27:23-05:00</updated>
+<title>Adventure Owl Meets the Mole Men</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Adventure Owl Meets the Mole Men&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;br&gt;    A 2D adventure platformer for the web.  Made in 72 hours for Ludum Dare 38, with Phaser, WebGl, and more.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a  href=&#34;//fenwick67.github.io/ld38/build&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSX12PW0YJF9GZ1H9GGFB0.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSX12PW0YJF9GZ1H9GGFB0.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSSYYFWVS4WSFJQ4G3SB9S.html</id>
+<published>2017-10-31T22:24:11-05:00</published>
+<updated>2017-10-31T22:24:11-05:00</updated>
+<title>Call of the Ancients</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Call of the Ancients&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;br&gt;    An Alternative Reality Game created for Ludum Dare 36.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;//ancients.herokuapp.com&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSSYYFWVS4WSFJQ4G3SB9S.html</id>
+<published>2017-10-31T22:24:11-05:00</published>
+<updated>2017-10-31T22:24:11-05:00</updated>
+<title>Call of the Ancients</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Call of the Ancients&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;br&gt;    An Alternative Reality Game created for Ludum Dare 36.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;//ancients.herokuapp.com&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSSYYFWVS4WSFJQ4G3SB9S.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSSYYFWVS4WSFJQ4G3SB9S.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSRB56ZGEN199EERX8T2WB.html</id>
+<published>2017-10-31T22:24:50-05:00</published>
+<updated>2017-10-31T22:24:50-05:00</updated>
+<title>Chicken Shift</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Chicken Shift&lt;/h1&gt;&lt;span&gt;&lt;p&gt;This is a third-person stealth game made for Ludum Dare 35. All art, music, assets etc. were made in 72 hours by yours truly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//fenwick67.github.io/ld35&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//www.dropbox.com/s/rbg4zgn5vsgaepv/chickenshift_beatable.zip?dl=1&#34;&gt;Download (Windows)&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSRB56ZGEN199EERX8T2WB.html</id>
+<published>2017-10-31T22:24:50-05:00</published>
+<updated>2017-10-31T22:24:50-05:00</updated>
+<title>Chicken Shift</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Chicken Shift&lt;/h1&gt;&lt;span&gt;&lt;p&gt;This is a third-person stealth game made for Ludum Dare 35. All art, music, assets etc. were made in 72 hours by yours truly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//fenwick67.github.io/ld35&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;//www.dropbox.com/s/rbg4zgn5vsgaepv/chickenshift_beatable.zip?dl=1&#34;&gt;Download (Windows)&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSRB56ZGEN199EERX8T2WB.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSRB56ZGEN199EERX8T2WB.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSQ4YEJVA37Z7B3XEMXYYT.html</id>
+<published>2017-10-31T22:24:11-05:00</published>
+<updated>2017-10-31T22:24:11-05:00</updated>
+<title>Duck Game</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Duck Game&lt;/h1&gt;&lt;span&gt;&lt;p&gt;An experiment with Three.js and WebGL&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/duckgame&#34;&gt;Play Now&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSQ4YEJVA37Z7B3XEMXYYT.html</id>
+<published>2017-10-31T22:24:11-05:00</published>
+<updated>2017-10-31T22:24:11-05:00</updated>
+<title>Duck Game</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Duck Game&lt;/h1&gt;&lt;span&gt;&lt;p&gt;An experiment with Three.js and WebGL&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/duckgame&#34;&gt;Play Now&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSQ4YEJVA37Z7B3XEMXYYT.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSQ4YEJVA37Z7B3XEMXYYT.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSMKVK0VR6YFYZ8YP3JZMF.html</id>
+<published>2017-10-31T22:22:48-05:00</published>
+<updated>2017-10-31T22:22:48-05:00</updated>
+<title>Risks of Opaque Machine Learning</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Risks of Opaque Machine Learning&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Many science fiction writers have written about how an AI can go rogue, typically in self-preservation.  Stories like Terminator or The Matrix.  Fortunately today, there is very little risk of an AI taking over the world, but there are ethical dilemmas that need to be considered when we work with Machine Learning.&lt;/p&gt;
+&lt;p&gt;Especially when the influence of individual factors is difficult to understand, the output of machine learning systems can be obtuse.  &lt;strong&gt;Do you think Facebook can tell you &lt;em&gt;exactly&lt;/em&gt; why they showed you an ad for shampoo?  Do you think &lt;a href=&#34;https://en.wikipedia.org/wiki/High-frequency_trading#May_6.2C_2010_Flash_Crash&#34;&gt;high-frequency trading&lt;/a&gt; agencies have &lt;em&gt;full&lt;/em&gt; understanding of their systems?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;case-1-vehicle-emissions&#34;&gt;Case 1: Vehicle Emissions&lt;/h2&gt;
+&lt;h3 id=&#34;background-vw-nox-scandal&#34;&gt;Background: VW NOx scandal&lt;/h3&gt;
+&lt;p&gt;As you are likely aware, in 2015, &lt;a href=&#34;https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal&#34;&gt;Volkswagen was accused of cheating&lt;/a&gt; on its emissions tests.  Cars were found to behave differently in real-world conditions than when they were undergoing the EPA test regimen.  The EPA fined Volkswagen for about $18 Billion.  VW stuck with the story that a &amp;quot;rogue engineer&amp;quot; was responsible for this issue.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When he and his co-conspirators realized that they could not design a diesel engine that would meet the stricter US emissions standards, they designed and implemented [the defeat device] software &lt;a href=&#34;https://www.justice.gov/opa/pr/volkswagen-engineer-pleads-guilty-his-role-conspiracy-cheat-us-emissions-tests&#34;&gt;[link]&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, emissions software is actually a very likely candidate for machine learning optimizations.  Many parameters can be tweaked and optimized to reduce diesel particulates to meet emissions standards.  That standard, however, is a well-known test.&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s look at an example, with a very simplified system, to show how a solution like the &amp;quot;rogue engineer&amp;quot; created might also arise with an &amp;quot;rogue&amp;quot; machine learning system.&lt;/p&gt;
+&lt;h3 id=&#34;the-contrived-example&#34;&gt;The Contrived Example&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;This is egregiously simplified, but will demonstrate the concept.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s set up a scenario where some engineers are designing an engine system for a diesel car.  They will put &lt;a href=&#34;https://en.wikipedia.org/wiki/Exhaust_gas_recirculation&#34;&gt;an EGR filter&lt;/a&gt; on the car to help it produce fewer NOx emissions.  They use many complex equations to model the system.  Let&amp;#39;s mention a few facts that will be put into their model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;As the EGR filter is used more, the worse the engine performance will be, but the car will produce less NOx, which the EPA tests for.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The EPA tests for NOx at 2000 and 3000 RPM&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;As the engine speed increases, the more fuel it will use&lt;/li&gt;
+&lt;li&gt;As the engine gets cooler, it operates less efficiently&lt;/li&gt;
+&lt;li&gt;(many more)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, a machine learning algorithm is thrown at the model, with these goals in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pass the EPA test&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ensure high engine output power&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimize for fuel economy&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;keep the engine running&lt;/li&gt;
+&lt;li&gt;keep the engine at a certain temperature&lt;/li&gt;
+&lt;li&gt;(many more)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, what do you think the exhaust gas recirculation rate will look like as a function of engine speed?  The curve may look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rs.svg&#34; alt=&#34;it goes up at s=2000 and s=3000&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, is the algorithm immoral?  Is it &amp;quot;cheating&amp;quot;?&lt;/p&gt;
+&lt;p&gt;What if the engineers didn&amp;#39;t actually &lt;em&gt;see&lt;/em&gt; this plot, but just saw an obtuse set of constants in their code?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The point made above is that a machine learning system can generate behavior that might be considered immoral or &amp;quot;cheating&amp;quot; if it was intentionally designed by a person.&lt;/p&gt;
+&lt;h2 id=&#34;case-2-jim-s-flight&#34;&gt;Case 2: Jim&amp;#39;s Flight&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note: this is based on a scenario I saw in a comment on &lt;a href=&#34;https://news.ycombinator.com&#34;&gt;Hacker News&lt;/a&gt;, but I can&amp;#39;t find it anymore.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s imagine a man named Jim in the not-so-distant future.  Here are a couple of facts about Jim:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;He is flying out to a conference today, somewhere far away, during the busy travel season&lt;/li&gt;
+&lt;li&gt;He doesn&amp;#39;t like flying&lt;/li&gt;
+&lt;li&gt;He likes to drink&lt;/li&gt;
+&lt;li&gt;He booked the flight just three days in advance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;#39;s also imagine in this scenario that the airline he is flying on has revolutionized their customer service.  They now offer personalized coupons, reminders, and notices delivered to your phone, based on advanced deep learning techniques.  The airline&amp;#39;s system looks at your Facebook likes to offer you special deals and coupons in the terminal. They even recognize your face to allow you to skip showing your boarding pass at various places, and can bill you for your food / souvenir purchases in the airport by recognizing your face.&lt;/p&gt;
+&lt;p&gt;Now, let&amp;#39;s say Jim arrives at the terminal with about 15 minutes to spare.  He is not looking forward to his 6-hour flight, and he heads over to the airport bar to grab a quick drink.  &lt;/p&gt;
+&lt;p&gt;The system at the bar conveniently recognizes his face as he sits down,  verifies he is of age, and bills him for his first drink without him even opening his wallet.  After he sits for what feels like 5 minutes with his drink, his phone buzzes and offers him a coupon for another drink at half price.  He accepts the offer and presents the coupon to the waiter and sips his second drink.&lt;/p&gt;
+&lt;p&gt;As Jim finishes his drink, he checks the time, and rushes to the terminal to board his plane.  Unfortunately, he is too late, and the doors to the plane are already closed.  The airline does not offer him a refund, because he was not on time to the doors.  Unbeknownst to Jim, every seat on the plane was taken.  &lt;/p&gt;
+&lt;p&gt;Jim blames himself for missing his flight.  He is able to find a flight that leaves 2 hours later, and buys another ticket.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In hindsight, why did the system offer him a discounted drink?  Why didn&amp;#39;t it send him a reminder to board his plane when he still had time?  &lt;/p&gt;
+&lt;p&gt;Machine learning algorithms have the ability to optimize for patterns that may not be obvious to humans working on the same problem.  They can develop new strategies.  In this case, the algorithm may have weighed a few facts, and acted in the airline&amp;#39;s best interests:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim was at the bar&lt;/td&gt;
+&lt;td&gt;recognized with camera&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim likes to drink, and doesn&amp;#39;t like flying&lt;/td&gt;
+&lt;td&gt;Jim&amp;#39;s Facebook posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim isn&amp;#39;t very punctual&lt;/td&gt;
+&lt;td&gt;Jim booked his flight late&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The flight is overbooked&lt;/td&gt;
+&lt;td&gt;Airline database&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The airline will need to offer passengers vouchers or cash to &amp;quot;bump&amp;quot; them to a later flight&lt;/td&gt;
+&lt;td&gt;policy/regulation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;The cost of forcing Jim to take another flight would have cost &lt;em&gt;hundreds&lt;/em&gt; of times more than a drink coupon.  If the algorithm is optimizing for money, maximizing passenger throughput, and selling more products, this is one possible scenario.&lt;/p&gt;
+&lt;p&gt;Now again, is this behavior immoral?  &lt;strong&gt;More importantly, how would anyone have known this behavior emerged at all?&lt;/strong&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;case-3-predatory-lending&#34;&gt;Case 3: Predatory Lending&lt;/h2&gt;
+&lt;p&gt;This one will be brief, because I&amp;#39;m assuming you get the idea by now.&lt;/p&gt;
+&lt;p&gt;If a &lt;em&gt;person&lt;/em&gt; chooses to give a 30-year, extremely high rate mortgage to somebody with absolutely terrible credit, it is &lt;a href=&#34;https://en.wikipedia.org/wiki/Predatory_lending&#34;&gt;predatory&lt;/a&gt;.  But if an algorithm does it, what is it?  Is it wrong?  Is it illegal?  Who goes to jail?&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSMKVK0VR6YFYZ8YP3JZMF.html</id>
+<published>2017-10-31T22:22:48-05:00</published>
+<updated>2017-10-31T22:22:48-05:00</updated>
+<title>Risks of Opaque Machine Learning</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Risks of Opaque Machine Learning&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Many science fiction writers have written about how an AI can go rogue, typically in self-preservation.  Stories like Terminator or The Matrix.  Fortunately today, there is very little risk of an AI taking over the world, but there are ethical dilemmas that need to be considered when we work with Machine Learning.&lt;/p&gt;
+&lt;p&gt;Especially when the influence of individual factors is difficult to understand, the output of machine learning systems can be obtuse.  &lt;strong&gt;Do you think Facebook can tell you &lt;em&gt;exactly&lt;/em&gt; why they showed you an ad for shampoo?  Do you think &lt;a href=&#34;https://en.wikipedia.org/wiki/High-frequency_trading#May_6.2C_2010_Flash_Crash&#34;&gt;high-frequency trading&lt;/a&gt; agencies have &lt;em&gt;full&lt;/em&gt; understanding of their systems?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;case-1-vehicle-emissions&#34;&gt;Case 1: Vehicle Emissions&lt;/h2&gt;
+&lt;h3 id=&#34;background-vw-nox-scandal&#34;&gt;Background: VW NOx scandal&lt;/h3&gt;
+&lt;p&gt;As you are likely aware, in 2015, &lt;a href=&#34;https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal&#34;&gt;Volkswagen was accused of cheating&lt;/a&gt; on its emissions tests.  Cars were found to behave differently in real-world conditions than when they were undergoing the EPA test regimen.  The EPA fined Volkswagen for about $18 Billion.  VW stuck with the story that a &amp;quot;rogue engineer&amp;quot; was responsible for this issue.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When he and his co-conspirators realized that they could not design a diesel engine that would meet the stricter US emissions standards, they designed and implemented [the defeat device] software &lt;a href=&#34;https://www.justice.gov/opa/pr/volkswagen-engineer-pleads-guilty-his-role-conspiracy-cheat-us-emissions-tests&#34;&gt;[link]&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, emissions software is actually a very likely candidate for machine learning optimizations.  Many parameters can be tweaked and optimized to reduce diesel particulates to meet emissions standards.  That standard, however, is a well-known test.&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s look at an example, with a very simplified system, to show how a solution like the &amp;quot;rogue engineer&amp;quot; created might also arise with an &amp;quot;rogue&amp;quot; machine learning system.&lt;/p&gt;
+&lt;h3 id=&#34;the-contrived-example&#34;&gt;The Contrived Example&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;This is egregiously simplified, but will demonstrate the concept.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s set up a scenario where some engineers are designing an engine system for a diesel car.  They will put &lt;a href=&#34;https://en.wikipedia.org/wiki/Exhaust_gas_recirculation&#34;&gt;an EGR filter&lt;/a&gt; on the car to help it produce fewer NOx emissions.  They use many complex equations to model the system.  Let&amp;#39;s mention a few facts that will be put into their model:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;As the EGR filter is used more, the worse the engine performance will be, but the car will produce less NOx, which the EPA tests for.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The EPA tests for NOx at 2000 and 3000 RPM&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;As the engine speed increases, the more fuel it will use&lt;/li&gt;
+&lt;li&gt;As the engine gets cooler, it operates less efficiently&lt;/li&gt;
+&lt;li&gt;(many more)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, a machine learning algorithm is thrown at the model, with these goals in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pass the EPA test&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ensure high engine output power&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimize for fuel economy&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;keep the engine running&lt;/li&gt;
+&lt;li&gt;keep the engine at a certain temperature&lt;/li&gt;
+&lt;li&gt;(many more)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, what do you think the exhaust gas recirculation rate will look like as a function of engine speed?  The curve may look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rs.svg&#34; alt=&#34;it goes up at s=2000 and s=3000&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, is the algorithm immoral?  Is it &amp;quot;cheating&amp;quot;?&lt;/p&gt;
+&lt;p&gt;What if the engineers didn&amp;#39;t actually &lt;em&gt;see&lt;/em&gt; this plot, but just saw an obtuse set of constants in their code?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The point made above is that a machine learning system can generate behavior that might be considered immoral or &amp;quot;cheating&amp;quot; if it was intentionally designed by a person.&lt;/p&gt;
+&lt;h2 id=&#34;case-2-jim-s-flight&#34;&gt;Case 2: Jim&amp;#39;s Flight&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note: this is based on a scenario I saw in a comment on &lt;a href=&#34;https://news.ycombinator.com&#34;&gt;Hacker News&lt;/a&gt;, but I can&amp;#39;t find it anymore.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s imagine a man named Jim in the not-so-distant future.  Here are a couple of facts about Jim:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;He is flying out to a conference today, somewhere far away, during the busy travel season&lt;/li&gt;
+&lt;li&gt;He doesn&amp;#39;t like flying&lt;/li&gt;
+&lt;li&gt;He likes to drink&lt;/li&gt;
+&lt;li&gt;He booked the flight just three days in advance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;#39;s also imagine in this scenario that the airline he is flying on has revolutionized their customer service.  They now offer personalized coupons, reminders, and notices delivered to your phone, based on advanced deep learning techniques.  The airline&amp;#39;s system looks at your Facebook likes to offer you special deals and coupons in the terminal. They even recognize your face to allow you to skip showing your boarding pass at various places, and can bill you for your food / souvenir purchases in the airport by recognizing your face.&lt;/p&gt;
+&lt;p&gt;Now, let&amp;#39;s say Jim arrives at the terminal with about 15 minutes to spare.  He is not looking forward to his 6-hour flight, and he heads over to the airport bar to grab a quick drink.  &lt;/p&gt;
+&lt;p&gt;The system at the bar conveniently recognizes his face as he sits down,  verifies he is of age, and bills him for his first drink without him even opening his wallet.  After he sits for what feels like 5 minutes with his drink, his phone buzzes and offers him a coupon for another drink at half price.  He accepts the offer and presents the coupon to the waiter and sips his second drink.&lt;/p&gt;
+&lt;p&gt;As Jim finishes his drink, he checks the time, and rushes to the terminal to board his plane.  Unfortunately, he is too late, and the doors to the plane are already closed.  The airline does not offer him a refund, because he was not on time to the doors.  Unbeknownst to Jim, every seat on the plane was taken.  &lt;/p&gt;
+&lt;p&gt;Jim blames himself for missing his flight.  He is able to find a flight that leaves 2 hours later, and buys another ticket.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In hindsight, why did the system offer him a discounted drink?  Why didn&amp;#39;t it send him a reminder to board his plane when he still had time?  &lt;/p&gt;
+&lt;p&gt;Machine learning algorithms have the ability to optimize for patterns that may not be obvious to humans working on the same problem.  They can develop new strategies.  In this case, the algorithm may have weighed a few facts, and acted in the airline&amp;#39;s best interests:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim was at the bar&lt;/td&gt;
+&lt;td&gt;recognized with camera&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim likes to drink, and doesn&amp;#39;t like flying&lt;/td&gt;
+&lt;td&gt;Jim&amp;#39;s Facebook posts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jim isn&amp;#39;t very punctual&lt;/td&gt;
+&lt;td&gt;Jim booked his flight late&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The flight is overbooked&lt;/td&gt;
+&lt;td&gt;Airline database&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The airline will need to offer passengers vouchers or cash to &amp;quot;bump&amp;quot; them to a later flight&lt;/td&gt;
+&lt;td&gt;policy/regulation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;The cost of forcing Jim to take another flight would have cost &lt;em&gt;hundreds&lt;/em&gt; of times more than a drink coupon.  If the algorithm is optimizing for money, maximizing passenger throughput, and selling more products, this is one possible scenario.&lt;/p&gt;
+&lt;p&gt;Now again, is this behavior immoral?  &lt;strong&gt;More importantly, how would anyone have known this behavior emerged at all?&lt;/strong&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;case-3-predatory-lending&#34;&gt;Case 3: Predatory Lending&lt;/h2&gt;
+&lt;p&gt;This one will be brief, because I&amp;#39;m assuming you get the idea by now.&lt;/p&gt;
+&lt;p&gt;If a &lt;em&gt;person&lt;/em&gt; chooses to give a 30-year, extremely high rate mortgage to somebody with absolutely terrible credit, it is &lt;a href=&#34;https://en.wikipedia.org/wiki/Predatory_lending&#34;&gt;predatory&lt;/a&gt;.  But if an algorithm does it, what is it?  Is it wrong?  Is it illegal?  Who goes to jail?&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSMKVK0VR6YFYZ8YP3JZMF.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSMKVK0VR6YFYZ8YP3JZMF.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html</id>
+<published>2017-10-31T22:22:00-05:00</published>
+<updated>2017-10-31T22:22:00-05:00</updated>
+<title>The Worst Web Design Trends of 2016</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The Worst Web Design Trends of 2016&lt;/h1&gt;&lt;span&gt;&lt;p&gt;In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&amp;#39;s tacky and overused.  Let&amp;#39;s move on.&lt;/p&gt;
+&lt;p&gt;Speaking as a user, this is my official list of irritating web design trends in 2016.&lt;/p&gt;
+&lt;h2 id=&#34;-5-scrollwheel-smoothing&#34;&gt;#5: Scrollwheel Smoothing&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://fatlinesofcode.github.io/jquery.smoothwheel/demo/smoothwheel.html&#34;&gt;Smoothwheel Library&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yeah, smooth scrolling was terrible a few years ago, but it still hasn&amp;#39;t gone away.  Why??? I want my browser to work the same way no matter which page I go to.  And implementations of smooth scrolling are usually painfully slow, making this even worse.  Stop it!&lt;/p&gt;
+&lt;h2 id=&#34;-4-scroll-jumping&#34;&gt;#4: Scroll Jumping&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://www.apple.com/watch/&#34;&gt;Apple Watch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apple&amp;#39;s watch page isn&amp;#39;t the worst example, but demonstrates the idea.&lt;/p&gt;
+&lt;p&gt;This is similar to my problem with smooth scrolling.  When I hit the scroll wheel on my mouse, I expect the page to scroll down slightly.  This is everybody&amp;#39;s expectation.  I don&amp;#39;t want it to jump down an entire screen.  Even worse, if I discover that your site works like this, I expect it to scroll consistently, in other words, move once per mousewheel stop.  Inevitably &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; work this way, and the page scrolls twice when I wanted it to happen once, or it doesn&amp;#39;t scroll at all with one motion of the mousewheel.&lt;/p&gt;
+&lt;h2 id=&#34;-3-infinite-scroll-done-wrong&#34;&gt;#3: Infinite Scroll Done Wrong&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;https://community.nodebb.org/category/3/nodebb-development&#34;&gt;NodeBB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The way Facebook does infinite scroll works.  It loads more content as you scroll, and doesn&amp;#39;t remove content above you.  Unfortunately, this isn&amp;#39;t how infinite scroll is always implemented.  Sometimes content is removed from the top of the page.  This is infuriating when I want to just go back to the top of the page, either to get to the nav bar or see the early content&lt;/p&gt;
+&lt;h2 id=&#34;-2-share-buttons-when-highlighting-text&#34;&gt;#2: Share Buttons when Highlighting Text&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://mashable.com/2016/07/16/thrawn-rebels/?utm_cid=hp-hh-pri#w0iMnXNkQuqF&#34;&gt;Mashable&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am somebody who sometimes highlights text when I read a blog, news story et cetera.  It&amp;#39;s how I sometimes keep track of my place if I have to look away, or sometimes I just do it out of habit.  What it &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; mean is that I want to share a quote on Twitter, facebook, or anything.  &lt;/p&gt;
+&lt;p&gt;This trend has even extended to include highlights of &amp;quot;most tweeted&amp;quot; sections of the article.  But this is mostly on garbage trendy news sites anyway, so I don&amp;#39;t run into it that often.  I pray it doesn&amp;#39;t spread.&lt;/p&gt;
+&lt;h2 id=&#34;-1-half-of-a-1080p-screen-is-not-a-mobile-device&#34;&gt;#1: Half of a 1080p Screen is &lt;em&gt;not&lt;/em&gt; a Mobile Device&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;Node.js Docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The progressive enhancement / graceful degredation / responsive design, whatever you want to call it trend is a good idea.  Scratch that, it&amp;#39;s a great idea.  Make your webpage work on multiple different screen sizes.  But that doesn&amp;#39;t mean that a narrow viewport is a phone.&lt;/p&gt;
+&lt;p&gt;Windows, MacOS, and most linux distros have a viewport snapping feature which lets you snap a window to half of your screen.  This is really useful for multitasking.  But I don&amp;#39;t want the mobile version of your website when I want to multitask.  &lt;/p&gt;
+&lt;p&gt;Yes, even the &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;nodejs docs&lt;/a&gt; are victims of this plague.  Visit that link and make your browser about 800 pixels wide.  The font size explodes and it becomes a chore to read.  Move it over the threshold, and it becomed readable again.&lt;/p&gt;
+&lt;p&gt;The proper way to do scale-up on mobile is via the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag?redirectlocale=en-US&amp;amp;redirectslug=Mobile%2FViewport_meta_tag&#34;&gt;viewport meta tag&lt;/a&gt;, not a CSS media query.  &lt;/p&gt;
+&lt;p&gt;Hamburger buttons &lt;em&gt;do&lt;/em&gt; work fine with a mouse.  It&amp;#39;s a perfectly acceptable way to provide a menu on a narrow viewport on the desktop.  But don&amp;#39;t change your whole experience to blow up your icons&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html</id>
+<published>2017-10-31T22:22:00-05:00</published>
+<updated>2017-10-31T22:22:00-05:00</updated>
+<title>The Worst Web Design Trends of 2016</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The Worst Web Design Trends of 2016&lt;/h1&gt;&lt;span&gt;&lt;p&gt;In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&amp;#39;s tacky and overused.  Let&amp;#39;s move on.&lt;/p&gt;
+&lt;p&gt;Speaking as a user, this is my official list of irritating web design trends in 2016.&lt;/p&gt;
+&lt;h2 id=&#34;-5-scrollwheel-smoothing&#34;&gt;#5: Scrollwheel Smoothing&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://fatlinesofcode.github.io/jquery.smoothwheel/demo/smoothwheel.html&#34;&gt;Smoothwheel Library&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yeah, smooth scrolling was terrible a few years ago, but it still hasn&amp;#39;t gone away.  Why??? I want my browser to work the same way no matter which page I go to.  And implementations of smooth scrolling are usually painfully slow, making this even worse.  Stop it!&lt;/p&gt;
+&lt;h2 id=&#34;-4-scroll-jumping&#34;&gt;#4: Scroll Jumping&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://www.apple.com/watch/&#34;&gt;Apple Watch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apple&amp;#39;s watch page isn&amp;#39;t the worst example, but demonstrates the idea.&lt;/p&gt;
+&lt;p&gt;This is similar to my problem with smooth scrolling.  When I hit the scroll wheel on my mouse, I expect the page to scroll down slightly.  This is everybody&amp;#39;s expectation.  I don&amp;#39;t want it to jump down an entire screen.  Even worse, if I discover that your site works like this, I expect it to scroll consistently, in other words, move once per mousewheel stop.  Inevitably &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; work this way, and the page scrolls twice when I wanted it to happen once, or it doesn&amp;#39;t scroll at all with one motion of the mousewheel.&lt;/p&gt;
+&lt;h2 id=&#34;-3-infinite-scroll-done-wrong&#34;&gt;#3: Infinite Scroll Done Wrong&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;https://community.nodebb.org/category/3/nodebb-development&#34;&gt;NodeBB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The way Facebook does infinite scroll works.  It loads more content as you scroll, and doesn&amp;#39;t remove content above you.  Unfortunately, this isn&amp;#39;t how infinite scroll is always implemented.  Sometimes content is removed from the top of the page.  This is infuriating when I want to just go back to the top of the page, either to get to the nav bar or see the early content&lt;/p&gt;
+&lt;h2 id=&#34;-2-share-buttons-when-highlighting-text&#34;&gt;#2: Share Buttons when Highlighting Text&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;http://mashable.com/2016/07/16/thrawn-rebels/?utm_cid=hp-hh-pri#w0iMnXNkQuqF&#34;&gt;Mashable&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am somebody who sometimes highlights text when I read a blog, news story et cetera.  It&amp;#39;s how I sometimes keep track of my place if I have to look away, or sometimes I just do it out of habit.  What it &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; mean is that I want to share a quote on Twitter, facebook, or anything.  &lt;/p&gt;
+&lt;p&gt;This trend has even extended to include highlights of &amp;quot;most tweeted&amp;quot; sections of the article.  But this is mostly on garbage trendy news sites anyway, so I don&amp;#39;t run into it that often.  I pray it doesn&amp;#39;t spread.&lt;/p&gt;
+&lt;h2 id=&#34;-1-half-of-a-1080p-screen-is-not-a-mobile-device&#34;&gt;#1: Half of a 1080p Screen is &lt;em&gt;not&lt;/em&gt; a Mobile Device&lt;/h2&gt;
+&lt;p&gt;Example: &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;Node.js Docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The progressive enhancement / graceful degredation / responsive design, whatever you want to call it trend is a good idea.  Scratch that, it&amp;#39;s a great idea.  Make your webpage work on multiple different screen sizes.  But that doesn&amp;#39;t mean that a narrow viewport is a phone.&lt;/p&gt;
+&lt;p&gt;Windows, MacOS, and most linux distros have a viewport snapping feature which lets you snap a window to half of your screen.  This is really useful for multitasking.  But I don&amp;#39;t want the mobile version of your website when I want to multitask.  &lt;/p&gt;
+&lt;p&gt;Yes, even the &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;nodejs docs&lt;/a&gt; are victims of this plague.  Visit that link and make your browser about 800 pixels wide.  The font size explodes and it becomes a chore to read.  Move it over the threshold, and it becomed readable again.&lt;/p&gt;
+&lt;p&gt;The proper way to do scale-up on mobile is via the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag?redirectlocale=en-US&amp;amp;redirectslug=Mobile%2FViewport_meta_tag&#34;&gt;viewport meta tag&lt;/a&gt;, not a CSS media query.  &lt;/p&gt;
+&lt;p&gt;Hamburger buttons &lt;em&gt;do&lt;/em&gt; work fine with a mouse.  It&amp;#39;s a perfectly acceptable way to provide a menu on a narrow viewport on the desktop.  But don&amp;#39;t change your whole experience to blow up your icons&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html"/>
+</entry>
+</feed>
