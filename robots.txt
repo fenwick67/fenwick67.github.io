@@ -1,1 +1,1 @@
-C:/Users/Drew/workspace/fenwick67.github.io/_bumblersrc/static/robots.txt
+_bumblersrc/static/robots.txt
