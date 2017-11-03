@@ -1,5 +1,1 @@
-# www.robotstxt.org/
-
-# Allow crawling of all content
-User-agent: *
-Disallow:
+C:/Users/Drew/workspace/fenwick67.github.io/_bumblersrc/static/robots.txt
