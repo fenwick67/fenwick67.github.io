@@ -3,7 +3,7 @@
 <id>https://fenwick.pizza/feed.atom</id>
 <title>Drew Harwell</title>
 <subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
-<updated>2017-11-02T21:00:19-05:00</updated>
+<updated>2017-11-03T22:09:42-05:00</updated>
 <logo>https://fenwick.pizza/tile.png</logo>
 <author>
 <id>https://fenwick.pizza</id>
@@ -162,7 +162,7 @@
 <content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Mastofeed&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Mastofeed is a project that lets users embed their Mastodon feed into their blog, website, et cetera:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.mastofeed.com&#34;&gt;Mastofeed&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;#39;s what one looks like:&lt;/p&gt;
-&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
+&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//www.mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <activity:object>
 <id>https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html</id>
 <published>2017-10-31T22:33:29-05:00</published>
@@ -173,7 +173,7 @@
 <content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Mastofeed&lt;/h1&gt;&lt;span&gt;&lt;p&gt;Mastofeed is a project that lets users embed their Mastodon feed into their blog, website, et cetera:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.mastofeed.com&#34;&gt;Mastofeed&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;#39;s what one looks like:&lt;/p&gt;
-&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
+&lt;iframe id=&#34;frame&#34; allowfullscreen=&#34;&#34; sandbox=&#34;allow-top-navigation allow-scripts&#34; src=&#34;//www.mastofeed.com/api/feed?url=https%3A%2F%2Foctodon.social%2Fusers%2Ffenwick67.atom&amp;amp;theme=dark&amp;amp;size=100&amp;amp;header=true&#34;  height=&#34;400&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;&lt;/span&gt;&lt;/p&gt;</content>
 <category term=""/>
 <link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTT86JT3H52J5Y76X7VCPM7.html"/>
 </activity:object>
