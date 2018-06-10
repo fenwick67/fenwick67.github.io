@@ -3,7 +3,7 @@
 <id>https://fenwick.pizza/feed.atom</id>
 <title>Drew Harwell</title>
 <subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
-<updated>2018-02-07T20:46:37-06:00</updated>
+<updated>2018-06-10T13:26:59-05:00</updated>
 <logo>https://fenwick.pizza/tile.png</logo>
 <author>
 <id>https://fenwick.pizza</id>
@@ -19,30 +19,69 @@
 <link rel="alternate" type="text/html" href="https://fenwick.pizza/"/>
 <link rel="self" type="application/atom+xml" href="https://fenwick.pizza/feed.atom"/>
 <entry>
-<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
-<published>2017-11-01T23:31:31-05:00</published>
-<updated>2017-11-01T23:31:31-05:00</updated>
-<title>Term-Px</title>
+<id>https://fenwick.pizza/post/01CFNENCMRMZB3KZAC52WBNGPB.html</id>
+<published>2018-06-10T13:17:19-05:00</published>
+<updated>2018-06-10T13:17:19-05:00</updated>
+<title>Updates to Mastofeed</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Updates to Mastofeed&lt;/h1&gt;&lt;a href=&#34;/assets/firefox_2018-06-10_13-15-20.png&#34;&gt;&lt;img src=&#34;/assets/firefox_2018-06-10_13-15-20.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;Mastofeed has been updated.&lt;/p&gt;
+&lt;p&gt;Biggest features are...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bugfixes&lt;/li&gt;
+&lt;li&gt;Visual updates&lt;/li&gt;
+&lt;li&gt;Added options to hide boosts and/or replies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now live at &lt;a href=&#34;https://www.mastofeed.com/&#34;&gt;https://www.mastofeed.com/&lt;/a&gt; .&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
 <activity:object>
-<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
-<published>2017-11-01T23:31:31-05:00</published>
-<updated>2017-11-01T23:31:31-05:00</updated>
-<title>Term-Px</title>
+<id>https://fenwick.pizza/post/01CFNENCMRMZB3KZAC52WBNGPB.html</id>
+<published>2018-06-10T13:17:19-05:00</published>
+<updated>2018-06-10T13:17:19-05:00</updated>
+<title>Updates to Mastofeed</title>
 <activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
 <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Updates to Mastofeed&lt;/h1&gt;&lt;a href=&#34;/assets/firefox_2018-06-10_13-15-20.png&#34;&gt;&lt;img src=&#34;/assets/firefox_2018-06-10_13-15-20.png&#34;&gt;&lt;/img&gt;&lt;/a&gt;&lt;br&gt;&lt;span&gt;&lt;p&gt;Mastofeed has been updated.&lt;/p&gt;
+&lt;p&gt;Biggest features are...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bugfixes&lt;/li&gt;
+&lt;li&gt;Visual updates&lt;/li&gt;
+&lt;li&gt;Added options to hide boosts and/or replies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now live at &lt;a href=&#34;https://www.mastofeed.com/&#34;&gt;https://www.mastofeed.com/&lt;/a&gt; .&lt;/p&gt;
 &lt;/span&gt;&lt;/p&gt;</content>
+<link rel="enclosure" type="image/png" href="https://fenwick.pizza/assets/firefox_2018-06-10_13-15-20.png"/>
 <category term="projects"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01CFNENCMRMZB3KZAC52WBNGPB.html"/>
+</activity:object>
+<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
+<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01CFNENCMRMZB3KZAC52WBNGPB.html"/>
+</entry>
+<entry>
+<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
+<published>2017-11-01T23:31:31-05:00</published>
+<updated>2017-11-01T23:31:31-05:00</updated>
+<title>Term-Px</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<activity:object>
+<id>https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html</id>
+<published>2017-11-01T23:31:31-05:00</published>
+<updated>2017-11-01T23:31:31-05:00</updated>
+<title>Term-Px</title>
+<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
+<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
+<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;Term-Px&lt;/h1&gt;&lt;span&gt;&lt;p&gt;&lt;a href=&#34;//github.com/fenwick67/term-px&#34;&gt;Term-px&lt;/a&gt; lets you turn images or image data into RGB or ANSI art for your terminal.  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/iwlN1Ru.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;#39;s written in Javascript, so you can use it with Node, &lt;em&gt;or&lt;/em&gt; say, &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;use it to make a browser tool&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can try converting an image &lt;a href=&#34;//fenwick67.github.io/term-px&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/p&gt;</content>
+<category term=""/>
 <link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXXFZ5CYN15WFM2XTN6TE5VM.html"/>
 </activity:object>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
@@ -487,73 +526,5 @@
 </activity:object>
 <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
 <link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSMKVK0VR6YFYZ8YP3JZMF.html"/>
-</entry>
-<entry>
-<id>https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html</id>
-<published>2017-10-31T22:22:00-05:00</published>
-<updated>2017-10-31T22:22:00-05:00</updated>
-<title>The Worst Web Design Trends of 2016</title>
-<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The Worst Web Design Trends of 2016&lt;/h1&gt;&lt;span&gt;&lt;p&gt;In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&amp;#39;s tacky and overused.  Let&amp;#39;s move on.&lt;/p&gt;
-&lt;p&gt;Speaking as a user, this is my official list of irritating web design trends in 2016.&lt;/p&gt;
-&lt;h2 id=&#34;-5-scrollwheel-smoothing&#34;&gt;#5: Scrollwheel Smoothing&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://fatlinesofcode.github.io/jquery.smoothwheel/demo/smoothwheel.html&#34;&gt;Smoothwheel Library&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yeah, smooth scrolling was terrible a few years ago, but it still hasn&amp;#39;t gone away.  Why??? I want my browser to work the same way no matter which page I go to.  And implementations of smooth scrolling are usually painfully slow, making this even worse.  Stop it!&lt;/p&gt;
-&lt;h2 id=&#34;-4-scroll-jumping&#34;&gt;#4: Scroll Jumping&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://www.apple.com/watch/&#34;&gt;Apple Watch&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Apple&amp;#39;s watch page isn&amp;#39;t the worst example, but demonstrates the idea.&lt;/p&gt;
-&lt;p&gt;This is similar to my problem with smooth scrolling.  When I hit the scroll wheel on my mouse, I expect the page to scroll down slightly.  This is everybody&amp;#39;s expectation.  I don&amp;#39;t want it to jump down an entire screen.  Even worse, if I discover that your site works like this, I expect it to scroll consistently, in other words, move once per mousewheel stop.  Inevitably &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; work this way, and the page scrolls twice when I wanted it to happen once, or it doesn&amp;#39;t scroll at all with one motion of the mousewheel.&lt;/p&gt;
-&lt;h2 id=&#34;-3-infinite-scroll-done-wrong&#34;&gt;#3: Infinite Scroll Done Wrong&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;https://community.nodebb.org/category/3/nodebb-development&#34;&gt;NodeBB&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The way Facebook does infinite scroll works.  It loads more content as you scroll, and doesn&amp;#39;t remove content above you.  Unfortunately, this isn&amp;#39;t how infinite scroll is always implemented.  Sometimes content is removed from the top of the page.  This is infuriating when I want to just go back to the top of the page, either to get to the nav bar or see the early content&lt;/p&gt;
-&lt;h2 id=&#34;-2-share-buttons-when-highlighting-text&#34;&gt;#2: Share Buttons when Highlighting Text&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://mashable.com/2016/07/16/thrawn-rebels/?utm_cid=hp-hh-pri#w0iMnXNkQuqF&#34;&gt;Mashable&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am somebody who sometimes highlights text when I read a blog, news story et cetera.  It&amp;#39;s how I sometimes keep track of my place if I have to look away, or sometimes I just do it out of habit.  What it &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; mean is that I want to share a quote on Twitter, facebook, or anything.  &lt;/p&gt;
-&lt;p&gt;This trend has even extended to include highlights of &amp;quot;most tweeted&amp;quot; sections of the article.  But this is mostly on garbage trendy news sites anyway, so I don&amp;#39;t run into it that often.  I pray it doesn&amp;#39;t spread.&lt;/p&gt;
-&lt;h2 id=&#34;-1-half-of-a-1080p-screen-is-not-a-mobile-device&#34;&gt;#1: Half of a 1080p Screen is &lt;em&gt;not&lt;/em&gt; a Mobile Device&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;Node.js Docs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The progressive enhancement / graceful degredation / responsive design, whatever you want to call it trend is a good idea.  Scratch that, it&amp;#39;s a great idea.  Make your webpage work on multiple different screen sizes.  But that doesn&amp;#39;t mean that a narrow viewport is a phone.&lt;/p&gt;
-&lt;p&gt;Windows, MacOS, and most linux distros have a viewport snapping feature which lets you snap a window to half of your screen.  This is really useful for multitasking.  But I don&amp;#39;t want the mobile version of your website when I want to multitask.  &lt;/p&gt;
-&lt;p&gt;Yes, even the &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;nodejs docs&lt;/a&gt; are victims of this plague.  Visit that link and make your browser about 800 pixels wide.  The font size explodes and it becomes a chore to read.  Move it over the threshold, and it becomed readable again.&lt;/p&gt;
-&lt;p&gt;The proper way to do scale-up on mobile is via the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag?redirectlocale=en-US&amp;amp;redirectslug=Mobile%2FViewport_meta_tag&#34;&gt;viewport meta tag&lt;/a&gt;, not a CSS media query.  &lt;/p&gt;
-&lt;p&gt;Hamburger buttons &lt;em&gt;do&lt;/em&gt; work fine with a mouse.  It&amp;#39;s a perfectly acceptable way to provide a menu on a narrow viewport on the desktop.  But don&amp;#39;t change your whole experience to blow up your icons&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
-<activity:object>
-<id>https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html</id>
-<published>2017-10-31T22:22:00-05:00</published>
-<updated>2017-10-31T22:22:00-05:00</updated>
-<title>The Worst Web Design Trends of 2016</title>
-<activity:object-type>http://activitystrea.ms/schema/1.0/note</activity:object-type>
-<activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;h1&gt;The Worst Web Design Trends of 2016&lt;/h1&gt;&lt;span&gt;&lt;p&gt;In 2015 we had Parallax scrolling.  Okay, parallax scrolling still exists, but I think most people agree it&amp;#39;s tacky and overused.  Let&amp;#39;s move on.&lt;/p&gt;
-&lt;p&gt;Speaking as a user, this is my official list of irritating web design trends in 2016.&lt;/p&gt;
-&lt;h2 id=&#34;-5-scrollwheel-smoothing&#34;&gt;#5: Scrollwheel Smoothing&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://fatlinesofcode.github.io/jquery.smoothwheel/demo/smoothwheel.html&#34;&gt;Smoothwheel Library&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Yeah, smooth scrolling was terrible a few years ago, but it still hasn&amp;#39;t gone away.  Why??? I want my browser to work the same way no matter which page I go to.  And implementations of smooth scrolling are usually painfully slow, making this even worse.  Stop it!&lt;/p&gt;
-&lt;h2 id=&#34;-4-scroll-jumping&#34;&gt;#4: Scroll Jumping&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://www.apple.com/watch/&#34;&gt;Apple Watch&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Apple&amp;#39;s watch page isn&amp;#39;t the worst example, but demonstrates the idea.&lt;/p&gt;
-&lt;p&gt;This is similar to my problem with smooth scrolling.  When I hit the scroll wheel on my mouse, I expect the page to scroll down slightly.  This is everybody&amp;#39;s expectation.  I don&amp;#39;t want it to jump down an entire screen.  Even worse, if I discover that your site works like this, I expect it to scroll consistently, in other words, move once per mousewheel stop.  Inevitably &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; work this way, and the page scrolls twice when I wanted it to happen once, or it doesn&amp;#39;t scroll at all with one motion of the mousewheel.&lt;/p&gt;
-&lt;h2 id=&#34;-3-infinite-scroll-done-wrong&#34;&gt;#3: Infinite Scroll Done Wrong&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;https://community.nodebb.org/category/3/nodebb-development&#34;&gt;NodeBB&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The way Facebook does infinite scroll works.  It loads more content as you scroll, and doesn&amp;#39;t remove content above you.  Unfortunately, this isn&amp;#39;t how infinite scroll is always implemented.  Sometimes content is removed from the top of the page.  This is infuriating when I want to just go back to the top of the page, either to get to the nav bar or see the early content&lt;/p&gt;
-&lt;h2 id=&#34;-2-share-buttons-when-highlighting-text&#34;&gt;#2: Share Buttons when Highlighting Text&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;http://mashable.com/2016/07/16/thrawn-rebels/?utm_cid=hp-hh-pri#w0iMnXNkQuqF&#34;&gt;Mashable&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I am somebody who sometimes highlights text when I read a blog, news story et cetera.  It&amp;#39;s how I sometimes keep track of my place if I have to look away, or sometimes I just do it out of habit.  What it &lt;em&gt;doesn&amp;#39;t&lt;/em&gt; mean is that I want to share a quote on Twitter, facebook, or anything.  &lt;/p&gt;
-&lt;p&gt;This trend has even extended to include highlights of &amp;quot;most tweeted&amp;quot; sections of the article.  But this is mostly on garbage trendy news sites anyway, so I don&amp;#39;t run into it that often.  I pray it doesn&amp;#39;t spread.&lt;/p&gt;
-&lt;h2 id=&#34;-1-half-of-a-1080p-screen-is-not-a-mobile-device&#34;&gt;#1: Half of a 1080p Screen is &lt;em&gt;not&lt;/em&gt; a Mobile Device&lt;/h2&gt;
-&lt;p&gt;Example: &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;Node.js Docs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The progressive enhancement / graceful degredation / responsive design, whatever you want to call it trend is a good idea.  Scratch that, it&amp;#39;s a great idea.  Make your webpage work on multiple different screen sizes.  But that doesn&amp;#39;t mean that a narrow viewport is a phone.&lt;/p&gt;
-&lt;p&gt;Windows, MacOS, and most linux distros have a viewport snapping feature which lets you snap a window to half of your screen.  This is really useful for multitasking.  But I don&amp;#39;t want the mobile version of your website when I want to multitask.  &lt;/p&gt;
-&lt;p&gt;Yes, even the &lt;a href=&#34;https://nodejs.org/dist/latest-v4.x/docs/api/url.html&#34;&gt;nodejs docs&lt;/a&gt; are victims of this plague.  Visit that link and make your browser about 800 pixels wide.  The font size explodes and it becomes a chore to read.  Move it over the threshold, and it becomed readable again.&lt;/p&gt;
-&lt;p&gt;The proper way to do scale-up on mobile is via the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag?redirectlocale=en-US&amp;amp;redirectslug=Mobile%2FViewport_meta_tag&#34;&gt;viewport meta tag&lt;/a&gt;, not a CSS media query.  &lt;/p&gt;
-&lt;p&gt;Hamburger buttons &lt;em&gt;do&lt;/em&gt; work fine with a mouse.  It&amp;#39;s a perfectly acceptable way to provide a menu on a narrow viewport on the desktop.  But don&amp;#39;t change your whole experience to blow up your icons&lt;/p&gt;
-&lt;/span&gt;&lt;/p&gt;</content>
-<category term=""/>
-<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html"/>
-</activity:object>
-<link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="Drew Harwell"/>
-<link rel="alternate" type="text/html" href="https://fenwick.pizza/post/01BXTSK5VTCF9Y8GZ88BKYPQZP.html"/>
 </entry>
 </feed>
