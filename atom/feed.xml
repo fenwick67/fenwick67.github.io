@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>https://fenwick.pizza/feed.atom</id>
 <title>Drew Harwell</title>
-<updated>2018-07-13T21:26:59-05:00</updated>
+<updated>2018-07-30T19:46:31-05:00</updated>
 <subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
 <logo>https://fenwick.pizza/tile.png</logo>
 <author>
@@ -123,10 +123,10 @@
 <title>Music</title>
 <content type="html" xml:lang="en">&lt;p&gt;Here are some samples of music I&amp;#39;ve made.  &lt;/p&gt;
 &lt;p&gt;Check out my &lt;a href=&#34;https://soundcloud.com/smileman66/tracks&#34;&gt;SoundCloud&lt;/a&gt; for the rest.&lt;/p&gt;
-&lt;p&gt;&lt;h2&gt;Chiptune Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;h2&gt;Chiptune Music:&lt;/h2&gt;
 &lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179666085%3Fsecret_token%3Ds-z3byT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;h2&gt;Ambient Music:&lt;/h2&gt;&lt;/p&gt;
+&lt;h2&gt;Ambient Music:&lt;/h2&gt;
 &lt;iframe src=&#34;//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/179665508%3Fsecret_token%3Ds-zMDjT&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&#34; style=&#34;width:100%&#34;&gt;&lt;/iframe&gt;
 </content>
 <category term="music"/>
@@ -149,7 +149,9 @@
 <published>2017-10-31T22:27:23-05:00</published>
 <updated>2017-10-31T22:27:23-05:00</updated>
 <title>Adventure Owl Meets the Mole Men</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;br&gt;    A 2D adventure platformer for the web.  Made in 72 hours for Ludum Dare 38, with Phaser, WebGl, and more.&lt;br&gt;&lt;/p&gt;
+<content type="html" xml:lang="en">&lt;p&gt;
+    A 2D adventure platformer for the web.  Made in 72 hours for Ludum Dare 38, with Phaser, WebGl, and more.
+&lt;/p&gt;
 
 &lt;p&gt;&lt;a  href=&#34;//fenwick67.github.io/ld38/build&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -161,7 +163,9 @@
 <published>2017-10-31T22:24:11-05:00</published>
 <updated>2017-10-31T22:24:11-05:00</updated>
 <title>Call of the Ancients</title>
-<content type="html" xml:lang="en">&lt;p&gt;&lt;br&gt;    An Alternative Reality Game created for Ludum Dare 36.&lt;br&gt;&lt;/p&gt;
+<content type="html" xml:lang="en">&lt;p&gt;
+    An Alternative Reality Game created for Ludum Dare 36.  
+&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;//ancients.herokuapp.com&#34;&gt;Play&lt;/a&gt;&lt;/p&gt;
 </content>
@@ -255,8 +259,7 @@
 &lt;th&gt;Source&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;Jim was at the bar&lt;/td&gt;
 &lt;td&gt;recognized with camera&lt;/td&gt;
 &lt;/tr&gt;
@@ -276,8 +279,7 @@
 &lt;td&gt;The airline will need to offer passengers vouchers or cash to &amp;quot;bump&amp;quot; them to a later flight&lt;/td&gt;
 &lt;td&gt;policy/regulation&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;hr&gt;
 &lt;p&gt;The cost of forcing Jim to take another flight would have cost &lt;em&gt;hundreds&lt;/em&gt; of times more than a drink coupon.  If the algorithm is optimizing for money, maximizing passenger throughput, and selling more products, this is one possible scenario.&lt;/p&gt;
 &lt;p&gt;Now again, is this behavior immoral?  &lt;strong&gt;More importantly, how would anyone have known this behavior emerged at all?&lt;/strong&gt;  &lt;/p&gt;
