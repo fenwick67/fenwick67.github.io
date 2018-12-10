@@ -68,7 +68,7 @@ html
                 div
                   .box
                     if post.title
-                      .title.is-size-3= post.title
+                      a.title.is-size-3(href=post.permalink,style="text-decoration:none")= post.title
                     .level
                       span
                         a(href=post.permalink)= post.englishDate
