@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>https://fenwick.pizza/feed.atom</id>
 <title>Drew Harwell</title>
-<updated>2018-12-09T21:13:31-06:00</updated>
+<updated>2018-12-09T21:48:10-06:00</updated>
 <subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
 <logo>https://fenwick.pizza/tile.png</logo>
 <author>
@@ -22,23 +22,23 @@
 <title>Why Ad-blockers are Okay</title>
 <content type="html" xml:lang="en">&lt;p&gt;Ad-blocking is a common point of contention in developer/tech circles. Some will say it&amp;#39;s a necessary evil, some will say it&amp;#39;s just plain stealing.  But I disagree with these points.  &lt;/p&gt;
 &lt;p&gt;I think ad-blocking is a moral, righteous and good thing to do today, and even dramatic actions like installing AdNauseum are okay.  And here&amp;#39;s why.&lt;/p&gt;
-&lt;h1 id=&#34;personal-advertisement-undermines-free-will&#34;&gt;Personal Advertisement Undermines Free Will&lt;/h1&gt;
+&lt;h2 id=&#34;personal-advertisement-undermines-free-will&#34;&gt;Personal Advertisement Undermines Free Will&lt;/h2&gt;
 &lt;p&gt;What does an effective advertisement do? It gets you to buy something you otherwise wouldn&amp;#39;t have. In some cases this is a diversion from another brand (such as from Coke to Pepsi), but these are exceptions.&lt;/p&gt;
 &lt;p&gt;I understand from the perspective of a business, advertising is a way to &amp;quot;get your product out there&amp;quot;. But personalized ads are beyond just putting a product in front of people. Most ads I notice on the web aren&amp;#39;t this way. They are trying to sell me things I don&amp;#39;t need because these are the things with the highest margins. Sometimes they&amp;#39;re ads for more ads (links to sites just loaded with ads and with a very poorly written article).&lt;/p&gt;
-&lt;h1 id=&#34;culture-of-clicks&#34;&gt;Culture of Clicks&lt;/h1&gt;
+&lt;h2 id=&#34;culture-of-clicks&#34;&gt;Culture of Clicks&lt;/h2&gt;
 &lt;p&gt;The web isn&amp;#39;t about hits anymore. It&amp;#39;s about clicks. Pages and articles are shared by their headlines and not by their content, and websites certainly aren&amp;#39;t bookmarked anymore. This is a direct consequence of online advertisement.&lt;/p&gt;
 &lt;p&gt;This is why you have to click through multiple pages to read a full article on certain sites, this is why SEO is dominated by scummy sites, and it makes clickbait headlines and articles effective. More importantly, it has fueled the &amp;quot;culture of outrage&amp;quot; we have today by making sure that clickable, scandalous headlines get floated up to the top of the page, the feed, and our consciousness.&lt;/p&gt;
-&lt;h1 id=&#34;free-services-aren-t-going-anywhere&#34;&gt;Free Services Aren&amp;#39;t Going Anywhere&lt;/h1&gt;
+&lt;h2 id=&#34;free-services-aren-t-going-anywhere&#34;&gt;Free Services Aren&amp;#39;t Going Anywhere&lt;/h2&gt;
 &lt;p&gt;Google etc. operate on ad revenue.  While it&amp;#39;s true that they hold an important place on the internet, that doesn&amp;#39;t mean they are irreplacable. If Google&amp;#39;s advertisement-driven business model went down the pipes, the actual web wouldn&amp;#39;t suffer much. Gmail would go away and people would move to other webmail. Android would go away but AOSP would live on, and so would iOS and Tizen and the many other operating systems.  &lt;/p&gt;
 &lt;p&gt;Let&amp;#39;s face it, without advertising, lots of the web would stay around. The combination of cheap hosting and wide bandwidth mean &lt;a href=&#34;https://pleroma.social/&#34;&gt;you can run a social network on a $35 Raspberry Pi&lt;/a&gt;, or &lt;a href=&#34;https://github.com/ssbc/patchwork&#34;&gt;run a decentralized one on your PC&lt;/a&gt;. I&amp;#39;ll admit that some of this software isn&amp;#39;t perfect and probably not the easiest thing to get &lt;a href=&#34;https://twitter.com/WilliamShatner/status/849436080462016512&#34;&gt;William Shatner&lt;/a&gt; to use, but they work. &lt;/p&gt;
-&lt;h1 id=&#34;why-your-smart-tv-sells-your-data&#34;&gt;Why Your Smart TV Sells Your Data&lt;/h1&gt;
+&lt;h2 id=&#34;why-your-smart-tv-sells-your-data&#34;&gt;Why Your Smart TV Sells Your Data&lt;/h2&gt;
 &lt;p&gt;Somebody asked me why Smart TVs send in telemetry data to &amp;quot;the mothership&amp;quot;.  And there are really two reasons.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;To provide you with &amp;quot;better&amp;quot; advertisements&lt;/li&gt;
 &lt;li&gt;To make &amp;quot;better&amp;quot; programming&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You&amp;#39;ll have to forgive my use of scare-qoutes, but neither are really better for consumers. Better ads means &amp;quot;more effective&amp;quot; ads, i.e. &amp;quot;ads that get you to spend more&amp;quot;. &amp;quot;Better programming&amp;quot; means shows that get more milquetoast TV shows that don&amp;#39;t challenge or offend anybody.&lt;/p&gt;
-&lt;h1 id=&#34;the-bottom-line&#34;&gt;The Bottom Line&lt;/h1&gt;
+&lt;h2 id=&#34;the-bottom-line&#34;&gt;The Bottom Line&lt;/h2&gt;
 &lt;p&gt;Breaking the existing personalized ad system...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;makes our personal data worth less to the world&lt;/li&gt;
