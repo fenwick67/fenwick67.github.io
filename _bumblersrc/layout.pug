@@ -2,7 +2,7 @@
 html
   head
     title= site.title + (page.isCustom?(' - '+page.customPage.title):"") + (page.tag?' - '+_.capitalize(page.tag):'')+ (page.posts && page.posts.length == 1 && page.posts[0].title?' - '+page.posts[0].title:'')
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jenil/bulmaswatch/gh-pages/journal/bulmaswatch.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/journal/bulmaswatch.min.css" type="text/css" />
     <link rel="stylesheet" href="/assets/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />

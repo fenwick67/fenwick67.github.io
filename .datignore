@@ -3,6 +3,7 @@ node_modules
 .idea
 ms-build
 .sessions
-.*
+./.*
 .git
-_bumblersrc
+_bumblersrc/.bumblerhash
+edit-blog.sh
