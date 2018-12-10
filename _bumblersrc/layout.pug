@@ -8,7 +8,6 @@ html
     <meta charset="utf-8" />
     <link type="application/atom+xml" rel="alternate" href="/atom.xml"/>
     <link rel="icon" type="image/png" sizes="558x558" href="#{site.avatar}" />
-    <link rel="icon" type="image/png" sizes="558x270" href="/tile-wide.png" />
     <meta name="theme-color" content="#f66">
     meta(name="description" content=site.description)
   body
@@ -67,26 +66,23 @@ html
             for post in page.posts
               .section.post
                 div
-                  .box                    
+                  .box
                     if post.title
-                      h1.title= post.title
-                    if post.tags
-                      span.tags
-                        for tag in post.tags
-                          a.tag.is-primary(href="/tag/"+tag)= _.capitalize(tag)
+                      .title.is-size-3= post.title
+                    .level
+                      span
+                        a(href=post.permalink)= post.englishDate
+                        if post.tags
+                          span &nbsp;in&nbsp;
+                          span.tags(style="display:inline;")
+                            for tag in post.tags
+                              a.tag.is-primary(href="/tag/"+tag)= _.capitalize(tag)
+                      a(href='/admin/#post/edit?id='+post.id).is-hidden ✎ Edit
                   .post-assets
                     for asset in post.assets
                       a.post-asset(href=asset.href)
                         span!= asset.widget
                   .content.card-content!= post.caption
-                  .card
-                    .post-info
-                      .post-info-level
-                        span= 'Posted '+post.englishDate
-                        span 
-                          a(href=post.permalink) Permalink
-                          a(href='/admin/#post/edit?id='+post.id).is-hidden ✎ Edit
-    
     .hide-scroll
       // pagination
       .container.section
