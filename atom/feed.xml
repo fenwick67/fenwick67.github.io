@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:activity="http://activitystrea.ms/spec/1.0/" xmlns:poco="http://portablecontacts.net/spec/1.0" xmlns:media="http://purl.org/syndication/atommedia" xmlns:ostatus="http://ostatus.org/schema/1.0">
 <id>https://fenwick.pizza/feed.atom</id>
 <title>Drew Harwell</title>
-<updated>2019-11-11T17:24:44-05:00</updated>
+<updated>2019-11-19T22:30:51-05:00</updated>
 <subtitle>A showcase of most stuff Drew works on in his spare time</subtitle>
 <logo>https://fenwick.pizza/tile.png</logo>
 <author>

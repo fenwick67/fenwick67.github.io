@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="276"
-   height="212"
-   viewBox="0 0 275.99999 211.99999"
+   width="200"
+   height="200"
+   viewBox="0 0 199.99999 199.99999"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="conure.svg">
+   sodipodi:docname="conure.svg"
+   inkscape:export-filename="C:\Users\Drew\workspace\fenwick67.github.io\_bumblersrc\favicon.png"
+   inkscape:export-xdpi="230.39999"
+   inkscape:export-ydpi="230.39999">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,18 +28,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="145.45915"
-     inkscape:cy="158.59308"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="-886.49119"
+     inkscape:cy="342.04967"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-grids="false"
+     inkscape:snap-grids="true"
      inkscape:snap-page="false"
      inkscape:snap-midpoints="false"
      inkscape:snap-to-guides="false"
@@ -47,7 +50,17 @@
      units="px"
      showborder="true"
      inkscape:showpageshadow="false"
-     borderlayer="true" />
+     borderlayer="true"
+     inkscape:snap-global="true"
+     inkscape:snap-others="false"
+     inkscape:snap-nodes="true"
+     inkscape:snap-bbox="false"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4742" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -66,24 +79,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-134.15433,-153.77614)">
+     transform="translate(-134.15433,-165.77614)">
     <path
        style="fill:#ff5555;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 275.52928,266.34659 -44.62178,-31.7987 38.07798,-65.96792 65.5438,16.76661 -2.65254,84.53786 2.66104,100.56504 -43.28858,-0.59187 z"
+       d="m 245.4176,292.37395 -44.91391,-49.89713 31.47007,-57.42992 65.6528,12.59556 8.30875,66.33176 0.21902,121.80191 -61,0 z"
        id="path3503"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />
     <path
        style="fill:#ffaaaa;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 199.61196,301.40741 -8.51959,-58.34739 15.38607,-44.7341 62.52839,-29.75661 -38.40885,66.7929 z"
+       d="m 184.15432,350.77612 -39.99999,-84.99999 27.32411,-52.45021 60.49532,-28.27902 -31.47007,57.42992 -16.34937,33.29931 z"
        id="path3506"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:#550000;fill-opacity:1;stroke:none"
        inkscape:transform-center-x="2.7785691"
        inkscape:transform-center-y="1.9582242"
-       d="m 274.10207,207.65284 9.02496,-14.00959 9.72071,12.39723 -11.03604,19.73806 z"
+       d="m 239.15432,222.77613 9,-14 9,14 -9,18 z"
        id="path4336-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
