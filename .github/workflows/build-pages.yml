@@ -16,9 +16,7 @@ jobs:
     - name: setup node
       uses: actions/setup-node@v4
     - name: Generate the site
-      run: 
-        - yarn
-        - yarn build
+      run: yarn && yarn build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
