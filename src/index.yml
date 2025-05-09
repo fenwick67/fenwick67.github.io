@@ -1,0 +1,47 @@
+sites:
+  - title: Mastofeed
+    id: mastofeed
+    description: Iframe embed service for Mastodon feeds, Serving about 100,000 requests per day.
+    tech:
+      - web
+      - Node.js
+      - Express
+      - cryptography
+      - fediverse
+      - APIs
+    url: https://mastofeed.com
+    static: false
+  - title: Rent-A-Duck
+    id: rentaduck
+    description: A soothing rubber duck who is happy to help you with debugging.
+    tech:
+      - javascript
+      - WebGL
+      - THREE.js
+    url: https://fenwick67.github.io/rentaduck
+    static: true
+  - title: Image to ANSI art utility
+    id: termpx
+    description: input an image and get a string you can print in the terminal. Also an accompanying npm package for programmatic use, <a href="https://npmjs.org/term-px"><code>term-px</code></a>.
+    tech:
+      - pure javascript
+      - terminal escape sequences
+    url: https://fenwick67.github.io/term-px
+    static: true
+  - title: Weather Duck
+    id: weatherduck
+    description: A duck shows you today's weather, and dresses for the occasion.
+    tech:
+      - WebGL
+      - PIXI.js
+      - HTTP API
+      - browser APIs
+    url: https://fenwick67.github.io/weather-duck
+    static: true
+  - title: Neato-Emoji-Converter
+    id: neato
+    description: Convert between emoji characters, short-codes, including custom emoji and more. Forgive the odd name - NPM package names for something like this were slim pickings.
+    tech:
+      - pure javascript
+      - unicode
+    url: https://github.com/fenwick67/neato-emoji-converter

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Drew's Web Tools and Libraries
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    body 
+        .section
+            .container
+                h1.title Drew's Web Tools and Libraries
+        .columns
+            .column.is-one-fifth-tablet.is-3-desktop
+            
+            .column
+                each site in sites
+                    section.section
+                        .card
+                            .card-header
+                                a.card-header-title.title.is-4(href=site.url)= site.title                           
+                            a.card-image(href=site.url)
+                                img(src="screenshots/"+site.title+".jpg")
+                            .card-content
+                                .block   
+                                    .tags
+                                        each s in site.tech 
+                                            .tag= s
+                                p!= site.description
+            .column.is-one-fifth-tablet.is-3-desktop
+        if dev == true
+            <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>')</script>
