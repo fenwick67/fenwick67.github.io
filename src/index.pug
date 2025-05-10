@@ -4,16 +4,14 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title= title
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" href="/bulma.min.css">
     body 
         .hero
             .hero-body
                 h1.title.is-1.has-text-centered=title
-        .columns
-            .column.is-one-fifth-tablet.is-3-desktop
-            
-            .column
-                .block
+        .main-outer
+            .main-inner
+                .section
                     section.block
                         h4.title.is-4 About 
                         p.content!= about
@@ -23,23 +21,22 @@ html(lang="en")
                             each link in links
                                 a(href=link.url)!= link.text
                                 br
-                            a(onclick="setTimeout(()=>{var addr=[100,102,104,97,114,119,101,108,108,64,103,109,97,105,108,46,99,111,109].map(n=>String.fromCharCode(n)).join('');this.href=('mailto:'+addr);this.textContent=addr},1)") Click for Email
-                .block
+                            a(onclick="setTimeout(()=>{var addr=[100,102,104,97,114,119,101,108,108,64,103,109,97,105,108,46,99,111,109].map(n=>String.fromCharCode(n)).join('');this.href=('mailto:'+addr);this.textContent=addr},1)") Click to reveal Email
+                .section
                     h4.title.is-4 Web Tools and Utilities
-                each site in sites
-                    section.block
-                        .card
-                            .card-header
-                                a.card-header-title.title.is-4(href=site.url)= site.title                           
-                            a.card-image(href=site.url)
-                                img(src="screenshots/"+site.title+".jpg")
-                            .card-content
-                                .block   
-                                    .tags
-                                        each s in site.tech 
-                                            .tag= s
-                                p!= site.description
-            .column.is-one-fifth-tablet.is-3-desktop
+                    each site in sites
+                        section.block
+                            .card
+                                .card-header
+                                    a.card-header-title.title.is-4(href=site.url)= site.title                           
+                                a.card-image(href=site.url)
+                                    img(src="screenshots/"+site.title+".jpg").image.is-fullwidth
+                                .card-content
+                                    .block   
+                                        .tags
+                                            each s in site.tech 
+                                                .tag= s
+                                    p!= site.description
         if dev
             <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>')</script>
         style
@@ -63,4 +60,11 @@ html(lang="en")
             | to {
             |   background-position: 1008px 2016px;
             | }
+            | }
+            | .main-outer{
+            |   display: flex;
+            |   justify-content:space-around;  
+            | }
+            | .main-inner{
+            |   max-width: 800px;               
             | }
