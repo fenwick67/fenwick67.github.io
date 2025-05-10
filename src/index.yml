@@ -1,7 +1,20 @@
+title: Drew Harwell
+about: I'm a software engineer, I write software for web, vehicles, embedded and everything else.<br>I'm not the journalist, <a href="https://drewharwell.com">(that's this guy!)</a>
+links: 
+  - text: Github
+    url: https://github.com/fenwick67
+  - text: Linkedin
+    url: https://linkedin.com/in/dfharwell
+  - text: Fediverse / Mastodon
+    url: https://techhub.social/@fenwick67
+  - text: ko-fi
+    url: https://ko-fi.com/M4M014P3UT
+  - text: Check out my patents
+    url: https://patents.google.com/?inventor=drew+f+harwell
 sites:
   - title: Mastofeed
     id: mastofeed
-    description: Iframe embed service for Mastodon feeds, Serving about 100,000 requests per day.
+    description: iframe embed service for Mastodon feeds, Serving about 100,000 requests per day.
     tech:
       - web
       - Node.js

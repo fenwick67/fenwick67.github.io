@@ -3,7 +3,9 @@ var watch = require('watch')
 const connect = require('connect')
 var livereload = require('livereload');
 
-watch.watchTree('src',async function(f,curr,prev){
+watch.watchTree('.',{
+    filter: s=>s.indexOf('src') > -1 || s.indexOf('static') > -1
+},async function(f,curr,prev){
     await build({dev:true});
     console.log('built')
 });
