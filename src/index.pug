@@ -9,6 +9,7 @@ html(lang="en")
         a#light-toggle.button.is-warning(title="toggle light/dark")
             span.light-mode-icon
             span#light-mode-txt
+        div &nbsp; # this is just a lil spacer
         .hero
             .hero-body
                 h1.title.is-1.has-text-centered=title
@@ -43,6 +44,10 @@ html(lang="en")
         if dev
             <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +':35729/livereload.js?snipver=1"></' + 'script>')</script>
         style
+            | :root{
+            |                /*removing Inter because firefox mobile uses Inter Thin which is unreadable :/ */
+            |       --bulma-body-family: SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif           
+            | }
             | html{
             |   background-image: url("bg.webp");
             |   animation: 120s infinite linear slide;
